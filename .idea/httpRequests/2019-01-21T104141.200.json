@@ -1,0 +1,25 @@
+{
+  "result": 1,
+  "data": {
+    "listnum": [
+      {
+        "name": "访问总人数",
+        "value": 6
+      },
+      {
+        "name": "付费会员人数",
+        "value": 0
+      },
+      {
+        "name": "付费人数",
+        "value": 1
+      }
+    ],
+    "vipnumPercentage": 0.0,
+    "endtime": 1548038501000,
+    "allnumPercentage": 100,
+    "starttime": 1547520101002,
+    "paynumPercentage": 16.7
+  },
+  "message": "成功"
+}

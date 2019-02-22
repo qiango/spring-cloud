@@ -1,0 +1,2 @@
+2019-02-13 10:54:15.078 - INFO PID_IS_UNDEFINED [           main] com.github.sarxos.webcam.Webcam          : WebcamDefaultDriver capture driver will be used
+2019-02-13 10:54:15.597 - WARN PID_IS_UNDEFINED [           main] com.github.sarxos.webcam.Webcam          : No webcam has been detected!

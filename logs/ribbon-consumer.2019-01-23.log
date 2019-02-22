@@ -1,0 +1,779 @@
+2019-01-23 10:44:24.699 - INFO 20188 [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@59b38691: startup date [Wed Jan 23 10:44:24 CST 2019]; root of context hierarchy
+2019-01-23 10:44:24.910 - INFO 20188 [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-23 10:44:24.950 - INFO 20188 [           main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$53327b87] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 10:44:25.400 - INFO 20188 [           main] c.r.RibbonConsumerApplication            : No active profile set, falling back to default profiles: default
+2019-01-23 10:44:25.410 - INFO 20188 [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3c4bc9fc: startup date [Wed Jan 23 10:44:25 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@59b38691
+2019-01-23 10:44:26.360 - INFO 20188 [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-23 10:44:26.697 - INFO 20188 [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c741d85f-e507-3210-b7f0-243e96d017e3
+2019-01-23 10:44:26.717 - INFO 20188 [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-23 10:44:26.827 - INFO 20188 [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3718788a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 10:44:26.877 - INFO 20188 [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$53327b87] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 10:44:27.318 - INFO 20188 [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8886 (http)
+2019-01-23 10:44:27.338 - INFO 20188 [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-01-23 10:44:27.338 - INFO 20188 [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-01-23 10:44:27.338 - INFO 20188 [ost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Software\jdk1.8.0_172\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Software\gradle\gradle-4.6\bin;D:\Software\jdk1.8.0_172\bin;C:\Software\Git\cmd;C:\Software\Microsoft VS Code\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\WINDOWS\System32\OpenSSH\;C:\Software\node\;D:\logs\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Roaming\npm;.]
+2019-01-23 10:44:27.468 - INFO 20188 [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-01-23 10:44:27.468 - INFO 20188 [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2058 ms
+2019-01-23 10:44:27.677 - WARN 20188 [ost-startStop-1] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-01-23 10:44:27.677 - INFO 20188 [ost-startStop-1] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-01-23 10:44:27.687 - INFO 20188 [ost-startStop-1] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@41e0f1c5
+2019-01-23 10:44:27.868 - INFO 20188 [ost-startStop-1] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-01-23 10:44:28.018 - INFO 20188 [ost-startStop-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-01-23 10:44:29.240 - INFO 20188 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-23 10:44:29.240 - INFO 20188 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2019-01-23 10:44:29.240 - INFO 20188 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-23 10:44:29.240 - INFO 20188 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-23 10:44:29.240 - INFO 20188 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-23 10:44:29.240 - INFO 20188 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2019-01-23 10:44:29.240 - INFO 20188 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2019-01-23 10:44:29.240 - INFO 20188 [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-01-23 10:44:29.240 - INFO 20188 [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2019-01-23 10:44:29.288 - WARN 20188 [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'configModel': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'base.localimg' in value "${base.localimg}"
+2019-01-23 10:44:29.288 - WARN 20188 [           main] o.s.b.f.support.DisposableBeanAdapter    : Destroy method 'close' on bean with name 'eurekaRegistration' threw an exception: org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2019-01-23 10:44:29.308 - INFO 20188 [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-01-23 10:44:29.308 - INFO 20188 [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-01-23 10:44:29.338 - INFO 20188 [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-01-23 10:44:29.338 -ERROR 20188 [           main] o.s.boot.SpringApplication               : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'configModel': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'base.localimg' in value "${base.localimg}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1258)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at com.ribbonconsumer.RibbonConsumerApplication.main(RibbonConsumerApplication.java:12)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'base.localimg' in value "${base.localimg}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:172)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:839)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1083)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:658)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372)
+	... 17 common frames omitted
+2019-01-23 10:46:22.059 - INFO 16912 [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@12ed9db6: startup date [Wed Jan 23 10:46:22 CST 2019]; root of context hierarchy
+2019-01-23 10:46:22.232 - INFO 16912 [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-23 10:46:22.267 - INFO 16912 [           main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f4f546be] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 10:46:22.602 - INFO 16912 [           main] c.r.RibbonConsumerApplication            : No active profile set, falling back to default profiles: default
+2019-01-23 10:46:22.612 - INFO 16912 [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@208e9ef6: startup date [Wed Jan 23 10:46:22 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@12ed9db6
+2019-01-23 10:46:23.431 - INFO 16912 [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-23 10:46:23.739 - INFO 16912 [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c741d85f-e507-3210-b7f0-243e96d017e3
+2019-01-23 10:46:23.759 - INFO 16912 [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-23 10:46:23.868 - INFO 16912 [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d8db43c1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 10:46:23.907 - INFO 16912 [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f4f546be] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 10:46:24.318 - INFO 16912 [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8886 (http)
+2019-01-23 10:46:24.338 - INFO 16912 [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-01-23 10:46:24.338 - INFO 16912 [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-01-23 10:46:24.338 - INFO 16912 [ost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Software\jdk1.8.0_172\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Software\gradle\gradle-4.6\bin;D:\Software\jdk1.8.0_172\bin;C:\Software\Git\cmd;C:\Software\Microsoft VS Code\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\WINDOWS\System32\OpenSSH\;C:\Software\node\;D:\logs\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Roaming\npm;.]
+2019-01-23 10:46:24.458 - INFO 16912 [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-01-23 10:46:24.458 - INFO 16912 [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1846 ms
+2019-01-23 10:46:24.659 - WARN 16912 [ost-startStop-1] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-01-23 10:46:24.659 - INFO 16912 [ost-startStop-1] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-01-23 10:46:24.669 - INFO 16912 [ost-startStop-1] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@b01ec0
+2019-01-23 10:46:24.837 - INFO 16912 [ost-startStop-1] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-01-23 10:46:24.997 - INFO 16912 [ost-startStop-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-01-23 10:46:26.217 - INFO 16912 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-23 10:46:26.217 - INFO 16912 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2019-01-23 10:46:26.217 - INFO 16912 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-23 10:46:26.217 - INFO 16912 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-23 10:46:26.217 - INFO 16912 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-23 10:46:26.217 - INFO 16912 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2019-01-23 10:46:26.217 - INFO 16912 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2019-01-23 10:46:26.217 - INFO 16912 [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-01-23 10:46:26.217 - INFO 16912 [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2019-01-23 10:46:26.257 - WARN 16912 [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'swagger2Config': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'swagger.base.apiPath' in value "${swagger.base.apiPath}"
+2019-01-23 10:46:26.269 - WARN 16912 [           main] o.s.b.f.support.DisposableBeanAdapter    : Destroy method 'close' on bean with name 'eurekaRegistration' threw an exception: org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2019-01-23 10:46:26.278 - INFO 16912 [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-01-23 10:46:26.278 - INFO 16912 [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-01-23 10:46:26.298 - INFO 16912 [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-01-23 10:46:26.298 -ERROR 16912 [           main] o.s.boot.SpringApplication               : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'swagger2Config': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'swagger.base.apiPath' in value "${swagger.base.apiPath}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1258)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at com.ribbonconsumer.RibbonConsumerApplication.main(RibbonConsumerApplication.java:12)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'swagger.base.apiPath' in value "${swagger.base.apiPath}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:172)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:839)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1083)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:583)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372)
+	... 17 common frames omitted
+2019-01-23 10:48:27.509 - INFO 12248 [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@436bc36: startup date [Wed Jan 23 10:48:27 CST 2019]; root of context hierarchy
+2019-01-23 10:48:27.689 - INFO 12248 [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-23 10:48:27.719 - INFO 12248 [           main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$5e3efd79] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 10:48:28.057 - INFO 12248 [           main] c.r.RibbonConsumerApplication            : No active profile set, falling back to default profiles: default
+2019-01-23 10:48:28.067 - INFO 12248 [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3956b302: startup date [Wed Jan 23 10:48:28 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@436bc36
+2019-01-23 10:48:28.889 - INFO 12248 [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-23 10:48:29.199 - INFO 12248 [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c741d85f-e507-3210-b7f0-243e96d017e3
+2019-01-23 10:48:29.219 - INFO 12248 [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-23 10:48:29.328 - INFO 12248 [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4224fa7c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 10:48:29.368 - INFO 12248 [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$5e3efd79] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 10:48:29.779 - INFO 12248 [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8886 (http)
+2019-01-23 10:48:29.799 - INFO 12248 [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-01-23 10:48:29.799 - INFO 12248 [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-01-23 10:48:29.799 - INFO 12248 [ost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Software\jdk1.8.0_172\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Software\gradle\gradle-4.6\bin;D:\Software\jdk1.8.0_172\bin;C:\Software\Git\cmd;C:\Software\Microsoft VS Code\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\WINDOWS\System32\OpenSSH\;C:\Software\node\;D:\logs\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Roaming\npm;.]
+2019-01-23 10:48:29.919 - INFO 12248 [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-01-23 10:48:29.919 - INFO 12248 [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1852 ms
+2019-01-23 10:48:30.131 - WARN 12248 [ost-startStop-1] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-01-23 10:48:30.131 - INFO 12248 [ost-startStop-1] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-01-23 10:48:30.131 - INFO 12248 [ost-startStop-1] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@41c142ee
+2019-01-23 10:48:30.307 - INFO 12248 [ost-startStop-1] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-01-23 10:48:30.439 - INFO 12248 [ost-startStop-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-01-23 10:48:31.648 - INFO 12248 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-23 10:48:31.648 - INFO 12248 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2019-01-23 10:48:31.648 - INFO 12248 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-23 10:48:31.648 - INFO 12248 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-23 10:48:31.648 - INFO 12248 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-23 10:48:31.648 - INFO 12248 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2019-01-23 10:48:31.648 - INFO 12248 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2019-01-23 10:48:31.648 - INFO 12248 [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-01-23 10:48:31.658 - INFO 12248 [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2019-01-23 10:48:32.140 - INFO 12248 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/qian/getFinalCount],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.ribbonconsumer.controller.TestController.getFinalCount(java.util.Map<java.lang.String, java.lang.Object>)
+2019-01-23 10:48:32.140 - INFO 12248 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/qian/get],methods=[POST]}" onto public java.lang.Object com.ribbonconsumer.controller.TestController.exceptionTest()
+2019-01-23 10:48:32.140 - INFO 12248 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/qian/getDemo],methods=[GET]}" onto public java.lang.Object com.ribbonconsumer.controller.TestController.sayDemo()
+2019-01-23 10:48:32.140 - INFO 12248 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/qian/getCustomer],methods=[GET]}" onto public java.lang.Object com.ribbonconsumer.controller.TestController.sayHello()
+2019-01-23 10:48:32.140 - INFO 12248 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/qian/nullTest],methods=[GET]}" onto public java.lang.Object com.ribbonconsumer.controller.TestController.nullTest()
+2019-01-23 10:48:32.140 - INFO 12248 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-01-23 10:48:32.140 - INFO 12248 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-01-23 10:48:32.140 - INFO 12248 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-01-23 10:48:32.140 - INFO 12248 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-23 10:48:32.140 - INFO 12248 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-23 10:48:32.246 - INFO 12248 [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-01-23 10:48:32.256 - INFO 12248 [           main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-01-23 10:48:32.256 - INFO 12248 [           main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-01-23 10:48:32.256 - INFO 12248 [           main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-23 10:48:32.412 - INFO 12248 [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-01-23 10:48:32.442 - WARN 12248 [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-01-23 10:48:32.442 - INFO 12248 [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-01-23 10:48:32.532 - INFO 12248 [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-23 10:48:32.763 - INFO 12248 [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3956b302: startup date [Wed Jan 23 10:48:28 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@436bc36
+2019-01-23 10:48:32.818 - INFO 12248 [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-23 10:48:32.818 - INFO 12248 [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-23 10:48:33.318 - INFO 12248 [           main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3956b302: startup date [Wed Jan 23 10:48:28 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@436bc36] and template loader path [classpath:/templates/]
+2019-01-23 10:48:33.318 - INFO 12248 [           main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-01-23 10:48:33.588 - INFO 12248 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-01-23 10:48:33.588 - INFO 12248 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'statFilter' has been autodetected for JMX exposure
+2019-01-23 10:48:33.588 - INFO 12248 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-01-23 10:48:33.598 - INFO 12248 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2019-01-23 10:48:33.598 - INFO 12248 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2019-01-23 10:48:33.598 - INFO 12248 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2019-01-23 10:48:33.608 - INFO 12248 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2019-01-23 10:48:33.608 - INFO 12248 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2019-01-23 10:48:33.618 - INFO 12248 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=3956b302,type=ConfigurationPropertiesRebinder]
+2019-01-23 10:48:33.628 - INFO 12248 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2019-01-23 10:48:33.628 - INFO 12248 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2019-01-23 10:48:33.638 - INFO 12248 [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2019-01-23 10:48:33.638 - INFO 12248 [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-01-23 10:48:33.668 - INFO 12248 [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-01-23 10:48:33.978 - INFO 12248 [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-01-23 10:48:33.978 - INFO 12248 [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-01-23 10:48:34.078 - INFO 12248 [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-01-23 10:48:34.078 - INFO 12248 [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-01-23 10:48:34.279 - INFO 12248 [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 10:48:34.414 - INFO 12248 [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-01-23 10:48:34.414 - INFO 12248 [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-01-23 10:48:34.414 - INFO 12248 [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-01-23 10:48:34.414 - INFO 12248 [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-01-23 10:48:34.414 - INFO 12248 [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-01-23 10:48:34.414 - INFO 12248 [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-01-23 10:48:34.414 - INFO 12248 [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-01-23 10:48:34.620 - INFO 12248 [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-01-23 10:48:34.620 - INFO 12248 [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2019-01-23 10:48:34.630 - INFO 12248 [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-01-23 10:48:34.630 - INFO 12248 [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1548211714630 with initial instances count: 0
+2019-01-23 10:48:34.630 - INFO 12248 [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ribbon-consumer with eureka with status UP
+2019-01-23 10:48:34.630 - INFO 12248 [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1548211714630, current=UP, previous=STARTING]
+2019-01-23 10:48:34.640 - INFO 12248 [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RIBBON-CONSUMER/windows10.microdone.cn:ribbon-consumer:8886: registering service...
+2019-01-23 10:48:34.640 - INFO 12248 [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-01-23 10:48:34.640 - INFO 12248 [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-01-23 10:48:34.660 - INFO 12248 [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-01-23 10:48:34.968 - INFO 12248 [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-01-23 10:48:34.978 - INFO 12248 [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RIBBON-CONSUMER/windows10.microdone.cn:ribbon-consumer:8886 - registration status: 204
+2019-01-23 10:48:35.020 - INFO 12248 [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8886 (http) with context path ''
+2019-01-23 10:48:35.020 - INFO 12248 [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8886
+2019-01-23 10:48:35.020 - INFO 12248 [           main] c.r.RibbonConsumerApplication            : Started RibbonConsumerApplication in 8.122 seconds (JVM running for 9.066)
+2019-01-23 10:48:35.277 - INFO 12248 [on(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-01-23 10:48:35.277 - INFO 12248 [on(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-01-23 10:48:35.297 - INFO 12248 [on(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2019-01-23 10:48:35.491 - INFO 12248 [on(4)-127.0.0.1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2019-01-23 10:48:35.501 - INFO 12248 [on(4)-127.0.0.1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2019-01-23 10:49:04.635 - INFO 12248 [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-01-23 10:49:04.635 - INFO 12248 [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-01-23 10:49:04.635 - INFO 12248 [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-01-23 10:49:04.635 - INFO 12248 [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-01-23 10:49:04.635 - INFO 12248 [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-01-23 10:49:04.635 - INFO 12248 [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2019-01-23 10:49:04.635 - INFO 12248 [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-01-23 10:49:04.674 - INFO 12248 [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-01-23 10:53:34.417 - INFO 12248 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 10:55:38.310 - INFO 12136 [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7241a47d: startup date [Wed Jan 23 10:55:38 CST 2019]; root of context hierarchy
+2019-01-23 10:55:38.493 - INFO 12136 [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-23 10:55:38.523 - INFO 12136 [           main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$7738e7d1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 10:55:38.860 - INFO 12136 [           main] c.r.RibbonConsumerApplication            : No active profile set, falling back to default profiles: default
+2019-01-23 10:55:38.870 - INFO 12136 [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7f4d9395: startup date [Wed Jan 23 10:55:38 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7241a47d
+2019-01-23 10:55:39.718 - INFO 12136 [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-23 10:55:40.038 - INFO 12136 [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c741d85f-e507-3210-b7f0-243e96d017e3
+2019-01-23 10:55:40.058 - INFO 12136 [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-23 10:55:40.168 - INFO 12136 [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5b1ee4d4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 10:55:40.213 - INFO 12136 [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$7738e7d1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 10:55:40.629 - INFO 12136 [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8886 (http)
+2019-01-23 10:55:40.649 - INFO 12136 [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-01-23 10:55:40.649 - INFO 12136 [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-01-23 10:55:40.649 - INFO 12136 [ost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Software\jdk1.8.0_172\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Software\gradle\gradle-4.6\bin;D:\Software\jdk1.8.0_172\bin;C:\Software\Git\cmd;C:\Software\Microsoft VS Code\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\WINDOWS\System32\OpenSSH\;C:\Software\node\;D:\logs\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Roaming\npm;.]
+2019-01-23 10:55:40.779 - INFO 12136 [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-01-23 10:55:40.779 - INFO 12136 [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1909 ms
+2019-01-23 10:55:40.988 - WARN 12136 [ost-startStop-1] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-01-23 10:55:40.988 - INFO 12136 [ost-startStop-1] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-01-23 10:55:40.988 - INFO 12136 [ost-startStop-1] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@66bb7f91
+2019-01-23 10:55:41.168 - INFO 12136 [ost-startStop-1] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-01-23 10:55:41.310 - INFO 12136 [ost-startStop-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-01-23 10:55:42.526 - INFO 12136 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-23 10:55:42.526 - INFO 12136 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2019-01-23 10:55:42.526 - INFO 12136 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-23 10:55:42.526 - INFO 12136 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-23 10:55:42.526 - INFO 12136 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-23 10:55:42.526 - INFO 12136 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2019-01-23 10:55:42.526 - INFO 12136 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2019-01-23 10:55:42.526 - INFO 12136 [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-01-23 10:55:42.536 - INFO 12136 [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2019-01-23 10:55:43.009 - INFO 12136 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/qian/nullTest],methods=[GET]}" onto public java.lang.Object com.ribbonconsumer.controller.TestController.nullTest()
+2019-01-23 10:55:43.009 - INFO 12136 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/qian/getCustomer],methods=[GET]}" onto public java.lang.Object com.ribbonconsumer.controller.TestController.sayHello()
+2019-01-23 10:55:43.009 - INFO 12136 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/qian/getDemo],methods=[GET]}" onto public java.lang.Object com.ribbonconsumer.controller.TestController.sayDemo()
+2019-01-23 10:55:43.009 - INFO 12136 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/qian/getFinalCount],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.ribbonconsumer.controller.TestController.getFinalCount(java.util.Map<java.lang.String, java.lang.Object>)
+2019-01-23 10:55:43.009 - INFO 12136 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/qian/get],methods=[POST]}" onto public java.lang.Object com.ribbonconsumer.controller.TestController.exceptionTest()
+2019-01-23 10:55:43.009 - INFO 12136 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-01-23 10:55:43.009 - INFO 12136 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-01-23 10:55:43.009 - INFO 12136 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-01-23 10:55:43.019 - INFO 12136 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-23 10:55:43.019 - INFO 12136 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-23 10:55:43.129 - INFO 12136 [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-01-23 10:55:43.139 - INFO 12136 [           main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-01-23 10:55:43.139 - INFO 12136 [           main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-01-23 10:55:43.139 - INFO 12136 [           main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-23 10:55:43.288 - INFO 12136 [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-01-23 10:55:43.328 - WARN 12136 [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-01-23 10:55:43.328 - INFO 12136 [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-01-23 10:55:43.398 - INFO 12136 [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-23 10:55:43.618 - INFO 12136 [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7f4d9395: startup date [Wed Jan 23 10:55:38 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7241a47d
+2019-01-23 10:55:43.678 - INFO 12136 [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-23 10:55:43.678 - INFO 12136 [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-23 10:55:44.178 - INFO 12136 [           main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7f4d9395: startup date [Wed Jan 23 10:55:38 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7241a47d] and template loader path [classpath:/templates/]
+2019-01-23 10:55:44.178 - INFO 12136 [           main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-01-23 10:55:44.478 - INFO 12136 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-01-23 10:55:44.478 - INFO 12136 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'statFilter' has been autodetected for JMX exposure
+2019-01-23 10:55:44.478 - INFO 12136 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-01-23 10:55:44.488 - INFO 12136 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2019-01-23 10:55:44.488 - INFO 12136 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2019-01-23 10:55:44.488 - INFO 12136 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2019-01-23 10:55:44.488 - INFO 12136 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2019-01-23 10:55:44.498 - INFO 12136 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2019-01-23 10:55:44.508 - INFO 12136 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=7f4d9395,type=ConfigurationPropertiesRebinder]
+2019-01-23 10:55:44.518 - INFO 12136 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2019-01-23 10:55:44.518 - INFO 12136 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2019-01-23 10:55:44.518 - INFO 12136 [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2019-01-23 10:55:44.528 - INFO 12136 [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-01-23 10:55:44.558 - INFO 12136 [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-01-23 10:55:44.849 - INFO 12136 [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-01-23 10:55:44.849 - INFO 12136 [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-01-23 10:55:44.939 - INFO 12136 [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-01-23 10:55:44.939 - INFO 12136 [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-01-23 10:55:45.129 - INFO 12136 [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 10:55:45.259 - INFO 12136 [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-01-23 10:55:45.259 - INFO 12136 [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-01-23 10:55:45.259 - INFO 12136 [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-01-23 10:55:45.259 - INFO 12136 [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-01-23 10:55:45.259 - INFO 12136 [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-01-23 10:55:45.259 - INFO 12136 [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-01-23 10:55:45.259 - INFO 12136 [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-01-23 10:55:45.410 - INFO 12136 [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-01-23 10:55:45.410 - INFO 12136 [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2019-01-23 10:55:45.410 - INFO 12136 [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-01-23 10:55:45.660 - INFO 12136 [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1548212145410 with initial instances count: 1
+2019-01-23 10:55:45.660 - INFO 12136 [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ribbon-consumer with eureka with status UP
+2019-01-23 10:55:45.660 - INFO 12136 [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1548212145660, current=UP, previous=STARTING]
+2019-01-23 10:55:45.660 - INFO 12136 [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RIBBON-CONSUMER/windows10.microdone.cn:ribbon-consumer:8886: registering service...
+2019-01-23 10:55:45.670 - INFO 12136 [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-01-23 10:55:45.670 - INFO 12136 [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-01-23 10:55:45.690 - INFO 12136 [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-01-23 10:55:45.700 - INFO 12136 [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RIBBON-CONSUMER/windows10.microdone.cn:ribbon-consumer:8886 - registration status: 204
+2019-01-23 10:55:45.720 - INFO 12136 [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-01-23 10:55:45.838 - INFO 12136 [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8886 (http) with context path ''
+2019-01-23 10:55:45.838 - INFO 12136 [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8886
+2019-01-23 10:55:45.848 - INFO 12136 [           main] c.r.RibbonConsumerApplication            : Started RibbonConsumerApplication in 8.15 seconds (JVM running for 9.166)
+2019-01-23 10:55:46.252 - INFO 12136 [on(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-01-23 10:55:46.252 - INFO 12136 [on(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-01-23 10:55:46.279 - INFO 12136 [on(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+2019-01-23 10:55:46.491 - INFO 12136 [on(4)-127.0.0.1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2019-01-23 10:55:46.491 - INFO 12136 [on(4)-127.0.0.1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2019-01-23 10:58:54.568 - INFO 16392 [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7a1a3478: startup date [Wed Jan 23 10:58:54 CST 2019]; root of context hierarchy
+2019-01-23 10:58:54.743 - INFO 16392 [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-23 10:58:54.777 - INFO 16392 [           main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$40c252aa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 10:58:55.123 - INFO 16392 [           main] c.r.RibbonConsumerApplication            : No active profile set, falling back to default profiles: default
+2019-01-23 10:58:55.133 - INFO 16392 [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7fcff1b9: startup date [Wed Jan 23 10:58:55 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7a1a3478
+2019-01-23 10:58:55.990 - INFO 16392 [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-23 10:58:56.300 - INFO 16392 [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c741d85f-e507-3210-b7f0-243e96d017e3
+2019-01-23 10:58:56.319 - INFO 16392 [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-23 10:58:56.429 - INFO 16392 [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$24a84fad] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 10:58:56.479 - INFO 16392 [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$40c252aa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 10:58:56.879 - INFO 16392 [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8886 (http)
+2019-01-23 10:58:56.899 - INFO 16392 [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-01-23 10:58:56.899 - INFO 16392 [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-01-23 10:58:56.899 - INFO 16392 [ost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Software\jdk1.8.0_172\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Software\gradle\gradle-4.6\bin;D:\Software\jdk1.8.0_172\bin;C:\Software\Git\cmd;C:\Software\Microsoft VS Code\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\WINDOWS\System32\OpenSSH\;C:\Software\node\;D:\logs\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Roaming\npm;.]
+2019-01-23 10:58:57.029 - INFO 16392 [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-01-23 10:58:57.029 - INFO 16392 [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1896 ms
+2019-01-23 10:58:57.228 - WARN 16392 [ost-startStop-1] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-01-23 10:58:57.228 - INFO 16392 [ost-startStop-1] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-01-23 10:58:57.238 - INFO 16392 [ost-startStop-1] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@61db9f97
+2019-01-23 10:58:57.399 - INFO 16392 [ost-startStop-1] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-01-23 10:58:57.540 - INFO 16392 [ost-startStop-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-01-23 10:58:58.750 - INFO 16392 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-23 10:58:58.750 - INFO 16392 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2019-01-23 10:58:58.750 - INFO 16392 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-23 10:58:58.750 - INFO 16392 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-23 10:58:58.750 - INFO 16392 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-23 10:58:58.750 - INFO 16392 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2019-01-23 10:58:58.750 - INFO 16392 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2019-01-23 10:58:58.750 - INFO 16392 [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-01-23 10:58:58.750 - INFO 16392 [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2019-01-23 10:58:59.230 - INFO 16392 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/qian/getFinalCount],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.ribbonconsumer.controller.TestController.getFinalCount(java.util.Map<java.lang.String, java.lang.Object>)
+2019-01-23 10:58:59.230 - INFO 16392 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/qian/getCustomer],methods=[GET]}" onto public java.lang.Object com.ribbonconsumer.controller.TestController.sayHello()
+2019-01-23 10:58:59.230 - INFO 16392 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/qian/nullTest],methods=[GET]}" onto public java.lang.Object com.ribbonconsumer.controller.TestController.nullTest()
+2019-01-23 10:58:59.230 - INFO 16392 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/qian/get],methods=[POST]}" onto public java.lang.Object com.ribbonconsumer.controller.TestController.exceptionTest()
+2019-01-23 10:58:59.230 - INFO 16392 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/qian/getDemo],methods=[GET]}" onto public java.lang.Object com.ribbonconsumer.controller.TestController.sayDemo()
+2019-01-23 10:58:59.230 - INFO 16392 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-01-23 10:58:59.230 - INFO 16392 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-01-23 10:58:59.230 - INFO 16392 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-01-23 10:58:59.230 - INFO 16392 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-23 10:58:59.230 - INFO 16392 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-23 10:58:59.329 - INFO 16392 [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-01-23 10:58:59.379 - INFO 16392 [           main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-01-23 10:58:59.379 - INFO 16392 [           main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-01-23 10:58:59.379 - INFO 16392 [           main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-23 10:58:59.529 - INFO 16392 [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-01-23 10:58:59.559 - WARN 16392 [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-01-23 10:58:59.559 - INFO 16392 [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-01-23 10:58:59.649 - INFO 16392 [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-23 10:58:59.858 - INFO 16392 [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7fcff1b9: startup date [Wed Jan 23 10:58:55 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7a1a3478
+2019-01-23 10:58:59.918 - INFO 16392 [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-23 10:58:59.918 - INFO 16392 [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-23 10:59:00.409 - INFO 16392 [           main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7fcff1b9: startup date [Wed Jan 23 10:58:55 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7a1a3478] and template loader path [classpath:/templates/]
+2019-01-23 10:59:00.419 - INFO 16392 [           main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-01-23 10:59:00.710 - INFO 16392 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-01-23 10:59:00.720 - INFO 16392 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'statFilter' has been autodetected for JMX exposure
+2019-01-23 10:59:00.720 - INFO 16392 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-01-23 10:59:00.720 - INFO 16392 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2019-01-23 10:59:00.730 - INFO 16392 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2019-01-23 10:59:00.730 - INFO 16392 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2019-01-23 10:59:00.730 - INFO 16392 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2019-01-23 10:59:00.740 - INFO 16392 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2019-01-23 10:59:00.750 - INFO 16392 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=7fcff1b9,type=ConfigurationPropertiesRebinder]
+2019-01-23 10:59:00.750 - INFO 16392 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2019-01-23 10:59:00.750 - INFO 16392 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2019-01-23 10:59:00.760 - INFO 16392 [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2019-01-23 10:59:00.771 - INFO 16392 [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-01-23 10:59:00.798 - INFO 16392 [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-01-23 10:59:01.078 - INFO 16392 [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-01-23 10:59:01.078 - INFO 16392 [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-01-23 10:59:01.168 - INFO 16392 [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-01-23 10:59:01.168 - INFO 16392 [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-01-23 10:59:01.360 - INFO 16392 [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 10:59:01.490 - INFO 16392 [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-01-23 10:59:01.490 - INFO 16392 [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-01-23 10:59:01.490 - INFO 16392 [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-01-23 10:59:01.490 - INFO 16392 [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-01-23 10:59:01.490 - INFO 16392 [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-01-23 10:59:01.490 - INFO 16392 [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-01-23 10:59:01.490 - INFO 16392 [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-01-23 10:59:01.640 - INFO 16392 [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-01-23 10:59:01.640 - INFO 16392 [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2019-01-23 10:59:01.640 - INFO 16392 [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-01-23 10:59:01.898 - INFO 16392 [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1548212341650 with initial instances count: 1
+2019-01-23 10:59:01.908 - INFO 16392 [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ribbon-consumer with eureka with status UP
+2019-01-23 10:59:01.908 - INFO 16392 [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1548212341908, current=UP, previous=STARTING]
+2019-01-23 10:59:01.908 - INFO 16392 [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RIBBON-CONSUMER/windows10.microdone.cn:ribbon-consumer:8886: registering service...
+2019-01-23 10:59:01.908 - INFO 16392 [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-01-23 10:59:01.908 - INFO 16392 [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-01-23 10:59:01.928 - INFO 16392 [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-01-23 10:59:01.938 - INFO 16392 [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RIBBON-CONSUMER/windows10.microdone.cn:ribbon-consumer:8886 - registration status: 204
+2019-01-23 10:59:01.958 - INFO 16392 [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-01-23 10:59:02.088 - INFO 16392 [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8886 (http) with context path ''
+2019-01-23 10:59:02.088 - INFO 16392 [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8886
+2019-01-23 10:59:02.088 - INFO 16392 [           main] c.r.RibbonConsumerApplication            : Started RibbonConsumerApplication in 8.166 seconds (JVM running for 9.179)
+2019-01-23 10:59:02.471 - INFO 16392 [on(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-01-23 10:59:02.471 - INFO 16392 [on(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-01-23 10:59:02.491 - INFO 16392 [on(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2019-01-23 10:59:02.671 - INFO 16392 [on(2)-127.0.0.1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2019-01-23 10:59:02.671 - INFO 16392 [on(2)-127.0.0.1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2019-01-23 10:59:28.055 - INFO 16392 [io-8886-exec-10] c.ribbonconsumer.mapper.HomePageMapper   : mapper query sql > select sum(count) sumcount      from (select count(*) count      from (select ui.userid            from user_integral_detailed ui            where create_time BETWEEN ?                      AND ?            GROUP BY userid) a      UNION      select count(*) count      from (select di.doctorid            from doctor_integral_detailed di            where create_time BETWEEN ?                      AND ?            GROUP BY doctorid) a) b
+2019-01-23 10:59:28.055 - INFO 16392 [io-8886-exec-10] c.ribbonconsumer.mapper.HomePageMapper   : mapper query params > [1547693968051, 1548212368000, 1547693968051, 1548212368000]
+2019-01-23 10:59:28.074 - INFO 16392 [io-8886-exec-10] c.ribbonconsumer.mapper.HomePageMapper   : mapper query result > [{sumcount=3}]
+2019-01-23 10:59:28.074 - INFO 16392 [io-8886-exec-10] c.ribbonconsumer.mapper.HomePageMapper   : mapper query sql > select count(id) count from user_member where ifnull(delflag,0)=0 and is_enabled=1 and is_expire=1 and create_time between ? and ?
+2019-01-23 10:59:28.074 - INFO 16392 [io-8886-exec-10] c.ribbonconsumer.mapper.HomePageMapper   : mapper query params > [1547693968051, 1548212368000]
+2019-01-23 10:59:28.076 - INFO 16392 [io-8886-exec-10] c.ribbonconsumer.mapper.HomePageMapper   : mapper query result > [{count=0}]
+2019-01-23 10:59:28.076 - INFO 16392 [io-8886-exec-10] c.ribbonconsumer.mapper.HomePageMapper   : mapper query sql > SELECT count(*) count  FROM (SELECT userid      FROM doctor_problem_order dpo      WHERE create_time BETWEEN ?                AND ?        AND ifnull(delflag, 0) = 0        AND paystatus = 1      GROUP BY dpo.userid      UNION      SELECT userid      FROM doctor_phone_order dpo      WHERE create_time BETWEEN ?                AND ?        AND ifnull(delflag, 0) = 0        AND paystatus = 1      GROUP BY dpo.userid      UNION      SELECT userid      FROM doctor_video_order dpo      WHERE create_time BETWEEN ?                AND ?        AND ifnull(delflag, 0) = 0        AND paystatus = 1      GROUP BY dpo.userid      UNION      SELECT userid      FROM vip_order dpo      WHERE create_time BETWEEN ?                AND ?        AND ifnull(delflag, 0) = 0        AND pay_status = 1      GROUP BY dpo.userid      UNION      SELECT userid      FROM green_order dpo      WHERE create_time BETWEEN ?                AND ?        AND ifnull(delflag, 0) = 0        AND paystatus = 1      GROUP BY dpo.userid) count
+2019-01-23 10:59:28.076 - INFO 16392 [io-8886-exec-10] c.ribbonconsumer.mapper.HomePageMapper   : mapper query params > [1547693968051, 1548212368000, 1547693968051, 1548212368000, 1547693968051, 1548212368000, 1547693968051, 1548212368000, 1547693968051, 1548212368000]
+2019-01-23 10:59:28.080 - INFO 16392 [io-8886-exec-10] c.ribbonconsumer.mapper.HomePageMapper   : mapper query result > [{count=1}]
+2019-01-23 11:00:10.882 -ERROR 16392 [nio-8886-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.ribbonconsumer.service.TestService.nullTest(TestService.java:30)
+	at com.ribbonconsumer.controller.TestController.nullTest(TestController.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:155)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:123)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-23 11:04:01.499 - INFO 16392 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 11:09:01.500 - INFO 16392 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 11:14:01.503 - INFO 16392 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 11:19:01.505 - INFO 16392 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 11:24:01.506 - INFO 16392 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 11:29:01.508 - INFO 16392 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 11:34:01.509 - INFO 16392 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 11:39:01.510 - INFO 16392 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 11:44:01.512 - INFO 16392 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 11:49:01.513 - INFO 16392 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 11:54:01.515 - INFO 16392 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 11:59:01.517 - INFO 16392 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 12:04:01.518 - INFO 16392 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 12:09:01.520 - INFO 16392 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 12:14:01.521 - INFO 16392 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 12:19:01.524 - INFO 16392 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 12:24:01.525 - INFO 16392 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 12:29:01.526 - INFO 16392 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 12:34:01.527 - INFO 16392 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 12:39:01.529 - INFO 16392 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 12:44:01.530 - INFO 16392 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 12:49:01.531 - INFO 16392 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 12:54:01.533 - INFO 16392 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 12:59:01.534 - INFO 16392 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 13:04:01.536 - INFO 16392 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 13:09:01.538 - INFO 16392 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 13:14:01.540 - INFO 16392 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 13:19:01.541 - INFO 16392 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 13:24:01.543 - INFO 16392 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 13:29:01.546 - INFO 16392 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 13:34:01.547 - INFO 16392 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 13:39:01.548 - INFO 16392 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 13:44:01.550 - INFO 16392 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 13:49:01.552 - INFO 16392 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 13:54:01.553 - INFO 16392 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 17:18:56.599 - INFO 12884 [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@77d2e85: startup date [Wed Jan 23 17:18:56 CST 2019]; root of context hierarchy
+2019-01-23 17:18:56.771 - INFO 12884 [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-23 17:18:56.809 - INFO 12884 [           main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$6cd5ddca] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 17:18:57.158 - INFO 12884 [           main] c.r.RibbonConsumerApplication            : No active profile set, falling back to default profiles: default
+2019-01-23 17:18:57.169 - INFO 12884 [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@757194dc: startup date [Wed Jan 23 17:18:57 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@77d2e85
+2019-01-23 17:18:58.024 - INFO 12884 [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-23 17:18:58.342 - INFO 12884 [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=da8da890-7042-35a0-9ab8-c9aa0491d7b8
+2019-01-23 17:18:58.359 - INFO 12884 [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-23 17:18:58.472 - INFO 12884 [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$50bbdacd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 17:18:58.521 - INFO 12884 [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$6cd5ddca] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 17:18:58.936 - INFO 12884 [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8886 (http)
+2019-01-23 17:18:58.958 - INFO 12884 [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-01-23 17:18:58.958 - INFO 12884 [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-01-23 17:18:58.962 - INFO 12884 [ost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Software\jdk1.8.0_172\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Software\gradle\gradle-4.6\bin;D:\Software\jdk1.8.0_172\bin;C:\Software\Git\cmd;C:\Software\Microsoft VS Code\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\WINDOWS\System32\OpenSSH\;C:\Software\node\;D:\logs\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Roaming\npm;.]
+2019-01-23 17:18:59.091 - INFO 12884 [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-01-23 17:18:59.091 - INFO 12884 [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1922 ms
+2019-01-23 17:18:59.295 - WARN 12884 [ost-startStop-1] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-01-23 17:18:59.295 - INFO 12884 [ost-startStop-1] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-01-23 17:18:59.303 - INFO 12884 [ost-startStop-1] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@e2ad18b
+2019-01-23 17:18:59.475 - INFO 12884 [ost-startStop-1] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-01-23 17:18:59.612 - INFO 12884 [ost-startStop-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-01-23 17:19:00.868 - INFO 12884 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-23 17:19:00.869 - INFO 12884 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2019-01-23 17:19:00.869 - INFO 12884 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-23 17:19:00.869 - INFO 12884 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-23 17:19:00.869 - INFO 12884 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-23 17:19:00.869 - INFO 12884 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2019-01-23 17:19:00.869 - INFO 12884 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2019-01-23 17:19:00.870 - INFO 12884 [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-01-23 17:19:00.871 - INFO 12884 [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2019-01-23 17:19:01.392 - INFO 12884 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/server/getInfo],methods=[GET]}" onto public java.lang.Object com.ribbonconsumer.controller.ServerController.server(org.springframework.ui.ModelMap) throws java.lang.Exception
+2019-01-23 17:19:01.395 - INFO 12884 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/qian/getCustomer],methods=[GET]}" onto public java.lang.Object com.ribbonconsumer.controller.TestController.sayHello()
+2019-01-23 17:19:01.395 - INFO 12884 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/qian/getDemo],methods=[GET]}" onto public java.lang.Object com.ribbonconsumer.controller.TestController.sayDemo()
+2019-01-23 17:19:01.395 - INFO 12884 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/qian/get],methods=[POST]}" onto public java.lang.Object com.ribbonconsumer.controller.TestController.exceptionTest()
+2019-01-23 17:19:01.395 - INFO 12884 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/qian/nullTest],methods=[GET]}" onto public java.lang.Object com.ribbonconsumer.controller.TestController.nullTest()
+2019-01-23 17:19:01.396 - INFO 12884 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/qian/getFinalCount],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.ribbonconsumer.controller.TestController.getFinalCount(java.util.Map<java.lang.String, java.lang.Object>)
+2019-01-23 17:19:01.399 - INFO 12884 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-01-23 17:19:01.399 - INFO 12884 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-01-23 17:19:01.400 - INFO 12884 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-01-23 17:19:01.402 - INFO 12884 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-23 17:19:01.403 - INFO 12884 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-23 17:19:01.517 - INFO 12884 [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-01-23 17:19:01.532 - INFO 12884 [           main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-01-23 17:19:01.532 - INFO 12884 [           main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-01-23 17:19:01.533 - INFO 12884 [           main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-23 17:19:01.692 - INFO 12884 [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-01-23 17:19:01.722 - WARN 12884 [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-01-23 17:19:01.722 - INFO 12884 [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-01-23 17:19:01.802 - INFO 12884 [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-23 17:19:02.025 - INFO 12884 [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@757194dc: startup date [Wed Jan 23 17:18:57 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@77d2e85
+2019-01-23 17:19:02.084 - INFO 12884 [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-23 17:19:02.084 - INFO 12884 [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-23 17:19:02.601 - INFO 12884 [           main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@757194dc: startup date [Wed Jan 23 17:18:57 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@77d2e85] and template loader path [classpath:/templates/]
+2019-01-23 17:19:02.601 - INFO 12884 [           main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-01-23 17:19:02.901 - INFO 12884 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-01-23 17:19:02.903 - INFO 12884 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'statFilter' has been autodetected for JMX exposure
+2019-01-23 17:19:02.903 - INFO 12884 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-01-23 17:19:02.912 - INFO 12884 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2019-01-23 17:19:02.914 - INFO 12884 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2019-01-23 17:19:02.914 - INFO 12884 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2019-01-23 17:19:02.917 - INFO 12884 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2019-01-23 17:19:02.925 - INFO 12884 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2019-01-23 17:19:02.936 - INFO 12884 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=757194dc,type=ConfigurationPropertiesRebinder]
+2019-01-23 17:19:02.941 - INFO 12884 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2019-01-23 17:19:02.943 - INFO 12884 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2019-01-23 17:19:02.948 - INFO 12884 [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2019-01-23 17:19:02.955 - INFO 12884 [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-01-23 17:19:02.984 - INFO 12884 [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-01-23 17:19:03.272 - INFO 12884 [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-01-23 17:19:03.273 - INFO 12884 [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-01-23 17:19:03.370 - INFO 12884 [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-01-23 17:19:03.371 - INFO 12884 [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-01-23 17:19:03.565 - INFO 12884 [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 17:19:03.694 - INFO 12884 [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-01-23 17:19:03.694 - INFO 12884 [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-01-23 17:19:03.694 - INFO 12884 [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-01-23 17:19:03.694 - INFO 12884 [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-01-23 17:19:03.694 - INFO 12884 [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-01-23 17:19:03.694 - INFO 12884 [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-01-23 17:19:03.694 - INFO 12884 [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-01-23 17:19:03.884 - INFO 12884 [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-01-23 17:19:03.885 - INFO 12884 [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2019-01-23 17:19:03.887 - INFO 12884 [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-01-23 17:19:03.891 - INFO 12884 [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1548235143890 with initial instances count: 0
+2019-01-23 17:19:03.895 - INFO 12884 [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ribbon-consumer with eureka with status UP
+2019-01-23 17:19:03.896 - INFO 12884 [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1548235143896, current=UP, previous=STARTING]
+2019-01-23 17:19:03.898 - INFO 12884 [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RIBBON-CONSUMER/windows10.microdone.cn:ribbon-consumer:8886: registering service...
+2019-01-23 17:19:03.903 - INFO 12884 [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-01-23 17:19:03.903 - INFO 12884 [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-01-23 17:19:03.922 - INFO 12884 [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-01-23 17:19:04.188 - INFO 12884 [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-01-23 17:19:04.202 - INFO 12884 [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RIBBON-CONSUMER/windows10.microdone.cn:ribbon-consumer:8886 - registration status: 204
+2019-01-23 17:19:04.228 - WARN 12884 [           main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType org.springframework.ui.ModelMap
+2019-01-23 17:19:04.317 - INFO 12884 [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8886 (http) with context path ''
+2019-01-23 17:19:04.318 - INFO 12884 [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8886
+2019-01-23 17:19:04.320 - INFO 12884 [           main] c.r.RibbonConsumerApplication            : Started RibbonConsumerApplication in 8.354 seconds (JVM running for 9.373)
+2019-01-23 17:19:04.719 - INFO 12884 [on(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-01-23 17:19:04.719 - INFO 12884 [on(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-01-23 17:19:04.739 - INFO 12884 [on(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2019-01-23 17:19:04.923 - INFO 12884 [on(2)-127.0.0.1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2019-01-23 17:19:04.925 - INFO 12884 [on(2)-127.0.0.1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2019-01-23 17:19:33.033 - WARN 12884 [nio-8886-exec-2] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2019-01-23 17:19:33.886 - INFO 12884 [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-01-23 17:19:33.887 - INFO 12884 [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-01-23 17:19:33.887 - INFO 12884 [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-01-23 17:19:33.887 - INFO 12884 [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-01-23 17:19:33.887 - INFO 12884 [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-01-23 17:19:33.887 - INFO 12884 [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2019-01-23 17:19:33.887 - INFO 12884 [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-01-23 17:19:33.920 - INFO 12884 [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-01-23 17:21:05.959 - INFO 15492 [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5e8ac0e1: startup date [Wed Jan 23 17:21:05 CST 2019]; root of context hierarchy
+2019-01-23 17:21:06.137 - INFO 15492 [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-23 17:21:06.170 - INFO 15492 [           main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$6d30854e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 17:21:06.517 - INFO 15492 [           main] c.r.RibbonConsumerApplication            : No active profile set, falling back to default profiles: default
+2019-01-23 17:21:06.528 - INFO 15492 [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4159e81b: startup date [Wed Jan 23 17:21:06 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5e8ac0e1
+2019-01-23 17:21:07.381 - INFO 15492 [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-23 17:21:07.719 - INFO 15492 [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=da8da890-7042-35a0-9ab8-c9aa0491d7b8
+2019-01-23 17:21:07.738 - INFO 15492 [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-23 17:21:07.863 - INFO 15492 [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$51168251] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 17:21:07.920 - INFO 15492 [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$6d30854e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 17:21:08.410 - INFO 15492 [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8886 (http)
+2019-01-23 17:21:08.432 - INFO 15492 [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-01-23 17:21:08.432 - INFO 15492 [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-01-23 17:21:08.436 - INFO 15492 [ost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Software\jdk1.8.0_172\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Software\gradle\gradle-4.6\bin;D:\Software\jdk1.8.0_172\bin;C:\Software\Git\cmd;C:\Software\Microsoft VS Code\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\WINDOWS\System32\OpenSSH\;C:\Software\node\;D:\logs\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Roaming\npm;.]
+2019-01-23 17:21:08.563 - INFO 15492 [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-01-23 17:21:08.563 - INFO 15492 [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2035 ms
+2019-01-23 17:21:08.771 - WARN 15492 [ost-startStop-1] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-01-23 17:21:08.771 - INFO 15492 [ost-startStop-1] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-01-23 17:21:08.779 - INFO 15492 [ost-startStop-1] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4ac35f0e
+2019-01-23 17:21:08.964 - INFO 15492 [ost-startStop-1] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-01-23 17:21:09.115 - INFO 15492 [ost-startStop-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-01-23 17:21:10.345 - INFO 15492 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-23 17:21:10.345 - INFO 15492 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2019-01-23 17:21:10.346 - INFO 15492 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-23 17:21:10.346 - INFO 15492 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-23 17:21:10.346 - INFO 15492 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-23 17:21:10.346 - INFO 15492 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2019-01-23 17:21:10.346 - INFO 15492 [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2019-01-23 17:21:10.346 - INFO 15492 [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-01-23 17:21:10.347 - INFO 15492 [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2019-01-23 17:21:10.831 - INFO 15492 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/server/getInfo],methods=[GET]}" onto public java.lang.Object com.ribbonconsumer.controller.ServerController.server(org.springframework.ui.ModelMap) throws java.lang.Exception
+2019-01-23 17:21:10.834 - INFO 15492 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/qian/get],methods=[POST]}" onto public java.lang.Object com.ribbonconsumer.controller.TestController.exceptionTest()
+2019-01-23 17:21:10.834 - INFO 15492 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/qian/nullTest],methods=[GET]}" onto public java.lang.Object com.ribbonconsumer.controller.TestController.nullTest()
+2019-01-23 17:21:10.834 - INFO 15492 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/qian/getDemo],methods=[GET]}" onto public java.lang.Object com.ribbonconsumer.controller.TestController.sayDemo()
+2019-01-23 17:21:10.835 - INFO 15492 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/qian/getCustomer],methods=[GET]}" onto public java.lang.Object com.ribbonconsumer.controller.TestController.sayHello()
+2019-01-23 17:21:10.835 - INFO 15492 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/qian/getFinalCount],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.ribbonconsumer.controller.TestController.getFinalCount(java.util.Map<java.lang.String, java.lang.Object>)
+2019-01-23 17:21:10.837 - INFO 15492 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-01-23 17:21:10.838 - INFO 15492 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-01-23 17:21:10.839 - INFO 15492 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-01-23 17:21:10.841 - INFO 15492 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-23 17:21:10.841 - INFO 15492 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-23 17:21:10.941 - INFO 15492 [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-01-23 17:21:10.955 - INFO 15492 [           main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-01-23 17:21:10.956 - INFO 15492 [           main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-01-23 17:21:10.957 - INFO 15492 [           main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-23 17:21:11.127 - INFO 15492 [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-01-23 17:21:11.158 - WARN 15492 [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-01-23 17:21:11.158 - INFO 15492 [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-01-23 17:21:11.236 - INFO 15492 [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-23 17:21:11.459 - INFO 15492 [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4159e81b: startup date [Wed Jan 23 17:21:06 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5e8ac0e1
+2019-01-23 17:21:11.516 - INFO 15492 [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-23 17:21:11.516 - INFO 15492 [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-23 17:21:12.019 - INFO 15492 [           main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4159e81b: startup date [Wed Jan 23 17:21:06 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5e8ac0e1] and template loader path [classpath:/templates/]
+2019-01-23 17:21:12.020 - INFO 15492 [           main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-01-23 17:21:12.326 - INFO 15492 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-01-23 17:21:12.327 - INFO 15492 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'statFilter' has been autodetected for JMX exposure
+2019-01-23 17:21:12.328 - INFO 15492 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-01-23 17:21:12.336 - INFO 15492 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2019-01-23 17:21:12.338 - INFO 15492 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2019-01-23 17:21:12.338 - INFO 15492 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2019-01-23 17:21:12.341 - INFO 15492 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2019-01-23 17:21:12.349 - INFO 15492 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2019-01-23 17:21:12.360 - INFO 15492 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=4159e81b,type=ConfigurationPropertiesRebinder]
+2019-01-23 17:21:12.366 - INFO 15492 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2019-01-23 17:21:12.367 - INFO 15492 [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2019-01-23 17:21:12.372 - INFO 15492 [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2019-01-23 17:21:12.379 - INFO 15492 [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-01-23 17:21:12.409 - INFO 15492 [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-01-23 17:21:12.693 - INFO 15492 [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-01-23 17:21:12.693 - INFO 15492 [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-01-23 17:21:12.785 - INFO 15492 [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-01-23 17:21:12.785 - INFO 15492 [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-01-23 17:21:12.973 - INFO 15492 [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 17:21:13.105 - INFO 15492 [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-01-23 17:21:13.105 - INFO 15492 [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-01-23 17:21:13.106 - INFO 15492 [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-01-23 17:21:13.106 - INFO 15492 [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-01-23 17:21:13.106 - INFO 15492 [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-01-23 17:21:13.106 - INFO 15492 [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-01-23 17:21:13.106 - INFO 15492 [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-01-23 17:21:13.258 - INFO 15492 [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-01-23 17:21:13.261 - INFO 15492 [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2019-01-23 17:21:13.263 - INFO 15492 [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-01-23 17:21:13.509 - INFO 15492 [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1548235273265 with initial instances count: 1
+2019-01-23 17:21:13.514 - INFO 15492 [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ribbon-consumer with eureka with status UP
+2019-01-23 17:21:13.514 - INFO 15492 [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1548235273514, current=UP, previous=STARTING]
+2019-01-23 17:21:13.516 - INFO 15492 [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RIBBON-CONSUMER/windows10.microdone.cn:ribbon-consumer:8886: registering service...
+2019-01-23 17:21:13.521 - INFO 15492 [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-01-23 17:21:13.522 - INFO 15492 [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-01-23 17:21:13.553 - INFO 15492 [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-01-23 17:21:13.559 - INFO 15492 [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RIBBON-CONSUMER/windows10.microdone.cn:ribbon-consumer:8886 - registration status: 204
+2019-01-23 17:21:13.611 - INFO 15492 [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-01-23 17:21:13.683 - WARN 15492 [           main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType org.springframework.ui.ModelMap
+2019-01-23 17:21:13.821 - INFO 15492 [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8886 (http) with context path ''
+2019-01-23 17:21:13.822 - INFO 15492 [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8886
+2019-01-23 17:21:13.824 - INFO 15492 [           main] c.r.RibbonConsumerApplication            : Started RibbonConsumerApplication in 8.529 seconds (JVM running for 9.565)
+2019-01-23 17:21:14.081 - INFO 15492 [on(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-01-23 17:21:14.081 - INFO 15492 [on(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-01-23 17:21:14.101 - INFO 15492 [on(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2019-01-23 17:21:14.302 - INFO 15492 [on(6)-127.0.0.1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2019-01-23 17:21:14.304 - INFO 15492 [on(6)-127.0.0.1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2019-01-23 17:26:13.108 - INFO 15492 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 17:31:13.110 - INFO 15492 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 17:36:13.112 - INFO 15492 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 17:41:13.114 - INFO 15492 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 17:46:13.115 - INFO 15492 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 17:51:13.116 - INFO 15492 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-23 17:56:13.117 - INFO 15492 [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

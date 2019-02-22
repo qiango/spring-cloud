@@ -1,0 +1,16 @@
+采用了spring-data-redis（以下简称SDR）中的Template进行redis的操作。因为考虑到后期的使用场景，于是同时采用了StringRedisTemplate
+和RedisTemplate， 并且对存储String与存储Java对象采用不同的Template进行了简单的封装。 首先是测试 保存与取出方法。分别用不同的
+template可以完美通过。 然后在测试删除的方法中，测试出现了问题。 问题如下：
+在采用StringRedisTemplate进行保存的数据，用StringRedisTemplate去删除可以成功删除。
+在采用RedisTemplate进行保存的数据，用RedisTemplate去删除也可以删除成功。
+在用RedisTemplate去删除StringRedisTemplate保存的数据时，发现删除失败。
+在用StringRedisTemplate去删除RedisTemplate保存的数据时，删除失败。
+因为，需要封装一套通用的删除方法，并且需要封装一个批量删除的方法。
+所以研究了下问题出现的原因。 经过查看SDR官方给出的文档，发现是因为序列化策略的问题。
+这里简单说下：
+SDR默认采用的序列化策略有两种，一种是String的序列化策略，一种是JDK的序列化策略。
+StringRedisTemplate默认采用的是String的序列化策略，保存的key和value都是采用此策略序列化保存的。
+StringRedisSerializer
+RedisTemplate默认采用的是JDK的序列化策略，保存的key和value都是采用此策略序列化保存的。
+JdkSerializationRedisSerializer 就是因为序列化策略的不同，即使是同一个key用不同的Template去序列化，
+结果是不同的。所以根据key去删除数据的时候就出现了删除失败的问题。

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eureka" />
+        <module name="feign" />
+        <module name="qiandemo" />
+        <module name="ribbon" />
+        <module name="ribbon-consumer" />
+        <module name="ribbonconsumer" />
+        <module name="spring-cloud" />
+        <module name="zuul" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="base-core" target="1.8" />
+      <module name="eureka" target="1.8" />
+      <module name="feign" target="1.8" />
+      <module name="qiandemo" target="1.8" />
+      <module name="ribbon" target="1.8" />
+      <module name="ribbon-consumer" target="1.8" />
+      <module name="ribbonconsumer" target="1.8" />
+      <module name="spring-cloud" target="1.5" />
+      <module name="zuul" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

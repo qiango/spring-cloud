@@ -1,0 +1,31 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/
+server:
+  port: 8889
+spring:
+  application:
+    name: service-zuul
+
+zuul:
+  routes:
+#  ？：匹配任意单个字符串
+#  * ：匹配任意数量的字符串
+#  **：匹配任意数量的字符串，支持多级目录
+    api-a:
+      path: /api-a/**
+      serviceId: service-ribbon
+    api-b:
+      path: /api-b/**
+      serviceId: service-feign
+    api-c:
+      path: /api-c/**
+      serviceId: ribbon-consumer
+  host:
+       connect-timeout-millis: 10000
+       socket-timeout-millis: 60000
+
+
+#//首先指定服务注册中心的地址为http://localhost:8761/eureka/，服务的端口为8769，
+#//服务名为service-zuul；以/api-a/ 开头的请求都转发给service-ribbon服务；以/api-b/开头的请求都转发给service-feign服务；

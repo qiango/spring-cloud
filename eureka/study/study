@@ -1,0 +1,5 @@
+spring cloud 客户端调用
+1、客户端调用工具：rest/feign两种方式
+2、负载均衡：ribbon
+3、接口网关：zuul
+4、服务注册：eureka

@@ -1,0 +1,62 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/
+server:
+  port: 8886
+spring:
+  application:
+    name: ribbon-consumer
+    #Redis配置
+  redis:
+    host: 47.99.134.211 # Redis服务器地址
+    port: 7521          # Redis服务器连接端口
+    password: Syh=3.1415   # Redis服务器连接密码（默认为空）
+    database: 0         # Redis数据库索引（默认为0）
+    jedis:
+      pool:
+        max-active: 8 # 连接池最大连接数（使用负值表示没有限制）
+        max-idle: 8   # 连接池中的最大空闲连接
+        min-idle: 0   # 连接池中的最小空闲连接
+        max-wait: -1  # 连接池最大阻塞等待时间（使用负值表示没有限制）
+    timeout: 10000    # 连接超时时间（毫秒）
+  #  mq 配置
+  activemq:
+    broker-url: tcp://localhost:61616
+    user: admin
+    password: admin
+    pool:
+      enabled: false
+  #####################################################################################################
+  # mysql 属性配置(druid)
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://172.16.20.84:3306/syhdb?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: windows_2013
+    type: com.alibaba.druid.pool.DruidDataSource
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT1FROMDUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    filters: stat,wall,log4j
+    logSlowSql: true
+#  jpa:
+#    hibernate:
+#      #ddl-auto: create #ddl-auto:设为create表示每次都重新建表
+#      ddl-auto: update #ddl-auto:设为update表示每次都不会重新建表
+#    show-sql: true
+#####################################################################################################
+base:
+  isonline: 0  #正式测试环境的标记 0:非正式 1:正式
+  filepath: /home/qwq/ #上传文件的缓存位置
+
+swagger:
+  base:
+    apiPath:  #swagger根目录
