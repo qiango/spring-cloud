@@ -115,8 +115,12 @@ public class ValueUtil {
         return jsonObject;
     }
 
-    public static void isError(String message)throws QianException {
-        throw new QianException(HttpStatus.SC_INTERNAL_SERVER_ERROR,message);
+    public static String isError(String message)throws QianException {
+        RestJson restJson = new RestJson();
+        restJson.setCode(String.valueOf(HttpStatus.SC_INTERNAL_SERVER_ERROR));
+        restJson.setMsg("erro");
+        restJson.setData(coalesce(message, ""));
+        return gson.toJson(restJson);
     }
 
     public static String toError(String code, String message, Object object) {

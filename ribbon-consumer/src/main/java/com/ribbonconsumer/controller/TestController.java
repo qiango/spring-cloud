@@ -1,12 +1,14 @@
 package com.ribbonconsumer.controller;
 
 import com.ribbonconsumer.base.controller.BaseController;
+import com.ribbonconsumer.base.exception.QianException;
 import com.ribbonconsumer.base.util.ModelUtil;
 import com.ribbonconsumer.service.HomePageService;
 import com.ribbonconsumer.service.TestService;
 import io.swagger.annotations.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.jms.core.JmsMessagingTemplate;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
@@ -26,6 +28,7 @@ public class TestController extends BaseController {
     private HomePageService homePageService;
 
 
+
     @GetMapping("/getCustomer")
     public Object sayHello() {
         //将验证码存入redis
@@ -35,9 +38,8 @@ public class TestController extends BaseController {
     }
 
     @GetMapping("/getDemo")
-    public Object sayDemo() {
-//        return toError("参数错误");
-        return "";
+    public void sayDemo() {
+        toError("参数错误");
     }
 
     @PostMapping("/get")
@@ -64,6 +66,34 @@ public class TestController extends BaseController {
         result.put("data", homePageService.getFinalCount(startTime, endTime));
         setOkResult(result, "成功");
         return result;
+    }
+
+    @PostMapping("/activeMq")
+    public Object activeMq(@ApiParam(hidden = true) @RequestParam Map<String, Object> params){
+        String queneName=ModelUtil.getStr(params,"queneName");
+        String message=ModelUtil.getStr(params,"message");
+        testService.sendMessage(queneName,message);
+        return toJsonOk("success");
+    }
+
+    @PostMapping("/createOrder")
+    public Object createOrder(@ApiParam(hidden = true) @RequestParam Map<String, Object> params){
+        try {
+            long queneName=ModelUtil.getLong(params,"userid");
+            int message=ModelUtil.getInt(params,"num");
+            testService.createOrder(queneName);
+            return toJsonOk("success");
+        }catch (QianException e){
+            return toError(e.getMessage());
+        }
+    }
+
+    @PostMapping("/createOrderMq")
+    public Object createOrderMq(@ApiParam(hidden = true) @RequestParam Map<String, Object> params){
+        long queneName=ModelUtil.getLong(params,"userid");
+        int message=ModelUtil.getInt(params,"num");
+        testService.sendMessageOrder("testorder",queneName);
+        return toJsonOk("success");
     }
 
 

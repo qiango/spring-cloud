@@ -43,8 +43,8 @@ public abstract class BaseController {
         return ValueUtil.toJson(HttpStatus.SC_OK,value);
     }
 
-    protected void toError(String message){
-        ValueUtil.isError(message);
+    protected Object toError(String message){
+       return ValueUtil.isError(message);
     }
 
 
