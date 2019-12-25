@@ -12,6 +12,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@SuppressWarnings("unused")
 public class JsonUtil {
 
 
@@ -28,7 +29,6 @@ public class JsonUtil {
      * @return JsonUtil
      */
     public static JsonUtil getInstance() {
-
         synchronized (JsonUtil.class) {
             if (instance == null) {
                 instance = new JsonUtil();
@@ -87,12 +87,21 @@ public class JsonUtil {
         return t;
     }
 
+    /**
+     * json转成List对象
+     */
+    public List<Map<String, Object>> jsonToList(JSONArray array) {
+        List<Map<String, Object>> temp = new ArrayList<>();
+        for (Object val : array) {
+            if (val instanceof JSONObject) {
+                temp.add(jsonToMap((JSONObject) val));
+            }
+        }
+        return temp;
+    }
 
     /**
      * json转成Map对象
-     *
-     * @param json
-     * @return Map对象
      */
     public Map<String, Object> jsonToMap(JSONObject json) {
         Map<String, Object> temp = new HashMap<>();
@@ -122,9 +131,6 @@ public class JsonUtil {
 
     /**
      * map转换成Json对象
-     *
-     * @param value
-     * @return Map对象
      */
     public JSONObject mapToJson(Map<?, ?> value) {
         JSONObject temp = new JSONObject();

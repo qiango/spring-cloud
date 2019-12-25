@@ -20,6 +20,7 @@ import java.sql.SQLException;
  * @author qian.wang
  * @description:druid数据源监控sql配置文件
  * @date 2019/2/15
+ * 访问地址:http://localhost:8886/druid/index.html
  */
 @Configuration
 public class DruidConfiguration {

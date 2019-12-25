@@ -17,8 +17,12 @@ public class HttpParamModel {
         obj = new HashMap<>();
     }
 
-    public FormBody.Builder getForm() {
+    FormBody.Builder getForm() {
         return form;
+    }
+
+    Map<String, Object> getMap() {
+        return obj;
     }
 
     public void add(String name, Object value) {
