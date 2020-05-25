@@ -1,6 +1,7 @@
 package com.ribbonconsumer.service;
 
-import com.ribbonconsumer.base.exception.QianException;
+import com.core.base.exception.QianException;
+import com.core.base.util.RedisUtil;
 import com.ribbonconsumer.mapper.TestMapper;
 import org.apache.activemq.command.ActiveMQQueue;
 import org.slf4j.Logger;
@@ -29,6 +30,9 @@ public class TestService {
     @Autowired
     private TestMapper testMapper;
 
+    @Autowired
+    private RedisUtil redisUtil;
+
     Logger log = LoggerFactory.getLogger(this.getClass());
 
     public String sayHello() {
@@ -40,7 +44,8 @@ public class TestService {
         if (a.equals("")) {
             throw new QianException("测试异常ssssss");
         }
-        return null;
+//        redisUtil.set("kkk", "哈哈哈", 30 * 1000L);
+        return true;
     }
 
     public Object nullTest() {
@@ -70,12 +75,12 @@ public class TestService {
     @JmsListener(destination = "testorder")
     @SendTo("mytest.queue")//我们在receiveQueue方法上面多加了一个注解@SendTo("out.queue")，该注解的意思是将return回的值，再发送的"out.queue"队列中
     public String receiveQueues(String text) {
-        System.out.println("order收到的报文为:"+text);
+        System.out.println("order收到的报文为:" + text);
         if (testMapper.getNum() > 0) {
             testMapper.updateNum();
             System.out.println("用户编号" + text + "的购买成功");
-            return "return message"+text;
-        }else {
+            return "return message" + text;
+        } else {
             throw new QianException("卖完了---------------------");
         }
     }
@@ -90,10 +95,10 @@ public class TestService {
 //            }
             testMapper.updateNum();
             System.out.println("用户编号" + userid + "的购买成功");
-        }else {
+        } else {
             throw new QianException("卖完了---------------------");
         }
-        System.out.println("还剩余："+testMapper.getNum());
+        System.out.println("还剩余：" + testMapper.getNum());
     }
 
     public static void main(String[] args) {

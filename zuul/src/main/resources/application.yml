@@ -22,9 +22,29 @@ zuul:
     api-c:
       path: /api-c/**
       serviceId: ribbon-consumer
-  host:
-       connect-timeout-millis: 10000
-       socket-timeout-millis: 60000
+#  host:
+#       connect-timeout-millis: 3000
+#       socket-timeout-millis: 3000
+
+ribbon:
+  ReadTimeout: 50000
+  ConnectTimeout: 50000
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 600000
+#zuul:
+#  host:
+#    maxTotalConnections: 10000
+#    maxPerRouteConnections: 10000
+#  semaphore:
+#    max-semaphores: 200
+base:
+  isonline: 1 #正式测试环境的标记 1:dev 2:qa，3：uat 4:www
+  filepath: /Users/qiango/data/springboot/ #上传文件的缓存位置
 
 
 #//首先指定服务注册中心的地址为http://localhost:8761/eureka/，服务的端口为8769，

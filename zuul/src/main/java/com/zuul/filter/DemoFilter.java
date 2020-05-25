@@ -3,6 +3,7 @@ package com.zuul.filter;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import com.zuul.base.HttpRequestUtils;
+import com.zuul.base.MD5Encrypt;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,8 +21,10 @@ public class DemoFilter extends ZuulFilter {
 
 
     private static Logger logger = LoggerFactory.getLogger(DemoFilter.class);
-    private final static String AUTHORITY_ERROR = "{\"result\": -100,\"message\": \"token expire\"}";
-    private static List<String> noLoginList = Arrays.asList("/sys/login", "/sys/sendSmsCode");
+    private final static String AUTHORITY_ERROR = "{\"code\": -100,\"message\": \"token expire\"}";
+    private final static String VERIFY_ERROR = "{\"code\": -100,\"message\": \"param error\"}";
+    private static List<String> noLoginList = Arrays.asList("/sys/login", "/sys/sendSmsCode", "/server/test");
+    private static final String SECRETKEY = "1w2q3c4d";
 
     @Override
     public String filterType() {
@@ -46,13 +49,41 @@ public class DemoFilter extends ZuulFilter {
         String token = request.getParameter("token");
         String userid = request.getParameter("userid");
         String requestURL = request.getRequestURI();
-        if (!noLoginList.contains(requestURL)) {
-            if (StringUtils.isEmpty(token) || StringUtils.isEmpty(userid)) {
+        boolean isOk = verifyUrlParam(token, userid, requestURL);
+        if (isOk) {
+            isOk = verifySecutity(requestURL, request);
+            if (!isOk) {
                 ctx.setSendZuulResponse(false);
-                ctx.setResponseBody(AUTHORITY_ERROR);
+                ctx.setResponseBody(VERIFY_ERROR);
             }
+        } else {
+            ctx.setSendZuulResponse(false);
+            ctx.setResponseBody(AUTHORITY_ERROR);
+//            ctx.getResponse().getWriter().write("token is invalid"); 将错误输出
         }
         logger.info(String.format("url:----->%s>>>>>>params:------>%s", request.getRequestURL(), HttpRequestUtils.getAllParams(request)));
         return null;
+    }
+
+    //校验是否需要登录，token
+    private boolean verifyUrlParam(String token, String userid, String requestURL) {
+        for (String url : noLoginList) {
+            if (url.contains(requestURL)) {//需要登录接口
+                return !StringUtils.isEmpty(token) && !StringUtils.isEmpty(userid);
+            }
+        }
+        return true;
+    }
+
+    //参数验签
+    private boolean verifySecutity(String url, HttpServletRequest httpServletRequest) {
+        String sign = httpServletRequest.getHeader("sign");
+        long userid = Long.parseLong(httpServletRequest.getParameter("id"));
+        String timespan = httpServletRequest.getParameter("timespan");
+        String secretContent = String.format("%s|%s", userid, timespan);
+        String cipherMd5 = MD5Encrypt.encrypt(String.format("%s|%s", SECRETKEY, secretContent));
+        boolean result = sign.equals(cipherMd5);
+        logger.info("url>>>>>:" + url + " verify sign>>>>>>>>" + result + "  sign>>>>>>" + sign + " time:" + timespan);
+        return result;
     }
 }

@@ -44,7 +44,7 @@ public class ErrorFilter extends ZuulFilter {
 
         ctx.setResponseBody("出现异常");
 
-        return null;
+        return "sss";
 
     }
 }

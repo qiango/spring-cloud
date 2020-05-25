@@ -7,5 +7,14 @@
     <artifactId>spring-cloud</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>cloud</name>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>qiancore</module>
+        <module>ribbon-consumer</module>
+        <module>zuul</module>
+        <module>feign</module>
+        <module>ribbon</module>
+        <module>eureka</module>
+    </modules>
 </project>

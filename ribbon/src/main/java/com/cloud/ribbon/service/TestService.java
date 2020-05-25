@@ -21,12 +21,12 @@ public class TestService {
        return  restTemplate.getForObject("http://ribbon-consumer/qian/nullTest",String.class);
     }
 
-//    @HystrixCommand(fallbackMethod = "hiError")重写一个断路器方法
+    @HystrixCommand(fallbackMethod = "hiError")//重写一个断路器方法
 //    这样就会出现如上所述的异常，这是因为指定的 备用方法 和 原方法 的参数个数，类型不同造成的所以需要统一参数的个数，类型：
-//    public String getUser(Long id){
-//        System.out.print("http://ribbon-consumer/simple/"+id);
-//        return  restTemplate.getForObject("http://ribbon-consumer/simple/"+id,String.class);
-//    }
+    public String getUser(Long id){
+        System.out.print("http://ribbon-consumer/simple/"+id);
+        return  restTemplate.getForObject("http://ribbon-consumer/simple/"+id,String.class);
+    }
 
 
 

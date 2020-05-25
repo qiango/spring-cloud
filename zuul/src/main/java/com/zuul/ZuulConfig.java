@@ -3,6 +3,7 @@ package com.zuul;
 import com.zuul.filter.DemoFilter;
 import com.zuul.filter.DemoToFilter;
 import com.zuul.filter.ErrorFilter;
+import com.zuul.filter.FeignFallbackProvider;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -24,6 +25,11 @@ public class ZuulConfig {
     @Bean
     public ErrorFilter accessFilterToo() {
         return new ErrorFilter();
+    }
+
+    @Bean
+    public FeignFallbackProvider feignFallbackProvider(){
+        return new FeignFallbackProvider();
     }
 
 }

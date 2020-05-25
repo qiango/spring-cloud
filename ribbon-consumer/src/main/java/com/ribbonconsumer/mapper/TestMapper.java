@@ -1,12 +1,8 @@
 package com.ribbonconsumer.mapper;
 
-import com.ribbonconsumer.base.mapper.BaseMapper;
-import com.ribbonconsumer.base.util.ModelUtil;
+import com.core.base.mapper.BaseMapper;
+import com.core.base.util.ModelUtil;
 import org.springframework.stereotype.Repository;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
 
 /**
  * @author qian.wang

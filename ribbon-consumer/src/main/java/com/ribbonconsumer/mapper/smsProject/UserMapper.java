@@ -1,8 +1,9 @@
 package com.ribbonconsumer.mapper.smsProject;
 
-import com.ribbonconsumer.base.mapper.BaseMapper;
-import com.ribbonconsumer.base.util.MD5Encrypt;
-import com.ribbonconsumer.base.util.UnixUtil;
+import com.core.base.mapper.BaseMapper;
+import com.core.base.util.MD5Encrypt;
+import com.core.base.util.UnixUtil;
+import com.ribbonconsumer.thirdparty.enumutil.PayTypeEnum;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
@@ -34,6 +35,27 @@ public class UserMapper extends BaseMapper {
         param.add(0);
         param.add(userid);
         param.add(UnixUtil.getNowTimeStamp());
+        insert(sql, param);
+    }
+
+    //充值数量
+    public void recharWallet(long num, long userid) {
+        String sql = "update user_wallet set total_num=total_num+?,can_use_num=can_use_num+? where userid=?";
+        List<Object> param = new ArrayList<>();
+        param.add(num);
+        param.add(num);
+        param.add(userid);
+        update(sql, param);
+    }
+
+    public void insertRecharge(long userid, long num) {
+        String sql = "insert into use_recharge (userid, pay_time, pay_type, num, pay_status) values (?,?,?,?,?) ";
+        List<Object> param = new ArrayList<>();
+        param.add(userid);
+        param.add(UnixUtil.getNowTimeStamp());
+        param.add(PayTypeEnum.Admin.getCode());
+        param.add(num);
+        param.add(1);//1成功2失败
         insert(sql, param);
     }
 }

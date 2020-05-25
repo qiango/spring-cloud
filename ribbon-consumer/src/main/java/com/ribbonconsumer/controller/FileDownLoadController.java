@@ -1,6 +1,6 @@
 package com.ribbonconsumer.controller;
 
-import com.ribbonconsumer.base.controller.BaseController;
+import com.core.base.controller.BaseController;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import javax.servlet.http.HttpServletResponse;

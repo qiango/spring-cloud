@@ -18,9 +18,9 @@ public class TestController {
         return testService.sayHello();
     }
 
-//    @RequestMapping(value = "/getUser",method = RequestMethod.GET)
-//    public String getUser(Long id){
-//        return testService.getUser(id);
-//    }
+    @RequestMapping(value = "/getUser",method = RequestMethod.GET)
+    public String getUser(Long id){
+        return testService.getUser(id);
+    }
 
 }

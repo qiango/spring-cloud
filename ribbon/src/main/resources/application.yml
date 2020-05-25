@@ -7,12 +7,12 @@ server:
 spring:
   application:
     name: service-ribbon
-  activemq:
-    broker-url: tcp://localhost:61616
-    user: admin
-    password: admin
-    pool:
-      enabled: false
+#  activemq:
+#    broker-url: tcp://localhost:61616
+#    user: admin
+#    password: admin
+#    pool:
+#      enabled: false
 hystrix:
     command:
         default:

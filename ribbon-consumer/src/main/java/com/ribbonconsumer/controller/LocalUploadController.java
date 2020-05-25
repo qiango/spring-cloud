@@ -1,10 +1,10 @@
 package com.ribbonconsumer.controller;
 
-import com.ribbonconsumer.base.ConfigModel;
-import com.ribbonconsumer.base.controller.BaseController;
-import com.ribbonconsumer.base.util.FileUtil;
-import com.ribbonconsumer.base.util.ModelUtil;
-import com.ribbonconsumer.base.util.UnixUtil;
+import com.core.base.ConfigModel;
+import com.core.base.controller.BaseController;
+import com.core.base.util.FileUtil;
+import com.core.base.util.ModelUtil;
+import com.core.base.util.UnixUtil;
 import io.swagger.annotations.*;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.http.HttpHeaders;

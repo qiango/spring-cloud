@@ -1,12 +1,18 @@
 package com.feign.rpc;
 
+import com.feign.rpc.rpcImpl.GetHelloImpl;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Repository;
+import org.springframework.web.bind.annotation.*;
 
-@FeignClient(value = "ribbon-consumer")
+@FeignClient(value = "ribbon-consumer",fallback = GetHelloImpl.class)//指定熔断类
+@Repository
 public interface GetHello {//feign远程调用方式
 
-    @RequestMapping(value = "/getCustomer?name=feign",method = RequestMethod.GET)
+    @GetMapping(value = "/qian/getCustomer")
     public String sayHello();
+
+    @PostMapping(value = "/App/User/getUser")
+    String getUser(@RequestParam("userId") long userId);
 }

@@ -1,7 +1,7 @@
 package com.ribbonconsumer.controller;
 
-import com.ribbonconsumer.base.controller.BaseController;
-import com.ribbonconsumer.base.domain.Server;
+import com.core.base.controller.BaseController;
+import com.core.base.domain.Server;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,33 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/http/GoodPharmacistHttpUtil.java" description="public class GoodPharmacistHttpUtil extends HttpUt..." line="16" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="46efe340-4ae4-44b4-89d3-9d7a0a43132c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/http/GoodPharmacistHttpUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/http/HttpException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/http/HttpMultParamModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/util/MD5Encrypt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/util/VerifyCodeUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/smsProject/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/mapper/smsProject/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/service/smsProject/UserService.java" afterDir="false" />
+    <list default="true" id="46efe340-4ae4-44b4-89d3-9d7a0a43132c" name="Default" comment="订单">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_48.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_ctrip_framework_apollo_apollo_client_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_ctrip_framework_apollo_apollo_core_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jai_imageio_jai_imageio_core_1_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_whvcse_easy_captcha_1_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_18_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_zxing_core_3_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_zxing_javase_3_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_qiniu_qiniu_java_sdk_7_2_28.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_1_13_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_lettuce_lettuce_core_5_1_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_31_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_29.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_annotations_api_8_5_32.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_annotations_api_9_0_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_2_0_0_alpha1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_2_0_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_2_1_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_1_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_2_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_2_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_5_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign/src/main/java/com/feign/handle/ExceptionAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign/src/main/java/com/feign/rpc/rpcImpl/GetHelloImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qiancore/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qiancore/qiancore.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/util/MD5Encrypt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/util/PhotoUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/util/QiniuHttpUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/util/RedisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/util/SendSms.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/util/SendSmsUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/util/UnixUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/util/ZxingCreateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/util/ModelUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/hand/ExceptionAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/enumutil/PayTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/thread/ThreadTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/zuul/filter/FeignFallbackProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_1_5_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_1_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_3_0_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_2_2_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qiandemo/src/main/java/com/druid/qiandemo/config/DruidConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/qiandemo/src/main/java/com/druid/qiandemo/config/DruidConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qiandemo/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/qiandemo/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/http/BaseHttpUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/http/HttpParamModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/http/HttpParamModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/http/HttpUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/http/HttpUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/util/JsonUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/util/JsonUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/config/DruidConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/config/DruidConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/feign/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign/src/main/java/com/feign/FeignApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/feign/src/main/java/com/feign/FeignApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign/src/main/java/com/feign/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/feign/src/main/java/com/feign/controller/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign/src/main/java/com/feign/rpc/GetHello.java" beforeDir="false" afterPath="$PROJECT_DIR$/feign/src/main/java/com/feign/rpc/GetHello.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign/src/main/java/com/feign/service/HelloService.java" beforeDir="false" afterPath="$PROJECT_DIR$/feign/src/main/java/com/feign/service/HelloService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/feign/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qiandemo/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/qiandemo/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/qiandemo/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/qiandemo/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/qiandemo/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/qiandemo/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/qiandemo/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/qiandemo/src/main/java/com/druid/qiandemo/QiandemoApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/qiandemo/src/main/java/com/druid/qiandemo/config/DruidConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/qiandemo/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/qiandemo/src/test/java/com/druid/qiandemo/QiandemoApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/RibbonConsumerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/RibbonConsumerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/ConfigModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/ConfigModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/Swagger2Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/Swagger2Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/controller/BaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/controller/ErrorHandlerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/controller/ErrorHandlerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/domain/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/domain/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/domain/server/Cpu.java" beforeDir="false" afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/domain/server/Cpu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/domain/server/Jvm.java" beforeDir="false" afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/domain/server/Jvm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/domain/server/Mem.java" beforeDir="false" afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/domain/server/Mem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/domain/server/Sys.java" beforeDir="false" afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/domain/server/Sys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/domain/server/SysFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/domain/server/SysFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/exception/QianException.java" beforeDir="false" afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/exception/QianException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/http/GoodPharmacistHttpUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/http/GoodPharmacistHttpUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/http/HttpException.java" beforeDir="false" afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/http/HttpException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/http/HttpMultParamModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/http/HttpMultParamModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/http/HttpParamModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/http/HttpParamModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/http/HttpUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/http/HttpUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/mapper/BaseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/mapper/BaseMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/service/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/service/BaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/util/Arith.java" beforeDir="false" afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/util/Arith.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/util/DateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/util/DateUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/util/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/util/FileUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/util/HttpRequestUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/util/HttpRequestUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/util/IdCardVerCheckUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/util/IdCardVerCheckUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/util/IpUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/util/IpUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/util/JsonUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/util/JsonUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/util/MD5Encrypt.java" beforeDir="false" afterPath="$PROJECT_DIR$/zuul/src/main/java/com/zuul/base/MD5Encrypt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/util/ModelUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/util/ModelUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/util/RestJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/util/RestJson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/util/StrUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/util/StrUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/util/UnixUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/util/ValueUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/util/ValueUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/util/VerifyCodeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/util/VerifyCodeUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/FileDownLoadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/FileDownLoadController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/LocalUploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/LocalUploadController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/ServerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/ServerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/smsProject/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/smsProject/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/mapper/HomePageMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/mapper/HomePageMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/mapper/TestMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/mapper/TestMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/mapper/smsProject/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/mapper/smsProject/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/service/HomePageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/service/HomePageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/service/TestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/service/TestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/service/smsProject/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/service/smsProject/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/mq/ActivemqUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/mq/ActivemqUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/sort/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/sort/Sort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon/src/main/java/com/cloud/ribbon/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon/src/main/java/com/cloud/ribbon/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon/src/main/java/com/cloud/ribbon/service/TestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon/src/main/java/com/cloud/ribbon/service/TestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-cloud.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zuul/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/zuul/ZuulConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/zuul/src/main/java/com/zuul/ZuulConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/zuul/base/ErrorHandlerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zuul/src/main/java/com/zuul/base/ErrorHandlerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/zuul/filter/DemoFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/zuul/src/main/java/com/zuul/filter/DemoFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/zuul/filter/ErrorFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/zuul/src/main/java/com/zuul/filter/ErrorFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/zuul/src/main/resources/application.yml" afterDir="false" />
     </list>
     <ignored path="cloudDemo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,6 +149,9 @@
     <ignored path="$PROJECT_DIR$/base-core/target/" />
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <ignored path="$PROJECT_DIR$/qiandemo/target/" />
+    <ignored path="$PROJECT_DIR$/core/target/" />
+    <ignored path="$PROJECT_DIR$/qian-core/target/" />
+    <ignored path="$PROJECT_DIR$/qiancore/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,41 +181,49 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zuul/src/main/java/com/zuul/filter/DemoFilter.java">
+        <entry file="file://$PROJECT_DIR$/feign/src/main/java/com/feign/service/HelloService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="238">
+              <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
               <folding>
-                <element signature="e#923#924#0" expanded="true" />
-                <element signature="e#993#994#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/ServerController.java">
+        <entry file="file://$PROJECT_DIR$/zuul/src/main/java/com/zuul/filter/DemoFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+            <state relative-caret-position="884">
+              <caret line="68" column="33" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/TestController.java">
+        <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/config/DruidConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="33" column="21" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+            <state relative-caret-position="2958">
+              <caret line="244" column="41" selection-start-line="244" selection-start-column="41" selection-end-line="244" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/RibbonConsumerApplication.java">
+        <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/config/RedisConfig.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="8" column="47" lean-forward="true" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/mq/ActivemqUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="39" column="39" lean-forward="true" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -115,57 +231,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+            <state relative-caret-position="595">
+              <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eureka/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eureka/src/main/java/com/cloud/eureka/EurekaApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/zuul/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="23" column="31" lean-forward="true" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="32" />
+            <state relative-caret-position="238">
+              <caret line="14" column="23" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zuul/src/main/java/com/zuul/ZuulApplication.java">
+        <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/hand/ExceptionAdvice.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+            <state relative-caret-position="204">
+              <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zuul/src/main/java/com/zuul/ZuulConfig.java">
+        <entry file="file://$PROJECT_DIR$/feign/src/main/java/com/feign/handle/ExceptionAdvice.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
-              <folding>
-                <element signature="e#479#480#0" expanded="true" />
-                <element signature="e#520#521#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="153">
+              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zuul/src/main/java/com/zuul/filter/DemoToFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -177,37 +280,47 @@
       <list>
         <option value="JavaScript File" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>RELEASE</find>
-      <find>EnableEurekaServer</find>
-      <find>netflix.eureka</find>
-      <find>netflix-eureka-server</find>
-      <find>test</find>
-      <find>5672</find>
-      <find>rabbitmq-hello</find>
-      <find>RABBITMQ-HELLO</find>
-      <find>RestJson</find>
-      <find>getUserOrderList</find>
-      <find>/getUserOrderList</find>
-      <find>com.ribbonconsumer.util.RestJson</find>
-      <find>isError</find>
-      <find>参数有误</find>
-      <find>swagger.base.apiPath}&quot;</find>
-      <find>log</find>
       <find>add</find>
       <find>ip</find>
       <find>IpU</find>
       <find>IpUtils</find>
       <find>getCustomer</find>
       <find>redisTemplate</find>
+      <find>/appoint</find>
+      <find>host</find>
+      <find>port</find>
+      <find>DeliveryPointServiceFallBack</find>
+      <find>/ser</find>
+      <find>系统异常</find>
+      <find>240000</find>
+      <find>webcam</find>
+      <find>qiniu</find>
+      <find>lang</find>
+      <find>redis</find>
+      <find>@NotNull</find>
+      <find>version</find>
+      <find>java.version</find>
+      <find>&lt;source&gt;1.8&lt;/source&gt;</find>
+      <find>/getAppointOrderList</find>
+      <find>nullTest</find>
+      <find>/simple</find>
+      <find>/nullTest</find>
+      <find>/getCustomer</find>
+      <find>熔断</find>
+      <find>service</find>
+      <find>server is bad</find>
+      <find>请联系</find>
     </findStrings>
     <replaceStrings>
       <replace>RestJson</replace>
+      <replace />
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -216,57 +329,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/ThreadBox.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/thread/Consumer.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/thread/Producer.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/sort/Sort.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/thread/ThreadBox.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/design/SingletonTest.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/design/factory/Factory.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/design/factory/Car.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/design/factory/AoDi.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/design/factory/BaoMa.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/design/factory/AoDiFactory.java" />
-        <option value="$PROJECT_DIR$/ribbon/src/main/java/com/cloud/ribbon/RibbonApplication.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/util/HttpUtil.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/util/HttpParamModel.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/http/BaseHttpUtil.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/pom.xml" />
-        <option value="$PROJECT_DIR$/ribbon/src/main/java/com/cloud/ribbon/service/TestService.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/util/ValueUtil.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/controller/BaseController.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/TestController.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/service/TestService.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/mapper/TestMapper.java" />
-        <option value="$PROJECT_DIR$/ribbon/pom.xml" />
-        <option value="$PROJECT_DIR$/ribbon/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/ribbon/src/main/java/com/cloud/ribbon/rabbitmq/MqTest.java" />
-        <option value="$PROJECT_DIR$/ribbon/src/main/java/com/cloud/ribbon/rabbitmq/Consumer.java" />
-        <option value="$PROJECT_DIR$/ribbon/src/main/java/com/cloud/ribbon/rabbitmq/Producer.java" />
-        <option value="$PROJECT_DIR$/ribbon/src/main/java/com/cloud/ribbon/rabbitmq/RabbitMq.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/util/Arith.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/service/HomePageService.java" />
-        <option value="$PROJECT_DIR$/ribbon/src/main/java/com/cloud/ribbon/ser/Student.java" />
-        <option value="$PROJECT_DIR$/ribbon/src/main/java/com/cloud/ribbon/serializable/Student.java" />
-        <option value="$PROJECT_DIR$/qiandemo/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/qiandemo/src/main/java/com/druid/qiandemo/config/DruidConfiguration.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/config/DruidConfiguration.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/http/HttpException.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/http/HttpParamModel.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/util/JsonUtil.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/http/HttpMultParamModel.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/http/GoodPharmacistHttpUtil.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/mq/ActivemqUtil.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/http/HttpUtil.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/SmsProject/UserController.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/service/smsProject/UserService.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/util/VerifyCode.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/util/VerifyCodeUtil.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/util/Md5En.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/util/MD5Encrypt.java" />
+        <option value="$PROJECT_DIR$/qian-core/src/main/java/com/core/base/util/UnixUtil.java" />
+        <option value="$PROJECT_DIR$/qian-core/pom.xml" />
+        <option value="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/util/StrUtil.java" />
+        <option value="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/util/DateUtils.java" />
+        <option value="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/util/QiniuHttpUtil.java" />
+        <option value="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/util/RedisUtil.java" />
+        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/LocalUploadController.java" />
+        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/FileDownLoadController.java" />
+        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/ServerController.java" />
+        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/config/RedisConfig.java" />
         <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/mapper/smsProject/UserMapper.java" />
+        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/mapper/HomePageMapper.java" />
+        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/mapper/TestMapper.java" />
+        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/service/smsProject/UserService.java" />
+        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/service/HomePageService.java" />
+        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/mq/ActivemqUtil.java" />
+        <option value="$PROJECT_DIR$/zuul/src/main/java/com/zuul/ZuulConfig.java" />
+        <option value="$PROJECT_DIR$/zuul/src/main/java/com/zuul/base/QianException.java" />
+        <option value="$PROJECT_DIR$/zuul/src/main/java/com/zuul/filter/FeignFallbackProvider.java" />
+        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/hand/ExceptionAdvice.java" />
+        <option value="$PROJECT_DIR$/zuul/src/main/java/com/zuul/base/ValueUtil.java" />
+        <option value="$PROJECT_DIR$/zuul/src/main/java/com/zuul/base/RestJson.java" />
+        <option value="$PROJECT_DIR$/zuul/src/main/java/com/zuul/base/ErrorHandlerController.java" />
+        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/service/TestService.java" />
+        <option value="$PROJECT_DIR$/zuul/src/main/java/com/zuul/base/MD5Encrypt.java" />
+        <option value="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/mapper/BaseMapper.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/qiancore/pom.xml" />
+        <option value="$PROJECT_DIR$/ribbon/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/thread/ThreadTest.java" />
+        <option value="$PROJECT_DIR$/eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/ribbon/src/main/java/com/cloud/ribbon/controller/TestController.java" />
+        <option value="$PROJECT_DIR$/ribbon/src/main/java/com/cloud/ribbon/service/TestService.java" />
+        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/RibbonConsumerApplication.java" />
+        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/smsProject/UserController.java" />
+        <option value="$PROJECT_DIR$/ribbon/pom.xml" />
+        <option value="$PROJECT_DIR$/zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/TestController.java" />
+        <option value="$PROJECT_DIR$/feign/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/feign/src/main/java/com/feign/rpc/GetHello.java" />
+        <option value="$PROJECT_DIR$/feign/src/main/java/com/feign/rpc/rpcImpl/GetHelloImpl.java" />
+        <option value="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/controller/ErrorHandlerController.java" />
+        <option value="$PROJECT_DIR$/feign/pom.xml" />
+        <option value="$PROJECT_DIR$/ribbon-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/feign/src/main/java/com/feign/FeignApplication.java" />
+        <option value="$PROJECT_DIR$/feign/src/main/java/com/feign/controller/HelloController.java" />
+        <option value="$PROJECT_DIR$/feign/src/main/java/com/feign/service/HelloService.java" />
+        <option value="$PROJECT_DIR$/feign/src/main/java/com/feign/handle/ExceptionAdvice.java" />
         <option value="$PROJECT_DIR$/zuul/src/main/java/com/zuul/filter/DemoFilter.java" />
+        <option value="$PROJECT_DIR$/zuul/src/main/resources/application.yml" />
       </list>
     </option>
   </component>
@@ -284,11 +397,21 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="ribbon-consumer" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="ribbon-consumer" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="877" />
@@ -324,6 +447,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -336,133 +461,10 @@
               <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
               <item name="ribbon-consumer" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="ribbon-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="ribbon-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="ribbon-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="ribbon-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ribbonconsumer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="ribbon-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ribbonconsumer" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="ribbon-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="zuul" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="zuul" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="zuul" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="zuul" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="zuul" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zuul" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="zuul" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zuul" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="zuul" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zuul" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="zuul" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zuul" type="462c0819:PsiDirectoryNode" />
-              <item name="filter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="zuul" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -478,34 +480,37 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577270371379" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590145921976" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15337889" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/core/src/main/java/com/druid" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.cloud.eureka" />
       <recent name="com.ribbonconsumer" />
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.ribbonconsumer.base.http" />
+      <recent name="com.feign.handle" />
+      <recent name="com.zuul.base" />
+      <recent name="com.ribbonconsumer.hand" />
+      <recent name="com.druid.qiandemo.util" />
       <recent name="com.ribbonconsumer.base.util" />
-      <recent name="com.ribbonconsumer.mapper" />
-      <recent name="com.ribbonconsumer.thirdparty.mq" />
-      <recent name="com.ribbonconsumer.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/qian-core/src/main/java/com/core" />
+      <recent name="$PROJECT_DIR$/core/src/main/java/com/druid/qiandemo" />
       <recent name="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/http" />
       <recent name="D:\个人项目\spring-cloud\ribbon-consumer\src\main\java\com\ribbonconsumer\base\util" />
       <recent name="D:\个人项目\spring-cloud\qiandemo\src\main\resources" />
-      <recent name="D:\个人项目\spring-cloud\ribbon-consumer\src\main\java\com\ribbonconsumer\base" />
-      <recent name="D:\个人项目\spring-cloud\ribbon-consumer\src\main\resources" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -540,7 +545,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.RibbonConsumerApplication">
+  <component name="RunManager" selected="Spring Boot.FeignApplication">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -633,13 +638,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ActivemqUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ribbonconsumer.thirdparty.mq.ActivemqUtil" />
+    <configuration name="LocalUploadController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ribbonconsumer.controller.LocalUploadController" />
       <module name="ribbon-consumer" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ribbonconsumer.thirdparty.mq.*" />
+          <option name="PATTERN" value="com.ribbonconsumer.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -647,41 +652,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomePageService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ribbonconsumer.service.HomePageService" />
-      <module name="ribbon-consumer" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ribbonconsumer.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Student" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cloud.ribbon.serializable.Student" />
-      <module name="ribbon" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cloud.ribbon.serializable.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VerifyCodeUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ribbonconsumer.base.util.VerifyCodeUtil" />
+    <configuration name="PhotoUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ribbonconsumer.base.util.PhotoUtil" />
       <module name="ribbon-consumer" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.ribbonconsumer.base.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SendSms" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ribbonconsumer.base.util.SendSms" />
+      <module name="ribbon-consumer" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ribbonconsumer.base.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThreadTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ribbonconsumer.thirdparty.thread.ThreadTest" />
+      <module name="ribbon-consumer" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ribbonconsumer.thirdparty.thread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -740,6 +745,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="core" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
       <option name="filePath" />
       <option name="vmParameters" />
@@ -784,14 +802,6 @@
     <configuration name="FeignApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false">
       <module name="feign" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.feign.FeignApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="QiandemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="qiandemo" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.druid.qiandemo.QiandemoApplication" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -853,24 +863,23 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.ActivemqUtil" />
-      <item itemvalue="Application.HomePageService" />
-      <item itemvalue="Application.Student" />
-      <item itemvalue="Application.VerifyCodeUtil" />
+      <item itemvalue="Application.SendSms" />
+      <item itemvalue="Application.PhotoUtil" />
+      <item itemvalue="Application.LocalUploadController" />
+      <item itemvalue="Application.ThreadTest" />
       <item itemvalue="Spring Boot.EurekaApplication" />
       <item itemvalue="Spring Boot.RibbonApplication" />
       <item itemvalue="Spring Boot.FeignApplication" />
       <item itemvalue="Spring Boot.ZuulApplication" />
-      <item itemvalue="Spring Boot.QiandemoApplication" />
       <item itemvalue="Spring Boot.RibbonConsumerApplication" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.RibbonConsumerApplication" />
-        <item itemvalue="Application.VerifyCodeUtil" />
-        <item itemvalue="Application.ActivemqUtil" />
-        <item itemvalue="Application.Student" />
-        <item itemvalue="Application.HomePageService" />
+        <item itemvalue="Application.ThreadTest" />
+        <item itemvalue="Application.LocalUploadController" />
+        <item itemvalue="Application.SendSms" />
+        <item itemvalue="Application.PhotoUtil" />
       </list>
     </recent_temporary>
   </component>
@@ -929,12 +938,45 @@
       <workItem from="1572919936320" duration="1763000" />
       <workItem from="1576741050077" duration="5441000" />
       <workItem from="1576805908772" duration="538000" />
-      <workItem from="1577264997847" duration="3681000" />
+      <workItem from="1577264997847" duration="3902000" />
+      <workItem from="1577324057914" duration="942000" />
+      <workItem from="1577435872304" duration="3357000" />
+      <workItem from="1577755734391" duration="1957000" />
+      <workItem from="1577960010567" duration="408000" />
+      <workItem from="1578367094016" duration="10302000" />
+      <workItem from="1578540579099" duration="3926000" />
+      <workItem from="1578620340345" duration="16097000" />
+      <workItem from="1578879688384" duration="10317000" />
+      <workItem from="1578967138043" duration="1488000" />
+      <workItem from="1578968800831" duration="1838000" />
+      <workItem from="1578971796050" duration="634000" />
+      <workItem from="1578972583288" duration="7492000" />
+      <workItem from="1578987701093" duration="4774000" />
+      <workItem from="1579053790409" duration="369000" />
+      <workItem from="1579161050403" duration="5178000" />
+      <workItem from="1579244910178" duration="1727000" />
+      <workItem from="1579485340982" duration="1370000" />
+      <workItem from="1580809263161" duration="2000" />
+      <workItem from="1588232216705" duration="704000" />
+      <workItem from="1588236176832" duration="204000" />
+      <workItem from="1588730420029" duration="44000" />
+      <workItem from="1589184144977" duration="5567000" />
+      <workItem from="1590027013614" duration="17408000" />
+      <workItem from="1590112618536" duration="8840000" />
+      <workItem from="1590370983247" duration="690000" />
     </task>
+    <task id="LOCAL-00001" summary="订单">
+      <created>1577270396865</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1577270396866</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="320177000" />
+    <option name="totallyTimeSpent" value="426033000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -946,10 +988,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29466859" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2644092" />
       <window_info id="Structure" order="1" weight="0.24973205" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -958,18 +1000,18 @@
       <window_info id="Image Layers" order="6" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32968238" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49927953" weight="0.31592688" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49973333" visible="true" weight="0.3681462" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32898173" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49927953" weight="0.31201044" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49973333" weight="0.34986946" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32968238" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.31872946" />
       <window_info anchor="bottom" id="Java Enterprise" order="8" weight="0.32968238" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49927953" weight="0.27415144" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50072044" side_tool="true" weight="0.31070495" />
-      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32968238" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.25848565" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49927953" weight="0.26762402" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50072044" side_tool="true" weight="0.3093995" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.40600523" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.2845953" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -997,17 +1039,9 @@
       <collection />
     </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/zuul/src/main/java/com/zuul/filter/DemoFilter.java</url>
-          <line>43</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="订单" />
+    <option name="LAST_COMMIT_MESSAGE" value="订单" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1023,357 +1057,384 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/eureka/study/study">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka/src/main/java/com/cloud/eureka/dao/UserDao.java">
+    <entry file="file://$PROJECT_DIR$/ribbon/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        <state relative-caret-position="461">
+          <caret line="138" column="12" selection-start-line="138" selection-start-column="12" selection-end-line="138" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eureka/src/main/java/com/cloud/eureka/entiry/User.java">
+    <entry file="file://$PROJECT_DIR$/zuul/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="229">
+          <caret line="77" column="23" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eureka/src/main/resources/application-dev-9030.yml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.0.9.RELEASE/spring-data-redis-2.0.9.RELEASE.jar!/org/springframework/data/redis/core/RedisConnectionUtils.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        <state relative-caret-position="150">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon/src/main/java/com/cloud/ribbon/RibbonApplication.java">
+    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/service/TestService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-          <folding>
-            <element signature="e#779#780#0" expanded="true" />
-            <element signature="e#811#812#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="65" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feign/src/main/java/com/feign/controller/HelloController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qiandemo/src/main/java/com/druid/qiandemo/QiandemoApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qiandemo/src/main/java/com/druid/qiandemo/config/DruidConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1802">
-          <caret line="106" column="40" lean-forward="true" selection-start-line="106" selection-start-column="40" selection-end-line="106" selection-end-column="40" />
+        <state relative-caret-position="137">
+          <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4934#4935#0" expanded="true" />
-            <element signature="e#4968#4969#0" expanded="true" />
-            <element signature="e#5010#5011#0" expanded="true" />
-            <element signature="e#5048#5049#0" expanded="true" />
-            <element signature="e#5087#5088#0" expanded="true" />
-            <element signature="e#5126#5127#0" expanded="true" />
-            <element signature="e#5178#5179#0" expanded="true" />
-            <element signature="e#5226#5227#0" expanded="true" />
-            <element signature="e#5265#5266#0" expanded="true" />
-            <element signature="e#5304#5305#0" expanded="true" />
-            <element signature="e#5356#5357#0" expanded="true" />
-            <element signature="e#5404#5405#0" expanded="true" />
-            <element signature="e#5450#5451#0" expanded="true" />
-            <element signature="e#5496#5497#0" expanded="true" />
-            <element signature="e#5562#5563#0" expanded="true" />
-            <element signature="e#5624#5625#0" expanded="true" />
-            <element signature="e#5663#5664#0" expanded="true" />
-            <element signature="e#5705#5706#0" expanded="true" />
-            <element signature="e#5760#5761#0" expanded="true" />
-            <element signature="e#5814#5815#0" expanded="true" />
-            <element signature="e#5849#5850#0" expanded="true" />
-            <element signature="e#5887#5888#0" expanded="true" />
-            <element signature="e#5934#5935#0" expanded="true" />
-            <element signature="e#5980#5981#0" expanded="true" />
-            <element signature="e#6017#6018#0" expanded="true" />
-            <element signature="e#6057#6058#0" expanded="true" />
-            <element signature="e#6108#6109#0" expanded="true" />
-            <element signature="e#6158#6159#0" expanded="true" />
-            <element signature="e#6193#6194#0" expanded="true" />
-            <element signature="e#6231#6232#0" expanded="true" />
-            <element signature="e#6278#6279#0" expanded="true" />
-            <element signature="e#6324#6325#0" expanded="true" />
-            <element signature="e#6381#6382#0" expanded="true" />
-            <element signature="e#6441#6442#0" expanded="true" />
-            <element signature="e#6676#6677#0" expanded="true" />
-            <element signature="e#6733#6734#0" expanded="true" />
-            <element signature="e#6948#6949#0" expanded="true" />
-            <element signature="e#6994#6995#0" expanded="true" />
-            <element signature="e#7060#7061#0" expanded="true" />
-            <element signature="e#7122#7123#0" expanded="true" />
-            <element signature="e#7166#7167#0" expanded="true" />
-            <element signature="e#7210#7211#0" expanded="true" />
-            <element signature="e#7273#7274#0" expanded="true" />
-            <element signature="e#7331#7332#0" expanded="true" />
-            <element signature="e#7374#7375#0" expanded="true" />
-            <element signature="e#7417#7418#0" expanded="true" />
-            <element signature="e#7478#7479#0" expanded="true" />
-            <element signature="e#7534#7535#0" expanded="true" />
-            <element signature="e#7577#7578#0" expanded="true" />
-            <element signature="e#7620#7621#0" expanded="true" />
-            <element signature="e#7681#7682#0" expanded="true" />
-            <element signature="e#7737#7738#0" expanded="true" />
-            <element signature="e#7790#7791#0" expanded="true" />
-            <element signature="e#7843#7844#0" expanded="true" />
-            <element signature="e#8069#8070#0" expanded="true" />
-            <element signature="e#8141#8142#0" expanded="true" />
-            <element signature="e#8408#8409#0" expanded="true" />
-            <element signature="e#8446#8447#0" expanded="true" />
-            <element signature="e#8496#8497#0" expanded="true" />
-            <element signature="e#8542#8543#0" expanded="true" />
-            <element signature="e#8593#8594#0" expanded="true" />
-            <element signature="e#8644#8645#0" expanded="true" />
+            <element signature="e#1100#1101#0" expanded="true" />
+            <element signature="e#1146#1147#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qiandemo/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon/src/main/java/com/cloud/ribbon/serializable/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon/src/main/java/com/cloud/ribbon/controller/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ribbon/src/main/java/com/cloud/ribbon/service/TestService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        <state relative-caret-position="221">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/exception/QianException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/domain/server/Mem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/domain/server/Jvm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/domain/server/Cpu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/config/DruidConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="32" column="51" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/http/GoodPharmacistHttpUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3740">
-          <caret line="220" column="27" selection-start-line="220" selection-start-column="27" selection-end-line="220" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/domain/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="27" column="4" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/enumutil/OrderTypeEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feign/src/main/java/com/feign/service/HelloService.java">
+    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/ServerController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuul/src/main/java/com/zuul/ZuulApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="44" lean-forward="true" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
           <folding>
-            <element signature="e#292#293#0" expanded="true" />
-            <element signature="e#353#354#0" expanded="true" />
+            <element signature="e#475#476#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/feign/src/main/java/com/feign/rpc/GetHello.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.0.4.RELEASE/spring-boot-2.0.4.RELEASE-sources.jar!/org/springframework/boot/web/servlet/error/ErrorController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        <state relative-caret-position="137">
+          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.0.9.RELEASE/spring-data-redis-2.0.9.RELEASE.jar!/org/springframework/data/redis/core/RedisTemplate.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10-sources.jar!/org/apache/http/HttpStatus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+        <state relative-caret-position="151">
+          <caret line="162" column="28" selection-start-line="162" selection-start-column="28" selection-end-line="162" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/redis/RedisConfig.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/zuul/zuul-core/1.3.1/zuul-core-1.3.1-sources.jar!/com/netflix/zuul/ZuulFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-163">
-          <caret line="31" column="45" lean-forward="true" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+        <state relative-caret-position="368">
+          <caret line="120" selection-start-line="120" selection-end-line="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.4.RELEASE/spring-web-5.1.4.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="197" selection-start-line="197" selection-end-line="197" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zuul/src/main/java/com/zuul/controller/TestController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/zuul/src/main/java/com/zuul/base/ErrorHandlerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/controller/BaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="79" column="36" selection-start-line="79" selection-start-column="36" selection-end-line="79" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/util/JsonUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/smsProject/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
+        <state relative-caret-position="374">
+          <caret line="27" column="58" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#529#530#0" expanded="true" />
+            <element signature="e#560#561#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/mapper/HomePageMapper.java">
+    <entry file="file://$PROJECT_DIR$/zuul/src/main/java/com/zuul/base/HttpRequestUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="119">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuul/src/main/java/com/zuul/base/MD5Encrypt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-244">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuul/src/main/java/com/zuul/base/RestJson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuul/src/main/java/com/zuul/base/ValueUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qiancore/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qiancore/src/main/java/com/core/config/DruidConfiguration.java" />
+    <entry file="file://$PROJECT_DIR$/qiancore/src/main/java/com/core/util/ModelUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-66">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qiancore/src/main/java/com/core/base/ConfigModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-152">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qiancore/src/main/java/com/core/base/Swagger2Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-372">
+          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qiancore/src/main/java/com/core/base/service/BaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qiancore/src/main/java/com/core/base/mapper/BaseMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4368">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qiancore/src/main/java/com/core/base/http/GoodPharmacistHttpUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3518">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/mapper/TestMapper.java">
+    <entry file="file://$PROJECT_DIR$/qiancore/src/main/java/com/core/base/controller/ErrorHandlerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+        <state relative-caret-position="323">
+          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/util/MD5Encrypt.java">
+    <entry file="file://$PROJECT_DIR$/feign/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+        <state relative-caret-position="178">
+          <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/service/smsProject/UserService.java">
+    <entry file="file://$PROJECT_DIR$/ribbon-consumer/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="162" column="27" selection-start-line="162" selection-start-column="27" selection-end-line="162" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/RibbonConsumerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#442#443#0" expanded="true" />
+            <element signature="e#509#510#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign/src/main/java/com/feign/FeignApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.12/httpcore-4.4.12-sources.jar!/org/apache/http/HttpStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="162" column="28" selection-start-line="162" selection-start-column="28" selection-end-line="162" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qiancore/src/main/java/com/core/base/util/ValueUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="117" column="28" lean-forward="true" selection-start-line="117" selection-start-column="28" selection-end-line="117" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/TestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="24" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1062#1063#0" expanded="true" />
+            <element signature="e#1093#1094#0" expanded="true" />
+            <element signature="e#1543#1544#0" expanded="true" />
+            <element signature="e#1598#1599#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-netflix-zuul/2.0.1.RELEASE/spring-cloud-netflix-zuul-2.0.1.RELEASE-sources.jar!/org/springframework/cloud/netflix/zuul/filters/route/FallbackProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign/src/main/java/com/feign/rpc/GetHello.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign/src/main/java/com/feign/rpc/rpcImpl/GetHelloImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
+            <element signature="e#474#475#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qiancore/src/main/java/com/core/base/controller/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="44" column="21" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
+          <folding>
+            <element signature="e#1151#1152#0" expanded="true" />
+            <element signature="e#1214#1215#0" expanded="true" />
+            <element signature="e#1261#1262#0" expanded="true" />
+            <element signature="e#1310#1311#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign/src/main/java/com/feign/controller/HelloController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <folding>
+            <element signature="e#530#531#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#792#793#0" expanded="true" />
+            <element signature="e#841#842#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuul/src/main/java/com/zuul/filter/FeignFallbackProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="54" column="35" lean-forward="true" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
+          <folding>
+            <element signature="e#1781#1782#0" expanded="true" />
+            <element signature="e#1872#1873#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuul/src/main/java/com/zuul/filter/ErrorFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="37" column="25" lean-forward="true" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign/src/main/java/com/feign/service/HelloService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/base/util/VerifyCodeUtil.java">
+    <entry file="file://$PROJECT_DIR$/zuul/src/main/java/com/zuul/filter/DemoFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1615">
-          <caret line="103" column="44" selection-start-line="103" selection-start-column="44" selection-end-line="103" selection-end-column="44" />
+        <state relative-caret-position="884">
+          <caret line="68" column="33" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/FileDownLoadController.java">
+    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/config/DruidConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+        <state relative-caret-position="2958">
+          <caret line="244" column="41" selection-start-line="244" selection-start-column="41" selection-end-line="244" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/LocalUploadController.java">
+    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/config/RedisConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="24" selection-start-line="24" selection-end-line="24" selection-end-column="32" />
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/mapper/smsProject/UserMapper.java">
+    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="595">
+          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.32/tomcat-embed-core-8.5.32.jar!/javax/servlet/http/HttpServletRequest.class">
+    <entry file="file://$PROJECT_DIR$/zuul/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="54" column="17" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
+        <state relative-caret-position="238">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/hand/ExceptionAdvice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign/src/main/java/com/feign/handle/ExceptionAdvice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1384,88 +1445,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zuul/src/main/java/com/zuul/filter/ErrorFilter.java">
+    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/mq/ActivemqUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zuul/src/main/java/com/zuul/ZuulConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="e#479#480#0" expanded="true" />
-            <element signature="e#520#521#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka/src/main/java/com/cloud/eureka/EurekaApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zuul/src/main/java/com/zuul/ZuulApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zuul/src/main/java/com/zuul/filter/DemoFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="e#923#924#0" expanded="true" />
-            <element signature="e#993#994#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/ServerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="33" column="21" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/RibbonConsumerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="47" lean-forward="true" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zuul/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="23" column="31" lean-forward="true" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="32" />
+        <state relative-caret-position="459">
+          <caret line="39" column="39" lean-forward="true" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -1522,12 +1505,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>eureka</last-edited>
+          <last-edited>ribbon-consumer</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
