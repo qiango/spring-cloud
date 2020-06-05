@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 @Repository
 public interface GetHello {//feign远程调用方式
 
-    @GetMapping(value = "/qian/getCustomer")
+    @PostMapping(value = "/qian/get")
     public String sayHello();
 
     @PostMapping(value = "/App/User/getUser")

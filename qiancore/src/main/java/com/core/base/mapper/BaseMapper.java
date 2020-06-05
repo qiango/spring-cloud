@@ -112,6 +112,17 @@ public abstract class BaseMapper {
     }
 
     /**
+     * 给namedJdbcTemplate sql语句拼接分页
+     *
+     * @param sql     sql语句
+     * @param orderby 排序语句
+     * @return java.lang.String
+     */
+    protected String pageNameSql(String sql, String orderby) {
+        return sql + " " + orderby + " LIMIT :startindex,:size";
+    }
+
+    /**
      * 给sql参数拼接分页参数
      *
      * @param params 原始参数

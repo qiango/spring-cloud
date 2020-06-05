@@ -29,9 +29,9 @@ public class HelloService {
     }
 
     public String sayHello() {
-        int i = 1 / 0;
-        throw new QianException("抛错测试啦");
-//        return getHello.sayHello(); // 提供一个hello World
+//        int i = 1 / 0;
+//        throw new QianException("抛错测试啦");
+        return getHello.sayHello(); // 提供一个hello World
     }
 
     public void create(HttpServletResponse response) {

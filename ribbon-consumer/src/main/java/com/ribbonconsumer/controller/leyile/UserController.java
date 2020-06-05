@@ -1,4 +1,4 @@
-package com.ribbonconsumer.controller.smsProject;
+package com.ribbonconsumer.controller.leyile;
 
 import com.core.base.controller.BaseController;
 import com.ctrip.framework.apollo.Config;
@@ -15,6 +15,7 @@ public class UserController extends BaseController {
     @ApolloConfig
     private Config config;
 
+    //阿波罗配置中心获取配置文件
     @GetMapping("/hello")
     public String hello() {
         System.out.println("线程池名称: " + Thread.currentThread().getName());

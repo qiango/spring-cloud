@@ -1,9 +1,9 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://172.16.188.55:8888/eureka/
+      defaultZone: http://localhost:9030/eureka/
 server:
-  port: 8886
+  port: 9031
 spring:
   application:
     name: ribbon-consumer
@@ -56,11 +56,6 @@ spring:
 base:
   isonline: 0  #正式测试环境的标记 0:非正式 1:正式
   filepath: /home/qwq/ #上传文件的缓存位置
-
-
-ma:
-  maAppId: 123456
-  maSecret: 123456
 
 swagger:
   base:
