@@ -24,6 +24,16 @@ public class ActivemqUtil {
      */
     private static volatile ActivemqUtil instance ;
 
+
+    public static ActivemqUtil getInstance() {
+        synchronized (JsonUtil.class) {
+            if (instance == null) {
+                instance = new ActivemqUtil();
+            }
+        }
+        return instance;
+    }
+
     public void sendMessage(String disname, String message) {
         log.info("====================>> 发送queue消息：" + message + ",disname：" + disname);
         Destination destination = new ActiveMQQueue(disname);
@@ -36,14 +46,6 @@ public class ActivemqUtil {
         log.info("====================>> 收到消息：" + text);
     }
 
-    public static ActivemqUtil getInstance() {
-        synchronized (JsonUtil.class) {
-            if (instance == null) {
-                instance = new ActivemqUtil();
-            }
-        }
-        return instance;
-    }
 
     public void sendPushMessage(String disname, Map<String, Object> message) {
         log.info("====================>> 发送queue消息：" + message + ",disname：" + disname);

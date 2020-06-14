@@ -13,108 +13,104 @@ import java.util.Map;
 @Repository
 public class LeMapper extends BaseMapper {
 
-    public Map<String, Object> getUserOpen(String openid) {
-        String sql = "select id,userid from user_open where openid=? ";
-        List<Object> param = new ArrayList<>();
-        param.add(openid);
-        return queryForMap(sql, param);
-    }
 
-    public void insertUserOpen(String openid, String unionid, String sessionkey) {
-        String sql = "insert into user_open (openid, unionid, sessionkey, create_time) values (?,?,?,?) ";
+    //    fans_num    bigint default 0 not null comment '粉丝数量',
+//    focus_num   bigint default 0 not null comment '关注数量',
+//    praise_num  bigint default 0 not null comment '获赞数量',
+    //关注
+    public void focusUser(long userid, long focusUserId) {
+        String sql = "insert into user_focus (userid, focus_userid, create_time) values (?,?,?) ";
         List<Object> param = new ArrayList<>();
-        param.add(openid);
-        param.add(unionid);
-        param.add(sessionkey);
+        param.add(userid);
+        param.add(focusUserId);
         param.add(UnixUtil.getNowTimeStamp());
         insert(sql, param);
     }
 
-    public void updateSessionKey(String sessionKey, String openid) {
-        String sql = "update user_open set sessionkey=? where openid=? ";
+    //取关
+    public void cancleFocuse(long userid, long focusUserId) {
+        String sql = "delete from user_focus where userid=? and focus_userid=? ";
         List<Object> param = new ArrayList<>();
-        param.add(sessionKey);
-        param.add(openid);
+        param.add(userid);
+        param.add(focusUserId);
         update(sql, param);
     }
 
-    public void updateUserOpen(long userid, String openId) {
-        String sql = "update user_open set userid=? where openid=?";
+    public void updateAddNum(long userid, int type) {
+        String sqlFans = "update user set fans_num=fans_num+1 where id=? ";
+        String sqlFocus = "update user set focus_num=focus_num+1 where id=? ";
+        String sqlPraise = "update user set praise_num=praise_num+1 where id=? ";
         List<Object> param = new ArrayList<>();
         param.add(userid);
-        param.add(openId);
-        update(sql, param);
-    }
-
-    public Map<String, Object> getUserId(String phone) {
-        String sql = "select id from user where phone=? and ifnull(delflag,0)=0 ";
-        List<Object> param = new ArrayList<>();
-        param.add(phone);
-        return queryForMap(sql, param);
-    }
-
-    public long insertUser(String url, String phone, String name, String happyNo, String gender) {
-        String sql = "insert into user (phone, name, headpic, happy_no, create_time,gender) values (?,?,?,?,?,?)";
-        List<Object> param = new ArrayList<>();
-        param.add(phone);
-        param.add(name);
-        param.add(url);
-        param.add(happyNo);
-        param.add(UnixUtil.getNowTimeStamp());
-        param.add(gender);
-        return insert(sql, param, "id");
-    }
-
-    //我的信息
-    public Map<String, Object> getUserInfoMation(long userid) {
-        String sql = "select id,gender,name,headpic,happy_no happyNo,fans_num fansNum,focus_num focusNum,introduce from user where id=? ";
-        List<Object> param = new ArrayList<>();
-        param.add(userid);
-        return queryForMap(sql, param);
-    }
-
-    //更新自我介绍
-    public void updateIntroduce(long userid, String introduce) {
-        String sql = "update user set introduce=? where id=? ";
-        List<Object> param = new ArrayList<>();
-        param.add(introduce);
-        param.add(userid);
-        update(sql, param);
-    }
-
-    //发布作品
-    public void insertContent(long userid, String content, long meterialId) {
-        String sql = "insert into user_content (userid, create_time, content, material_id) values (?,?,?,?) ";
-        List<Object> param = new ArrayList<>();
-        param.add(userid);
-        param.add(UnixUtil.getNowTimeStamp());
-        param.add(content);
-        param.add(meterialId);
-        insert(sql, param);
-    }
-
-    //推荐作品列表
-    public List<Map<String, Object>> getContentList(List<Integer> classfyIds, int pageSize, int pageIndex) {
-        String sql = "select uc.create_time    time," +
-                "       uc.content," +
-                "       uc.evaluation_num evaluationNum," +
-                "       uc.praise_num     praiseNum," +
-                "       uc.forwarding_num forwardingNum," +
-                "       cm.meterial_url   meterialUrl," +
-                "       u.name," +
-                "       u.headpic" +
-                " from user_content uc" +
-                "       left join user u on uc.userid = u.id" +
-                "       left join content_material cm on uc.material_id = cm.id" +
-                " where check_status = :status";
-        Map<String, Object> param = new HashMap<>();
-        param.put("status", CheckStatusEnum.Success.getCode());
-        if (!classfyIds.isEmpty()) {
-            param.put("classfyId", classfyIds);
-            sql += " and uc.classify_id in (:classfyId)";
+        if (type == 2) {
+            sqlFans = sqlFocus;
+        } else if (type == 3) {
+            sqlFans = sqlPraise;
         }
-        return queryForList(pageNameSql(sql, "order by rand()"), pageParams(param, pageIndex, pageSize));
+        update(sqlFans, param);
     }
 
+    public void updateSubNum(long userid, int type) {
+        String sqlFans = "update user set fans_num=fans_num-1 where id=? ";
+        String sqlFocus = "update user set focus_num=focus_num-1 where id=? ";
+        String sqlPraise = "update user set praise_num=praise_num-1 where id=? ";
+        List<Object> param = new ArrayList<>();
+        param.add(userid);
+        if (type == 2) {
+            sqlFans = sqlFocus;
+        } else if (type == 3) {
+            sqlFans = sqlPraise;
+        }
+        update(sqlFans, param);
+    }
+
+
+
+    //点赞作品
+    public void praise(long userid, long contentId) {
+        String sql = "insert into user_praise (userid, create_time, content_id) values (?,?,?) ";
+        List<Object> param = new ArrayList<>();
+        param.add(userid);
+        param.add(UnixUtil.getNowTimeStamp());
+        param.add(contentId);
+        insert(sql, param);
+    }
+
+    //取消点赞
+    public void canclePraise(long userid, long contentId) {
+        String sql = "delete from user_praise where userid=? and content_id=?";
+        List<Object> param = new ArrayList<>();
+        param.add(userid);
+        param.add(contentId);
+        update(sql, param);
+    }
+
+    public Map<String, Object> getUserId(long contentId) {
+        String sql = "select userid from user_content where id=? ";
+        List<Object> param = new ArrayList<>();
+        param.add(contentId);
+        return queryForMap(sql, param);
+    }
+
+    //作品评价
+    public void insertEvaluation(long userid, long contentId, String content, long pid) {
+        String sql = "insert into user_evaluation (userid, create_time, content_id, evaluation_content, pid,check_status) values (?,?,?,?,?,?)";
+        List<Object> param = new ArrayList<>();
+        param.add(userid);
+        param.add(UnixUtil.getNowTimeStamp());
+        param.add(contentId);
+        param.add(content);
+        param.add(pid);
+        param.add(CheckStatusEnum.Success.getCode());
+        insert(sql, param);
+    }
+
+    //点赞评论
+    public void updateEvaluation(long evaluationId) {
+        String sql = "update user_evaluation set appoint_num=appoint_num+1 where id=? ";
+        List<Object> param = new ArrayList<>();
+        param.add(evaluationId);
+        update(sql, param);
+    }
 
 }
