@@ -1,7 +1,7 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://172.16.188.55:8888/eureka/
+      defaultZone: http://120.92.42.252:8888/eureka/
 server:
   port: 8887
   servlet:
