@@ -1,9 +1,9 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:9030/eureka/
+      defaultZone: http://120.92.42.252:9000/center/eureka/
 server:
-  port: 9031
+  port: 9010
   servlet:
     context-path: /pears
 spring:

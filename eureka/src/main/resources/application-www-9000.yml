@@ -1,7 +1,7 @@
 server:
-  port: 9030
+  port: 9000
   servlet:
-    context-path: /eureka
+    context-path: /center
 
 eureka:
   instance:
@@ -10,5 +10,5 @@ eureka:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/center/eureka
 

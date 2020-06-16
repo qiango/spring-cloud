@@ -8,7 +8,7 @@ import cn.binarywang.wx.miniapp.bean.WxMaUserInfo;
 import com.core.base.service.BaseService;
 import com.core.base.util.ModelUtil;
 import com.core.base.util.UnixUtil;
-import com.ribbonconsumer.config.RabbitMqConfig;
+//import com.ribbonconsumer.config.RabbitMqConfig;
 import com.ribbonconsumer.mapper.leyile.LeMapper;
 import me.chanjar.weixin.common.error.WxErrorException;
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
@@ -60,11 +60,11 @@ public class LeService extends BaseService {
     }
 
 
-    @RabbitHandler
-    @RabbitListener(queues = RabbitMqConfig.QUEUE_A)  //监听器监听指定的Queue
-    public void processC(String str) {
-        System.out.println("Receive>>>>>>>>>>>>>" + str);
-    }
+//    @RabbitHandler
+//    @RabbitListener(queues = RabbitMqConfig.QUEUE_A)  //监听器监听指定的Queue
+//    public void processC(String str) {
+//        System.out.println("Receive>>>>>>>>>>>>>" + str);
+//    }
 
     public void insertEvaluation(long userid, long contentId, String content, long pid) {
         leMapper.insertEvaluation(userid, contentId, content, pid);

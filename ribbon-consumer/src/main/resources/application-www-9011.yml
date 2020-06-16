@@ -1,9 +1,9 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8888/center/eureka/
+      defaultZone: http://120.92.42.252:9000/center/eureka/
 server:
-  port: 8887
+  port: 9011
   servlet:
     context-path: /pears
 spring:
@@ -29,18 +29,13 @@ spring:
 #    password: admin
 #    pool:
 #      enabled: false
-#  rabbitmq:
-#    host: 127.0.0.1
-#    port: 5672
-#    username: guest
-#    password: guest
   #####################################################################################################
   # mysql 属性配置(druid)
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/myproduct?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
+    url: jdbc:mysql://120.92.42.252:3306/myproduct?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
     username: root
-    password: 123456
+    password: 1q2W3e.,
     type: com.alibaba.druid.pool.DruidDataSource
     initialSize: 5
     minIdle: 5
@@ -62,20 +57,13 @@ spring:
 #####################################################################################################
 base:
   isonline: 0  #正式测试环境的标记 0:非正式 1:正式
-  filepath: /Users/qiango/data/springboot/file/ #上传文件的缓存位置
-#  weburl: https://www.nopears.com/ #上传文件的缓存位置
-  weburl: http://localhost:8887/pears/file/readFile/ #读取文件链接
-
-
-ma:
-  maAppId: 123456
-  maSecret: 123456
+  filepath: /qian/file/ #上传文件的缓存位置
+  weburl: https://www.nopears.com/pears/file/readFile/ #上传文件的缓存位置
 
 swagger:
   base:
     apiPath:  #swagger根目录
 
-# >>>阿波罗配置
 #app:
 #  id: ribbon-consumer
 #apollo:
