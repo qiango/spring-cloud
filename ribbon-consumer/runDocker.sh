@@ -3,7 +3,7 @@ mvn package
 
 dockerImageName=ribbon-image
 dockerContainerName=ribbon-contain
-dockerContainerPort=9010
+dockerContainerPort=9011
 
 
 docker stop $dockerContainerName
@@ -12,4 +12,4 @@ docker rmi $dockerImageName
 
 docker build -t $dockerImageName .
 
-docker run -e JAVA_OPTS='-Xmx512m' --name $dockerContainerName -it -p ${dockerContainerPort}:9010 -d $dockerImageName
+docker run -e JAVA_OPTS='-Xmx512m' --name $dockerContainerName -it -p ${dockerContainerPort}:9011 -d $dockerImageName
