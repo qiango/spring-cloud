@@ -1,11 +1,11 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://120.92.42.252:8888/eureka/
+      defaultZone: http://localhost:8888/eureka/
 server:
   port: 8887
   servlet:
-    context-path: /fzjh
+    context-path: /pears
 spring:
   application:
     name: ribbon-consumer
@@ -29,16 +29,16 @@ spring:
 #    password: admin
 #    pool:
 #      enabled: false
-#  rabbitmq:
-#    host: 127.0.0.1
-#    port: 5672
-#    username: guest
-#    password: guest
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
   #####################################################################################################
   # mysql 属性配置(druid)
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/demo?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
+    url: jdbc:mysql://localhost:3306/myproduct?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
     username: root
     password: 123456
     type: com.alibaba.druid.pool.DruidDataSource
@@ -62,7 +62,9 @@ spring:
 #####################################################################################################
 base:
   isonline: 0  #正式测试环境的标记 0:非正式 1:正式
-  filepath: /home/qwq/ #上传文件的缓存位置
+  filepath: /Users/qiango/data/springboot/file/ #上传文件的缓存位置
+#  weburl: https://www.nopears.com/ #上传文件的缓存位置
+  weburl: http://localhost:8887/pears/file/readFile/ #读取文件链接
 
 
 ma:

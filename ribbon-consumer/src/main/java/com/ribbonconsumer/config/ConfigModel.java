@@ -1,12 +1,34 @@
-package com.core.base;
+package com.ribbonconsumer.config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class ConfigModel {
     protected Logger log = LoggerFactory.getLogger(this.getClass());
+
+    public static String BASEFILEPATH;
+
+    @Value("${base.filepath}")
+    public void setBASEFILEPATH(String value) {
+        BASEFILEPATH = value;
+    }
+
+    public static String WEBURL;
+
+    @Value("${base.weburl}")
+    public void setWEBURL(String value) {
+        WEBURL = value;
+    }
+
+    public static String ISONLINE;
+
+    @Value("${base.isonline}")
+    public void setISONLINE(String value) {
+        ISONLINE = value;
+    }
 
     /**
      * 第三方用户注册来源渠道

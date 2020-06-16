@@ -1,16 +1,8 @@
 package com.ribbonconsumer.service.leyile;
 
-import cn.binarywang.wx.miniapp.api.WxMaService;
-import cn.binarywang.wx.miniapp.api.WxMaUserService;
-import cn.binarywang.wx.miniapp.bean.WxMaJscode2SessionResult;
-import cn.binarywang.wx.miniapp.bean.WxMaPhoneNumberInfo;
-import cn.binarywang.wx.miniapp.bean.WxMaUserInfo;
 import com.core.base.service.BaseService;
 import com.core.base.util.ModelUtil;
-import com.core.base.util.UnixUtil;
-import com.ribbonconsumer.mapper.leyile.LeMapper;
 import com.ribbonconsumer.mapper.leyile.ProductMapper;
-import me.chanjar.weixin.common.error.WxErrorException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -22,13 +14,11 @@ import java.util.Map;
 @Service
 public class ProductService extends BaseService {
 
-    private WxMaService wxMaService;
     private ProductMapper productMapper;
 
 
     @Autowired
-    public ProductService(WxMaService wxMaService, ProductMapper productMapper) {
-        this.wxMaService = wxMaService;
+    public ProductService(ProductMapper productMapper) {
         this.productMapper = productMapper;
     }
 

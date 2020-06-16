@@ -1,4 +1,4 @@
-package com.core.base.enumutil;
+package com.core.base.baseenum;
 
 import java.util.ArrayList;
 import java.util.HashMap;

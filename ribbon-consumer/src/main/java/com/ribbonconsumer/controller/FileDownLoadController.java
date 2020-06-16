@@ -1,26 +1,29 @@
 package com.ribbonconsumer.controller;
 
 import com.core.base.controller.BaseController;
-import org.springframework.web.bind.annotation.GetMapping;
+import com.core.base.util.FileUtil;
+import com.core.base.util.ModelUtil;
+import com.ribbonconsumer.config.ConfigModel;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 import java.net.URL;
+import java.util.Map;
 
 /**
  * @author qian.wang
  * @description
  * @date 2019/1/25
  */
+@RestController
+@RequestMapping("/file")
 public class FileDownLoadController extends BaseController {
 
-
-    @GetMapping(value = "/testPaths")
-//    @RequestMapping(method = RequestMethod.GET, value = "/testPaths/{filePath:.+}")
-    public void downLoad(HttpServletResponse response) throws IOException {
-//        String filePath="D:\\home\\qwq\\file\\apk\\17411d4db5cbcd6a3209cb6415a5a6778de81cf2.apk";
-        String filePath = "D:\\logs\\bzz_server_java.2018-09-14.log";
-        File f = new File(filePath);
+    @GetMapping(value = "/readFile/{filePath}")
+    public void downLoad(HttpServletResponse response, @PathVariable String filePath) throws IOException {
+        String fileName = FileUtil.setFileName(ConfigModel.BASEFILEPATH, FileUtil.getFileName(filePath));
+        File f = new File(fileName);
         if (!f.exists()) {
             response.sendError(404, "File not found!");
             return;

@@ -13,47 +13,47 @@ public class FileUtil {
     /**
      * 上传文件的临时目录
      */
-    public static final String FILE_TEMP_PATH = "file/temp/";
+    public static final String FILE_TEMP_PATH = "temp/";
 
     /**
      * 本地静态文件目录
      */
-    public static final String FILE_STATIC_PATH = "file/static/";
+    public static final String FILE_STATIC_PATH = "static/";
 
     /**
      * 医生答本地音频文件目录
      */
-    public static final String FILE_MEDIA_PATH = "file/media/";
+    public static final String FILE_MEDIA_PATH = "media/";
 
     /**
      * 本地文件目录
      */
-    public static final String FILE_LONG_PATH = "file/long/";
+    public static final String FILE_LONG_PATH = "long/";
 
     /**
      * 本地apk文件目录
      */
-    public static final String FILE_APK_PATH = "file/apk/";
+    public static final String FILE_APK_PATH = "apk/";
 
     /**
      * 医生认证相关图片
      */
-    public static final String FILE_DOCTOR_PATH = "file/doctor/";
+    public static final String FILE_DOCTOR_PATH = "doctor/";
 
     /**
      * 电话录音
      */
-    public static final String FILE_PHONE_PATH = "file/phone/";
+    public static final String FILE_PHONE_PATH = "phone/";
 
     /**
      * 处方相关图片
      */
-    public static final String FILE_PRESCRIPTION_PATH = "file/prescription/";
+    public static final String FILE_PRESCRIPTION_PATH = "prescription/";
 
 
-    public static final String FILE_EMAIL_PATH = "file/email/";
+    public static final String FILE_EMAIL_PATH = "email/";
 
-    public static final String FILE_ARTICLE_PATH = "file/article/";
+    public static final String FILE_ARTICLE_PATH = "article/";
 
     /**
      * 获取临时文件存储目录

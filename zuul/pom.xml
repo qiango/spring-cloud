@@ -57,11 +57,11 @@
 		</dependency>
 
 		<!--引用core模块-->
-		<!--<dependency>-->
-			<!--<groupId>com.core</groupId>-->
-			<!--<artifactId>qiancore</artifactId>-->
-			<!--<version>0.0.1-SNAPSHOT</version>-->
-		<!--</dependency>-->
+		<dependency>
+			<groupId>com.core</groupId>
+			<artifactId>qiancore</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 
 
 	</dependencies>

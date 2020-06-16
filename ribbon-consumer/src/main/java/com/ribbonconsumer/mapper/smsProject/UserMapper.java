@@ -3,7 +3,7 @@
 //import com.core.base.mapper.BaseMapper;
 //import com.core.base.util.MD5Encrypt;
 //import com.core.base.util.UnixUtil;
-//import com.ribbonconsumer.thirdparty.enumutil.PayTypeEnum;
+//import com.ribbonconsumer.thirdparty.baseenum.PayTypeEnum;
 //import org.springframework.stereotype.Repository;
 //
 //import java.util.ArrayList;

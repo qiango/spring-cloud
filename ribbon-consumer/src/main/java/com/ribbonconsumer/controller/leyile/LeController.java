@@ -1,19 +1,17 @@
 package com.ribbonconsumer.controller.leyile;
 
 import com.core.base.controller.BaseController;
-import com.core.base.domain.Server;
 import com.core.base.util.ModelUtil;
 import com.ribbonconsumer.service.leyile.LeService;
 import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
 
 
 @RestController
-@RequestMapping("/User/Login")
+@RequestMapping("/User")
 public class LeController extends BaseController {
 
     private LeService leService;

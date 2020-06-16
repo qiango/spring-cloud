@@ -1,4 +1,4 @@
-package com.core.base.enumutil;
+package com.core.base.baseenum;
 
 public interface CodeEnum {
     Integer getCode();

@@ -1,6 +1,6 @@
 package com.ribbonconsumer.mapper.leyile;
 
-import com.core.base.enumutil.CheckStatusEnum;
+import com.core.base.baseenum.CheckStatusEnum;
 import com.core.base.mapper.BaseMapper;
 import com.core.base.util.UnixUtil;
 import org.springframework.stereotype.Repository;

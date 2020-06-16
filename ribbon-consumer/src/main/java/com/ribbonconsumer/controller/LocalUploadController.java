@@ -1,10 +1,10 @@
 package com.ribbonconsumer.controller;
 
-import com.core.base.ConfigModel;
 import com.core.base.controller.BaseController;
 import com.core.base.util.FileUtil;
 import com.core.base.util.ModelUtil;
 import com.core.base.util.UnixUtil;
+import com.ribbonconsumer.config.ConfigModel;
 import io.swagger.annotations.*;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.http.HttpHeaders;
@@ -12,6 +12,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -34,21 +35,22 @@ public class LocalUploadController extends BaseController {
         log.info("file>uploadImage 参数 " + params);
         try {
             if (file == null) {
-                setErrorResult(result, "请选择文件");  
+                setErrorResult(result, "请选择文件");
             } else if (file.getSize() < 200 * 1024) {
                 BufferedImage image = ImageIO.read(file.getInputStream());
                 if (image != null) {
                     String filename = file.getOriginalFilename();
+                    assert filename != null;
                     String type = filename.substring(filename.lastIndexOf("."));
-                    String key = "syh" + UnixUtil.getCustomRandomString() + type;
-                    String fileName = FileUtil.setFileName(FileUtil.FILE_LONG_PATH, key);
+                    String key = "pear" + UnixUtil.getCustomRandomString() + type;
+                    String fileName = FileUtil.setFileName(FileUtil.FILE_STATIC_PATH, key);
                     String filePath = ConfigModel.BASEFILEPATH + fileName;
                     if (FileUtil.validateFile(filePath)) {
                         FileUtil.delFile(filePath);
                     }
                     FileUtil.saveFile(file.getBytes(), filePath);
                     Map<String, Object> data = new HashMap<>();
-                    data.put("url", ModelUtil.setLocalUrl(fileName));
+                    data.put("url", ConfigModel.WEBURL + ModelUtil.setLocalUrl(fileName));
                     data.put("key", ModelUtil.setLocalUrl(fileName));
                     result.put("data", data);
                     setOkResult(result, "上传成功!");
@@ -88,6 +90,7 @@ public class LocalUploadController extends BaseController {
                         setErrorResult(result, "图片尺寸不正确");
                     } else {
                         String filename = file.getOriginalFilename();
+                        assert filename != null;
                         String type = filename.substring(filename.lastIndexOf("."));
                         String key = "syh" + UnixUtil.getCustomRandomString() + type;
                         String fileName = FileUtil.setFileName(FileUtil.FILE_LONG_PATH, key);
@@ -128,8 +131,8 @@ public class LocalUploadController extends BaseController {
             InputStream inputStream = file.getInputStream();
             if (inputStream != null) {
                 String filename = file.getOriginalFilename();   //文件名
-                String finalName=filename.replace("-","_");
-                String finalNames=finalName.replace("/","_");
+                String finalName = filename.replace("-", "_");
+                String finalNames = finalName.replace("/", "_");
                 String suffix = filename.substring(filename.lastIndexOf(".") + 1);
                 if (!"apk".equals(suffix)) {
                     throw new ServerException("所传格式不为apk，请检查");
@@ -154,7 +157,7 @@ public class LocalUploadController extends BaseController {
 
     public static void main(String[] args) {
         String filename = "shenjun.ysy";   //文件名
-        String suffix = filename.substring(filename.indexOf("h") +1);
+        String suffix = filename.substring(filename.indexOf("h") + 1);
         String fileName = FileUtil.setFileName(FileUtil.FILE_APK_PATH, filename);
         String filePath = ConfigModel.BASEFILEPATH + fileName;
         File file = new File(fileName);
@@ -162,7 +165,7 @@ public class LocalUploadController extends BaseController {
         System.out.println(filePath);
         System.out.println(fileName);
         System.out.println(suffix);
-        System.out.println(filename.indexOf(".") +1);
+        System.out.println(filename.indexOf(".") + 1);
     }
 
     @PostMapping("/uploadVoice")
