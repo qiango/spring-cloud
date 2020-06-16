@@ -23,6 +23,7 @@ public class FileDownLoadController extends BaseController {
     @GetMapping(value = "/readFile/{filePath}")
     public void downLoad(HttpServletResponse response, @PathVariable String filePath) throws IOException {
         String fileName = FileUtil.setFileName(ConfigModel.BASEFILEPATH, FileUtil.getFileName(filePath));
+        log.info("文件访问路径为：" + fileName);
         File f = new File(fileName);
         if (!f.exists()) {
             response.sendError(404, "File not found!");
