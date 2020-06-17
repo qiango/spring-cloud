@@ -142,13 +142,6 @@
             <version>3.6.1.B</version>
         </dependency>
 
-        <!--rabbitmq依赖-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-amqp</artifactId>
-            <version>1.5.2.RELEASE</version>
-        </dependency>
-
         <dependency>
             <groupId>com.github.binarywang</groupId>
             <artifactId>weixin-java-pay</artifactId>
