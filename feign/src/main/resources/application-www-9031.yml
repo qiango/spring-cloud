@@ -1,0 +1,14 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://120.92.42.252:9000/center/eureka/
+server:
+  port: 9031
+spring:
+  application:
+    name: service-feign
+
+#ribbon的超时时间,不设置默认是一秒超时
+ribbon:
+  ReadTimeout: 6000
+  ConnectTimeout: 6000

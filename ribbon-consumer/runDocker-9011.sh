@@ -1,8 +1,8 @@
 #!/bin/bash
 mvn package
 
-dockerImageName=ribbon-image
-dockerContainerName=ribbon-contain
+dockerImageName=ribbon-image-9011
+dockerContainerName=ribbon-contain-9011
 dockerContainerPort=9011
 
 
