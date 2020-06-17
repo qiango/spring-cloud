@@ -150,11 +150,11 @@
 		</dependency>
 
 		<!--rabbitmq依赖-->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-amqp</artifactId>
-			<version>1.5.2.RELEASE</version>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.springframework.boot</groupId>-->
+			<!--<artifactId>spring-boot-starter-amqp</artifactId>-->
+			<!--<version>1.5.2.RELEASE</version>-->
+		<!--</dependency>-->
 
 		<!--引用core模块-->
 		<dependency>
