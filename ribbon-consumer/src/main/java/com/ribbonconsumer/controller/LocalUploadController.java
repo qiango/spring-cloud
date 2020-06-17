@@ -43,7 +43,19 @@ public class LocalUploadController extends BaseController {
                     assert filename != null;
                     String type = filename.substring(filename.lastIndexOf("."));
                     String key = "pear" + UnixUtil.getCustomRandomString() + type;
-                    String fileName = FileUtil.setFileName(FileUtil.FILE_STATIC_PATH, key);
+                    String path = FileUtil.FILE_TEMP_PATH;
+                    switch (ModelUtil.getStr(params, "type")) {
+                        case "static":
+                            path = FileUtil.FILE_STATIC_PATH;
+                            break;
+                        case "temp":
+                            path = FileUtil.FILE_TEMP_PATH;
+                            break;
+                        case "apk":
+                            path = FileUtil.FILE_APK_PATH;
+                            break;
+                    }
+                    String fileName = FileUtil.setFileName(path, key);
                     String filePath = ConfigModel.BASEFILEPATH + fileName;
                     if (FileUtil.validateFile(filePath)) {
                         FileUtil.delFile(filePath);

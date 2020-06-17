@@ -2,14 +2,12 @@ package com.ribbonconsumer.controller;
 
 import com.core.base.controller.BaseController;
 import com.core.base.util.FileUtil;
-import com.core.base.util.ModelUtil;
 import com.ribbonconsumer.config.ConfigModel;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 import java.net.URL;
-import java.util.Map;
 
 /**
  * @author qian.wang
