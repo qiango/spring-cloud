@@ -1,9 +1,7 @@
 eureka:
   client:
     serviceUrl:
-#      defaultZone: http://localhost:8888/center/eureka/
-       defaultZone: http://120.92.42.252:9000/center/eureka/
-
+      defaultZone: http://120.92.42.252:9000/center/eureka/
 server:
   port: 9020
   servlet:
@@ -14,17 +12,17 @@ spring:
 
 zuul:
   routes:
-#  ？：匹配任意单个字符串
-#  * ：匹配任意数量的字符串
-#  **：匹配任意数量的字符串，支持多级目录
-    api-a:
-      path: /api-a/**
-      serviceId: service-ribbon
-    api-b:
-      path: /api-b/**
+    #  ？：匹配任意单个字符串
+    #  * ：匹配任意数量的字符串
+    #  **：匹配任意数量的字符串，支持多级目录
+    #    api-a:
+    #      path: /api-a/**
+    #      serviceId: service-ribbon
+    feignApi:
+      path: /feignApi/**
       serviceId: service-feign
-    api-c:
-      path: /api-c/**
+    consumerApi:
+      path: /consumerApi/**
       serviceId: ribbon-consumer
 #  host:
 #       connect-timeout-millis: 3000
@@ -48,7 +46,7 @@ hystrix:
 #    max-semaphores: 200
 base:
   isonline: 1 #正式测试环境的标记 1:dev 2:qa，3：uat 4:www
-  filepath: /Users/qiango/data/springboot/ #上传文件的缓存位置
+  filepath: /qian/file/ #上传文件的缓存位置
 
 
 #//首先指定服务注册中心的地址为http://localhost:8761/eureka/，服务的端口为8769，
