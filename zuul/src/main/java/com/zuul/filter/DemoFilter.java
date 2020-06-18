@@ -1,9 +1,9 @@
 package com.zuul.filter;
 
+import com.core.base.util.HttpRequestUtils;
+import com.core.base.util.MD5Encrypt;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
-import com.zuul.base.HttpRequestUtils;
-import com.zuul.base.MD5Encrypt;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
