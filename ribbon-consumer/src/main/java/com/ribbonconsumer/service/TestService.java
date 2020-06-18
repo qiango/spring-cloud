@@ -41,9 +41,9 @@ public class TestService {
 
     public Object getTest() {
         String a = "";
-        if (a.equals("")) {
-            throw new QianException("测试异常ssssss");
-        }
+//        if (a.equals("")) {
+//            throw new QianException("测试异常ssssss");
+//        }
 //        redisUtil.set("kkk", "哈哈哈", 30 * 1000L);
         return true;
     }

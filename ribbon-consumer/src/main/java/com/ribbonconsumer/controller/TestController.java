@@ -44,9 +44,9 @@ public class TestController extends BaseController {
     @PostMapping("/get")
     public Object exceptionTest(@RequestParam Map<String, Object> params) {
         int code = ModelUtil.getInt(params, "a");
-        if (code == 0) {
-            return toError("参数错误");
-        }
+//        if (code == 0) {
+//            return toError("参数错误");
+//        }
         return toJsonOk(testService.getTest());
     }
 
