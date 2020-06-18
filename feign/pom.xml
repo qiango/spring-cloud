@@ -95,7 +95,7 @@
 							<addClasspath>true</addClasspath>
 							<useUniqueVersions>false</useUniqueVersions>
 							<classpathPrefix>lib/</classpathPrefix>
-							<mainClass>com.cloud.eureka.EurekaApplication</mainClass>
+							<mainClass>com.feign.FeignApplication</mainClass>
 						</manifest>
 						<manifestEntries>
 							<version>${project.version}</version>

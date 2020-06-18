@@ -1,0 +1,5 @@
+FROM java:8-alpine
+VOLUME /tmp
+ADD target/ribbon-0.0.1-SNAPSHOT.jar app.jar
+RUN sh -c 'touch /app.jar'
+ENTRYPOINT exec java $JAVA_OPTS -Djava.security.egd=file:/dev/./urandom -jar /app.jar --spring.profiles.active=www-9040 -c
