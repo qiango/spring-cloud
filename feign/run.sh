@@ -11,7 +11,7 @@ RETVAL="0"
 function start(){
     pid=$(ps -ef | grep -v 'grep' | grep $Tag | grep $Active | awk '{printf $2 " "}')
     if [ "$pid" == "" ]; then
-        nohup java -jar target/eureka-0.0.1-SNAPSHOT.jar --spring.profiles.$Active  > catalina.out  2>&1 &
+        nohup java -jar target/feign-0.0.1-SNAPSHOT.jar --spring.profiles.$Active  > catalina.out  2>&1 &
         echo 12345678
 
 fi
@@ -45,6 +45,3 @@ function status()
         echo "boot is stopped"
     fi
 }
-
-
-"run.sh" 81L, 1518C
