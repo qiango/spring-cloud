@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/Ma/User")
+    @RequestMapping("/Ma/User")
 public class UserController extends BaseController {
 
 
