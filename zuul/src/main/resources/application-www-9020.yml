@@ -18,12 +18,14 @@ zuul:
 #    api-a:
 #      path: /api-a/**
 #      serviceId: service-ribbon
-    feignApi:
+    service-feign:
       path: /feignApi/**
       serviceId: service-feign
-    consumerApi:
+      stripPrefix: false
+    ribbon-consumer:
       path: /consumerApi/**
       serviceId: ribbon-consumer
+      stripPrefix: false
 #  host:
 #       connect-timeout-millis: 3000
 #       socket-timeout-millis: 3000

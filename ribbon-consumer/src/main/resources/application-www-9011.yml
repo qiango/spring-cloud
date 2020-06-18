@@ -4,8 +4,8 @@ eureka:
       defaultZone: http://120.92.42.252:9000/center/eureka/
 server:
   port: 9011
-#  servlet:
-#    context-path: /pears
+
+
 spring:
   application:
     name: ribbon-consumer
