@@ -4,8 +4,8 @@ eureka:
       defaultZone: http://120.92.42.252:9000/center/eureka/
 server:
   port: 9020
-  servlet:
-    context-path: /authPears
+#  servlet:
+#    context-path: /authPears
 spring:
   application:
     name: service-zuul
