@@ -3,6 +3,7 @@ package com.ribbonconsumer.controller.leyile;
 import com.core.base.controller.BaseController;
 import com.core.base.util.ModelUtil;
 import com.ribbonconsumer.service.leyile.LeService;
+import com.ribbonconsumer.thirdparty.mq.MsgProducer;
 import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -15,10 +16,12 @@ import java.util.Map;
 public class LeController extends BaseController {
 
     private LeService leService;
+    private MsgProducer msgProducer;
 
     @Autowired
-    public LeController(LeService leService) {
+    public LeController(LeService leService, MsgProducer msgProducer) {
         this.leService = leService;
+        this.msgProducer = msgProducer;
     }
 
 
@@ -28,6 +31,8 @@ public class LeController extends BaseController {
         if (code == 0) {
             return toError("参数错误");
         }
+        msgProducer.sendMsg("测试单发");
+        msgProducer.sendAll("测试多发");
         return toJsonOk("");
     }
 

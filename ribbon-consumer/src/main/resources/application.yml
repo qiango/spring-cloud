@@ -3,7 +3,7 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8888/center/eureka/
 server:
-  port: 8887
+  port: 8889
 
 
 spring:
@@ -11,9 +11,9 @@ spring:
     name: ribbon-consumer
     #Redis配置
   redis:
-    host: 127.0.0.1 # Redis服务器地址
+    host: 120.92.42.252 # Redis服务器地址
     port: 6379          # Redis服务器连接端口
-    password: root   # Redis服务器连接密码（默认为空）
+    password: 123456   # Redis服务器连接密码（默认为空）
     database: 0         # Redis数据库索引（默认为0）
     jedis:
       pool:
@@ -29,11 +29,11 @@ spring:
 #    password: admin
 #    pool:
 #      enabled: false
-#  rabbitmq:
-#    host: 127.0.0.1
-#    port: 5672
-#    username: guest
-#    password: guest
+  rabbitmq:
+    host: 120.92.42.252
+    port: 5672
+    username: guest
+    password: guest
   #####################################################################################################
   # mysql 属性配置(druid)
   datasource:

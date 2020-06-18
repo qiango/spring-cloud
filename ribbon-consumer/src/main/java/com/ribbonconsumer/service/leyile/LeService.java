@@ -9,10 +9,13 @@ import com.core.base.service.BaseService;
 import com.core.base.util.ModelUtil;
 import com.core.base.util.UnixUtil;
 //import com.ribbonconsumer.config.RabbitMqConfig;
+import com.ribbonconsumer.config.RabbitMqConfig;
 import com.ribbonconsumer.mapper.leyile.LeMapper;
 import me.chanjar.weixin.common.error.WxErrorException;
 //import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 //import org.springframework.amqp.rabbit.annotation.RabbitListener;
+import org.springframework.amqp.rabbit.annotation.RabbitHandler;
+import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -60,11 +63,24 @@ public class LeService extends BaseService {
     }
 
 
-//    @RabbitHandler
-//    @RabbitListener(queues = RabbitMqConfig.QUEUE_A)  //监听器监听指定的Queue
-//    public void processC(String str) {
-//        System.out.println("Receive>>>>>>>>>>>>>" + str);
-//    }
+    @RabbitHandler
+    @RabbitListener(queues = RabbitMqConfig.QUEUE_A)  //监听器监听指定的Queue
+    public void processA(String str) {
+        System.out.println("Receive>>>>>>>>>>>>>AAA" + str);
+    }
+
+    @RabbitHandler
+    @RabbitListener(queues = RabbitMqConfig.QUEUE_B)  //监听器监听指定的Queue
+    public void processB(String str) {
+        System.out.println("Receive>>>>>>>>>>>>>BBB" + str);
+    }
+
+
+    @RabbitHandler
+    @RabbitListener(queues = RabbitMqConfig.QUEUE_C)  //监听器监听指定的Queue
+    public void processC(String str) {
+        System.out.println("Receive>>>>>>>>>>>>>CCC" + str);
+    }
 
     public void insertEvaluation(long userid, long contentId, String content, long pid) {
         leMapper.insertEvaluation(userid, contentId, content, pid);

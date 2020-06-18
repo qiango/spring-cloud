@@ -12,12 +12,12 @@ spring:
 
 zuul:
   routes:
-#  ？：匹配任意单个字符串
-#  * ：匹配任意数量的字符串
-#  **：匹配任意数量的字符串，支持多级目录
-#    api-a:
-#      path: /api-a/**
-#      serviceId: service-ribbon
+    #  ？：匹配任意单个字符串
+    #  * ：匹配任意数量的字符串
+    #  **：匹配任意数量的字符串，支持多级目录
+    api-a:
+      path: /api-a/**
+      serviceId: service-ribbon
     feignApi:
       path: /feignApi/**
       serviceId: service-feign

@@ -20,11 +20,11 @@ zuul:
     api-a:
       path: /api-a/**
       serviceId: service-ribbon
-    api-b:
-      path: /api-b/**
+    feignApi:
+      path: /feignApi/**
       serviceId: service-feign
-    api-c:
-      path: /api-c/**
+    consumerApi:
+      path: /consumerApi/**
       serviceId: ribbon-consumer
 #  host:
 #       connect-timeout-millis: 3000
