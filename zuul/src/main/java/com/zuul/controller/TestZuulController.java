@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 
 
 @Service
-public class TestController {
+public class TestZuulController {
 
     @Value("${server.port}")
     private String port;

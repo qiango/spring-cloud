@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-public class TestController extends BaseController {
+public class TestRibbonController extends BaseController {
 
     @Autowired
     private TestService testService;
