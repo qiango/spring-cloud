@@ -9,6 +9,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
@@ -46,6 +48,7 @@ public class DemoFilter extends ZuulFilter {
         logger.info("------------接口校验开始----------");
         RequestContext ctx = RequestContext.getCurrentContext();
         HttpServletRequest request = ctx.getRequest();
+        HttpServletResponse response = ctx.getResponse();
         String token = request.getParameter("token");
         String userid = request.getParameter("userid");
         String requestURL = request.getRequestURI();
@@ -55,6 +58,9 @@ public class DemoFilter extends ZuulFilter {
             if (!isOk) {
                 ctx.setSendZuulResponse(false);
                 ctx.setResponseBody(VERIFY_ERROR);
+            } else {
+                response.setContentType("text/html;charset=utf-8");
+                response.setHeader("Access-Control-Allow-Origin", "*");
             }
         } else {
             ctx.setSendZuulResponse(false);
