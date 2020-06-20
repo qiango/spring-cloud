@@ -4,7 +4,8 @@ eureka:
       defaultZone: http://localhost:8888/center/eureka/
 server:
   port: 8889
-
+#  servlet:
+#    context-path: /pears
 
 spring:
   application:
