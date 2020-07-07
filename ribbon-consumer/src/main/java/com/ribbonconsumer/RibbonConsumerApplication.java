@@ -3,10 +3,12 @@ package com.ribbonconsumer;
 import com.ctrip.framework.apollo.spring.annotation.EnableApolloConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 //@EnableApolloConfig 阿波罗配置中心
 @SpringBootApplication
+@ServletComponentScan
 @EnableEurekaClient
 public class RibbonConsumerApplication {//服务提供者
 

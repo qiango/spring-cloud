@@ -10,9 +10,7 @@ import org.slf4j.LoggerFactory;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 //网关中的过滤器，可配置多个，按照filterOrder的值来执行顺序
 //filterType：表示过滤类型。 pre表示路由之前， routing表示路由当中， post表示路由之后， error表示路由发生错误。
@@ -25,7 +23,7 @@ public class DemoFilter extends ZuulFilter {
     private static Logger logger = LoggerFactory.getLogger(DemoFilter.class);
     private final static String AUTHORITY_ERROR = "{\"code\": -100,\"message\": \"token expire\"}";
     private final static String VERIFY_ERROR = "{\"code\": -100,\"message\": \"param error\"}";
-    private static List<String> noLoginList = Arrays.asList("/sys/login", "/sys/sendSmsCode", "/server/test");
+    private static List<String> loginList = Arrays.asList("/sys/login", "/sys/sendSmsCode", "/server/test");
     private static final String SECRETKEY = "1w2q3c4d";
 
     @Override
@@ -49,12 +47,12 @@ public class DemoFilter extends ZuulFilter {
         RequestContext ctx = RequestContext.getCurrentContext();
         HttpServletRequest request = ctx.getRequest();
         HttpServletResponse response = ctx.getResponse();
-        String token = request.getParameter("token");
-        String userid = request.getParameter("userid");
+        String token = request.getHeader("token");
+        String userid = request.getHeader("id");
         String requestURL = request.getRequestURI();
         boolean isOk = verifyUrlParam(token, userid, requestURL);
         if (isOk) {
-            isOk = verifySecutity(requestURL, request);
+            isOk = verifySecutity(requestURL, request, userid);
             if (!isOk) {
                 ctx.setSendZuulResponse(false);
                 ctx.setResponseBody(VERIFY_ERROR);
@@ -65,7 +63,6 @@ public class DemoFilter extends ZuulFilter {
         } else {
             ctx.setSendZuulResponse(false);
             ctx.setResponseBody(AUTHORITY_ERROR);
-//            ctx.getResponse().getWriter().write("token is invalid"); 将错误输出
         }
         logger.info(String.format("url:----->%s>>>>>>params:------>%s", request.getRequestURL(), HttpRequestUtils.getAllParams(request)));
         return null;
@@ -73,7 +70,7 @@ public class DemoFilter extends ZuulFilter {
 
     //校验是否需要登录，token
     private boolean verifyUrlParam(String token, String userid, String requestURL) {
-        for (String url : noLoginList) {
+        for (String url : loginList) {
             if (url.contains(requestURL)) {//需要登录接口
                 return !StringUtils.isEmpty(token) && !StringUtils.isEmpty(userid);
             }
@@ -82,12 +79,11 @@ public class DemoFilter extends ZuulFilter {
     }
 
     //参数验签
-    private boolean verifySecutity(String url, HttpServletRequest httpServletRequest) {
-        String sign = httpServletRequest.getParameter("sign");
-        String id = httpServletRequest.getParameter("id");
-        long userid = null == id ? 0 : Long.parseLong(id);
-        String timespan = httpServletRequest.getParameter("timespan");
-        String secretContent = String.format("%s|%s", userid, timespan);
+    private boolean verifySecutity(String url, HttpServletRequest httpServletRequest, String userid) {
+        long useridreal = null == userid ? 0 : Long.parseLong(userid);
+        String sign = httpServletRequest.getHeader("sign");
+        String timespan = httpServletRequest.getHeader("timestamp");
+        String secretContent = String.format("%s|%s", useridreal, timespan);
         String cipherMd5 = MD5Encrypt.encrypt(String.format("%s|%s", SECRETKEY, secretContent));
         boolean result = sign.equals(cipherMd5);
         logger.info("url>>>>>:" + url + " verify sign>>>>>>>>" + result + "  sign>>>>>>" + sign + " time:" + timespan);

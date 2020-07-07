@@ -348,10 +348,12 @@ public class ModelUtil {
     /**
      * 获取Map中的值
      *
+     *
+     * @param message
      * @param value 原始Value* @param def   默认值
      * @return java.com.syhdoctor.webserver.api.util.List<?>
      */
-    public static List<?> getList(String value, List<?> def) {
+    public static List<?> getList(String message, String value, List<?> def) {
         JSONArray array = (JSONArray) JSON.parse(value);
         List<Object> tempList = new ArrayList<>();
         if (array != null) {

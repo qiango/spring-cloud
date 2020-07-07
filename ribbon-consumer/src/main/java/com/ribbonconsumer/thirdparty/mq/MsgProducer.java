@@ -39,7 +39,14 @@ public class MsgProducer implements RabbitTemplate.ConfirmCallback {
     //广播模式，指定交换机即可，这里不设置routing_key,因为设置了也无效，发送端的routing_key写任何字符都会被忽略。
     public void sendAll(String content) {
         CorrelationData correlationId = new CorrelationData("111222333");
-        rabbitTemplate.convertAndSend(RabbitMqConfig.FANOUT_EXCHANGE, "", content,correlationId);
+        rabbitTemplate.convertAndSend(RabbitMqConfig.FANOUT_EXCHANGE, "", content, correlationId);
+    }
+
+
+    //一对一发收消息
+    public void sendMsgByWebSocket(String content) {
+        CorrelationData correlationId = new CorrelationData(UUID.randomUUID().toString());
+        rabbitTemplate.convertAndSend(RabbitMqConfig.EXCHANGE_WEBSOCKET, RabbitMqConfig.ROUTINGKEY_WEBSOCKET, content, correlationId);
     }
 
     /**

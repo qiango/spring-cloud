@@ -130,19 +130,19 @@ public abstract class BaseMapper {
      * @param size   数据长度
      * @return java.com.syhdoctor.webserver.api.util.List
      */
+    protected Map<String, Object> pageParams(Map<String, Object> value, int index, int size) {
+        int startIndex = (index - 1) * size;
+        value.put("startindex", startIndex);
+        value.put("size", size);
+        return value;
+    }
+
+
     protected List<Object> pageParams(List<Object> params, int index, int size) {
         int startIndex = (index - 1) * size;
         params.add(startIndex);
         params.add(size);
         return params;
-    }
-
-
-    protected Map<String, Object> pageParams(Map<String, Object> value, int index, int size) {
-        int startIndex = index * size;
-        value.put("startindex", startIndex);
-        value.put("size", startIndex + size);
-        return value;
     }
 
     /**

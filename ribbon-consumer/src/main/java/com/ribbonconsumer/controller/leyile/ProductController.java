@@ -7,17 +7,14 @@ import com.ribbonconsumer.service.leyile.ProductService;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 import java.util.Map;
 
 
 @RestController
-@RequestMapping("/Product")
+@RequestMapping("/product")
 public class ProductController extends BaseController {
 
     private ProductService productService;
@@ -53,7 +50,7 @@ public class ProductController extends BaseController {
     }
 
     @ApiOperation(value = "首页作品列表")
-    @PostMapping("/getContentList")
+    @GetMapping("/getContentList")
     public Object getContentList(@ApiParam(hidden = true) @RequestParam Map<String, Object> params) {
         Map<String, Object> result = new HashMap<>();
         long userid = ModelUtil.getLong(params, "userid");

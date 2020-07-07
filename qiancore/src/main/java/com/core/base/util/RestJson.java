@@ -15,15 +15,8 @@ public class RestJson {
     @Expose
     private String msg;
     @Expose
-    private Object data;
+    private Object result;
 
-//    public String getCode() {
-//        return code;
-//    }
-//
-//    public void setCode(String code) {
-//        this.code = code;
-//    }
 
     public String getMsg() {
         return msg;
@@ -34,11 +27,11 @@ public class RestJson {
     }
 
     public Object getData() {
-        return data;
+        return result;
     }
 
     public void setData(Object data) {
-        this.data = data;
+        this.result = data;
     }
 
     public String getCode() {

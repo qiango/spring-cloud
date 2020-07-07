@@ -30,6 +30,21 @@ public class ConfigModel {
         ISONLINE = value;
     }
 
+    public static String IMAGEURL;
+
+    @Value("${base.imageurl}")
+    public void setIMAGEURL(String value) {
+        IMAGEURL = value;
+    }
+
+    public static String MUSIC;
+
+    @Value("${base.music}")
+    public void setMUSIC(String value) {
+        MUSIC = value;
+    }
+
+
     /**
      * 第三方用户注册来源渠道
      */

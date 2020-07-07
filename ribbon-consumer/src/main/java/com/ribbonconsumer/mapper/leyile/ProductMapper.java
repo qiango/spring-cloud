@@ -2,7 +2,9 @@ package com.ribbonconsumer.mapper.leyile;
 
 import com.core.base.baseenum.CheckStatusEnum;
 import com.core.base.mapper.BaseMapper;
+import com.core.base.util.ModelUtil;
 import com.core.base.util.UnixUtil;
+import com.ribbonconsumer.config.ConfigModel;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
@@ -27,26 +29,38 @@ public class ProductMapper extends BaseMapper {
     }
 
     //推荐作品列表
-    public List<Map<String, Object>> getContentList(List<Long> classfyIds, int pageSize, int pageIndex) {
+    public List<Map<String, Object>> getContentList(List<Long> classfyIds, long userid, int pageSize, int pageIndex) {
         String sql = "select uc.create_time    time," +
+                "       uc.id," +
                 "       uc.content," +
                 "       uc.evaluation_num evaluationNum," +
                 "       uc.praise_num     praiseNum," +
                 "       uc.forwarding_num forwardingNum," +
                 "       cm.meterial_url   meterialUrl," +
                 "       u.name," +
-                "       u.headpic" +
+                "       u.headpic," +
+                "       uc.music_url      musicUrl," +
+                "       uf.id ufd  " +
                 " from user_content uc" +
                 "       left join user u on uc.userid = u.id" +
+                "       left join user_focus uf on u.id=uf.focus_userid and uf.userid=:userid " +
                 "       left join content_material cm on uc.material_id = cm.id" +
                 " where check_status = :status";
         Map<String, Object> param = new HashMap<>();
         param.put("status", CheckStatusEnum.Success.getCode());
+        param.put("userid", userid);
         if (!classfyIds.isEmpty()) {
             param.put("classfyId", classfyIds);
             sql += " and uc.classify_id in (:classfyId)";
         }
-        return queryForList(pageNameSql(sql, "order by rand()"), pageParams(param, pageIndex, pageSize));
+        List<Map<String, Object>> list = queryForList(pageNameSql(sql, "order by rand()"), pageParams(param, pageIndex, pageSize));
+        for (Map<String, Object> map : list) {
+            map.put("meterialUrl", ConfigModel.IMAGEURL + ModelUtil.getStr(map, "meterialUrl"));
+            map.put("musicUrl", ConfigModel.MUSIC + ModelUtil.getStr(map, "musicUrl"));
+            map.put("headpic", ConfigModel.IMAGEURL + ModelUtil.getStr(map, "headpic"));
+            map.put("isFriend", ModelUtil.getLong(map, "ufd") > 0 ? 1 : 0);
+        }
+        return list;
     }
 
     public List<Long> getClassfyList(long userid) {

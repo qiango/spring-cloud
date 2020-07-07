@@ -6,13 +6,16 @@ import cn.binarywang.wx.miniapp.bean.WxMaJscode2SessionResult;
 import cn.binarywang.wx.miniapp.bean.WxMaPhoneNumberInfo;
 import cn.binarywang.wx.miniapp.bean.WxMaUserInfo;
 import com.core.base.service.BaseService;
+import com.core.base.util.JsonUtil;
 import com.core.base.util.ModelUtil;
 import com.core.base.util.UnixUtil;
 import com.ribbonconsumer.mapper.leyile.UserMapper;
+import com.ribbonconsumer.thirdparty.mq.MsgProducer;
 import me.chanjar.weixin.common.error.WxErrorException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -22,12 +25,14 @@ public class UserService extends BaseService {
 
     private WxMaService wxMaService;
     private UserMapper userMapper;
+    private MsgProducer msgProducer;
 
 
     @Autowired
-    public UserService(WxMaService wxMaService, UserMapper userMapper) {
+    public UserService(WxMaService wxMaService, UserMapper userMapper, MsgProducer msgProducer) {
         this.wxMaService = wxMaService;
         this.userMapper = userMapper;
+        this.msgProducer = msgProducer;
     }
 
     public Map<String, Object> getUserOpen(String code) {
@@ -90,5 +95,37 @@ public class UserService extends BaseService {
         userMapper.updateIntroduce(userid, headpic, name, introduce);
     }
 
+    public void sendMessage(long sessionId, String content, long userid, List<?> userList) {
+        Map<String, Object> message = new HashMap<>();
+        List<Long> userIds = new ArrayList<>();
+        List<String> userIdFinall = new ArrayList<>();
+        if (sessionId != 0) {
+            userIds = userMapper.getUserIds(sessionId);
+        } else {
+            sessionId = userMapper.insertSession(userid, "name");
+            userMapper.insertGroup(sessionId, userid);
+            userIds.add(userid);
+            for (Object o : userList) {
+                userIds.add(Long.parseLong(o.toString()));
+                userMapper.insertGroup(sessionId, Long.parseLong(String.valueOf(o)));
+            }
+        }
+        userMapper.insertAnswer(userid, sessionId, content);
+        List<Map<String, Object>> noList = userMapper.getNoList(userIds);
+        noList.forEach(stringObjectMap -> userIdFinall.add(ModelUtil.getStr(stringObjectMap, "no")));
+        message.put("userList", userIdFinall);
+        message.put("content", content);
+        message.put("sessionId", sessionId);
+
+        msgProducer.sendMsgByWebSocket(JsonUtil.getInstance().toJson(message));
+    }
+
+    public List<Map<String, Object>> getContentList(long sessionId) {
+        return userMapper.getContentList(sessionId);
+    }
+
+    public List<Map<String, Object>> getSessionList(long userid) {
+        return userMapper.getSessionList(userid);
+    }
 
 }

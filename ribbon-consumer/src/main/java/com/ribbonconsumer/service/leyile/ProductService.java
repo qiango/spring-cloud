@@ -52,7 +52,7 @@ public class ProductService extends BaseService {
 
     public List<Map<String, Object>> getContentList(long userid, int pageSize, int pageIndex) {
         List<Long> classfyIds = productMapper.getClassfyList(userid);
-        return productMapper.getContentList(classfyIds, pageSize, pageIndex);
+        return productMapper.getContentList(classfyIds, userid, pageSize, pageIndex);
     }
 
     public long getContentCount(long userid) {

@@ -17,7 +17,7 @@ import java.util.Map;
 public class ValueUtil {
 
     public static String defaultSuccess = "success";
-    private static JSONObject jsonObject=new JSONObject();
+    private static JSONObject jsonObject = new JSONObject();
 
     public static boolean notEmpity(Object obj) {
         if (null == obj) {
@@ -70,11 +70,8 @@ public class ValueUtil {
             restJson.setCode(String.valueOf(HttpStatus.SC_OK));
             restJson.setMsg(defaultSuccess);
             restJson.setData(coalesce(obj, ""));
-//            JSONValue jsonValue = JSONMapper.toJSON(restJson);
-//            String jsonStr = jsonValue.render(false);
-//            return jsonStr;
             return gson.toJson(restJson);
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return null;
@@ -82,14 +79,12 @@ public class ValueUtil {
 
     public static JSONObject toJsonObject(Object obj) {
         try {
-            return JSON.parseObject(gson.toJson(coalesce(obj, ""))) ;
-        }catch (Exception e){
+            return JSON.parseObject(gson.toJson(coalesce(obj, "")));
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return null;
     }
-
-
 
 
     public static String toString(Object obj) {
@@ -109,13 +104,13 @@ public class ValueUtil {
 
 
     public static JSONObject toError(String code, String message) {
-        jsonObject.put("code",code);
-        jsonObject.put("data","");
-        jsonObject.put("message",message);
+        jsonObject.put("code", code);
+        jsonObject.put("data", "");
+        jsonObject.put("message", message);
         return jsonObject;
     }
 
-    public static String isError(String message)throws QianException {
+    public static String isError(String message) throws QianException {
         RestJson restJson = new RestJson();
         restJson.setCode(String.valueOf(HttpStatus.SC_INTERNAL_SERVER_ERROR));
         restJson.setMsg("erro");

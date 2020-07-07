@@ -5,6 +5,7 @@ import com.core.base.util.UnixUtil;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -121,5 +122,59 @@ public class UserMapper extends BaseMapper {
         param.add(headpic);
         param.add(userid);
         update(sql, param);
+    }
+
+    public List<Long> getUserIds(long sessionId) {
+        String sql = "select userid from user_session_group where sessionid=? and ifnull(delflag,0)=0 ";
+        return jdbcTemplate.queryForList(sql, new Object[]{sessionId}, Long.class);
+    }
+
+    public void insertAnswer(long userid, long sessionid, String content) {
+        String sql = "insert into user_answer (userid, sessionid, content, create_time) values (?,?,?,?) ";
+        List<Object> param = new ArrayList<>();
+        param.add(userid);
+        param.add(sessionid);
+        param.add(content);
+        param.add(UnixUtil.getNowTimeStamp());
+        insert(sql, param);
+    }
+
+    public long insertSession(long userid, String name) {
+        String sql = "insert into user_session (userid, groupName, create_time) values (?,?,?) ";
+        List<Object> param = new ArrayList<>();
+        param.add(userid);
+        param.add(name);
+        param.add(UnixUtil.getNowTimeStamp());
+        return insert(sql, param, "id");
+    }
+
+    public void insertGroup(long sessionid, long userid) {
+        String sql = "insert into user_session_group (sessionid, userid, create_time) values (?,?,?)";
+        List<Object> param = new ArrayList<>();
+        param.add(sessionid);
+        param.add(userid);
+        param.add(UnixUtil.getNowTimeStamp());
+        insert(sql, param);
+    }
+
+    public List<Map<String, Object>> getNoList(List<Long> userids) {
+        String sql = "select happy_no no from user where id in (:userids) ";
+        Map<String, Object> param = new HashMap<>();
+        param.put("userids", userids);
+        return queryForList(sql, param);
+    }
+
+    public List<Map<String, Object>> getContentList(long sessionId) {
+        String sql = "select userid,content from user_answer where sessionid=? and ifnull(delflag,0)=0 ";
+        List<Object> param = new ArrayList<>();
+        param.add(sessionId);
+        return queryForList(sql, param);
+    }
+
+    public List<Map<String, Object>> getSessionList(long userid) {
+        String sql = "select id,groupName from user_session where userid=? and ifnull(delflag,0)=0 ";
+        List<Object> param = new ArrayList<>();
+        param.add(userid);
+        return queryForList(sql, param);
     }
 }

@@ -15,7 +15,7 @@ import org.springframework.context.annotation.Scope;
 
 /**
  * MQ的安装目录在 /usr/local/Cellar/rabbitmq
- *
+ * <p>
  * Broker:它提供一种传输服务,它的角色就是维护一条从生产者到消费者的路线，保证数据能按照指定的方式进行传输,
  * Exchange：消息交换机,它指定消息按什么规则,路由到哪个队列。
  * Queue:消息的载体,每个消息都会被投到一个或多个队列。
@@ -47,17 +47,17 @@ public class RabbitMqConfig {
 
     public static final String EXCHANGE_A = "my-mq-exchange_A";
     public static final String EXCHANGE_B = "my-mq-exchange_B";
-    public static final String EXCHANGE_C = "my-mq-exchange_C";
+    public static final String EXCHANGE_WEBSOCKET = "exchange_websocket";
     public static final String FANOUT_EXCHANGE = "fanout-exchange_C";
 
 
     public static final String QUEUE_A = "QUEUE_A";
     public static final String QUEUE_B = "QUEUE_B";
-    public static final String QUEUE_C = "QUEUE_C";
+    public static final String QUEUE_WEBSOCKET = "QUEUE_WEBSOCKET";
 
     public static final String ROUTINGKEY_A = "spring-boot-routingKey_A";
     public static final String ROUTINGKEY_B = "spring-boot-routingKey_B";
-    public static final String ROUTINGKEY_C = "spring-boot-routingKey_C";
+    public static final String ROUTINGKEY_WEBSOCKET = "spring-boot-routingKey_WEBSOCKET";
 
     @Bean
     public ConnectionFactory connectionFactory() {
@@ -91,6 +91,21 @@ public class RabbitMqConfig {
         return new DirectExchange(EXCHANGE_A);
     }
 
+    @Bean
+    public DirectExchange websocketExchange() {
+        return new DirectExchange(EXCHANGE_WEBSOCKET);
+    }
+
+    /**
+     * 广播模式
+     */
+    //配置fanout_exchange
+    @Bean
+    public FanoutExchange fanoutExchange() {
+        return new FanoutExchange(FANOUT_EXCHANGE);
+    }
+
+
     /**
      * 获取队列A
      */
@@ -105,12 +120,12 @@ public class RabbitMqConfig {
     }
 
     @Bean
-    public Queue queueC() {
-        return new Queue(QUEUE_C, true); //队列持久
+    public Queue queueWEBSOCKET() {
+        return new Queue(QUEUE_WEBSOCKET, true); //队列持久
     }
 
     /**
-     *一个交换机可以绑定多个消息队列，也就是消息通过一个交换机，可以分发到不同的队列当中去。
+     * 一个交换机可以绑定多个消息队列，也就是消息通过一个交换机，可以分发到不同的队列当中去。
      */
     @Bean
     public Binding bindingA() {
@@ -123,28 +138,21 @@ public class RabbitMqConfig {
 
     }
 
-
-    /**
-     * 广播模式
-     */
-    //配置fanout_exchange
     @Bean
-    public FanoutExchange fanoutExchange() {
-        return new FanoutExchange(FANOUT_EXCHANGE);
+    public Binding bindingWEBSOCKET() {
+        return BindingBuilder.bind(queueWEBSOCKET()).to(websocketExchange()).with(ROUTINGKEY_WEBSOCKET);
+
     }
 
+    //以下是把所有的队列都绑定到这个交换机上去，当发送此交换机的消息时，所有队列都将收到消息-绑定几个广播模式就会发几个
+    @Bean
+    public Binding bindingExchangeA() {
+        return BindingBuilder.bind(queueA()).to(fanoutExchange());
+    }
 
-    //以下是把所有的队列都绑定到这个交换机上去，当发送此交换机的消息时，所有队列都将收到消息
     @Bean
-    public Binding bindingExchangeA(Queue queueA,FanoutExchange fanoutExchange) {
-        return BindingBuilder.bind(queueA).to(fanoutExchange);
+    public Binding bindingExchangeB() {
+        return BindingBuilder.bind(queueB()).to(fanoutExchange());
     }
-    @Bean
-    public Binding bindingExchangeB(Queue queueB, FanoutExchange fanoutExchange) {
-        return BindingBuilder.bind(queueB).to(fanoutExchange);
-    }
-    @Bean
-    public Binding bindingExchangeC(Queue queueC, FanoutExchange fanoutExchange) {
-        return BindingBuilder.bind(queueC).to(fanoutExchange);
-    }
+
 }

@@ -76,11 +76,11 @@ public class LeService extends BaseService {
     }
 
 
-    @RabbitHandler
-    @RabbitListener(queues = RabbitMqConfig.QUEUE_C)  //监听器监听指定的Queue
-    public void processC(String str) {
-        System.out.println("Receive>>>>>>>>>>>>>CCC" + str);
-    }
+//    @RabbitHandler
+//    @RabbitListener(queues = RabbitMqConfig.QUEUE_WEBSOCKET)  //监听器监听指定的Queue
+//    public void processC(String str) {
+//        System.out.println("Receive>>>>>>>>>>>>>CCC" + str);
+//    }
 
     public void insertEvaluation(long userid, long contentId, String content, long pid) {
         leMapper.insertEvaluation(userid, contentId, content, pid);

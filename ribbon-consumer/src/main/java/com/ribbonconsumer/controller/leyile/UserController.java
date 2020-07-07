@@ -5,7 +5,6 @@ import com.core.base.util.ModelUtil;
 import com.core.base.util.StrUtil;
 import com.ctrip.framework.apollo.Config;
 import com.ctrip.framework.apollo.spring.annotation.ApolloConfig;
-import com.ribbonconsumer.service.leyile.ProductService;
 import com.ribbonconsumer.service.leyile.UserService;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
@@ -13,10 +12,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 @RestController
-    @RequestMapping("/Ma/User")
+@RequestMapping("/Ma/User")
 public class UserController extends BaseController {
 
 
@@ -80,7 +81,7 @@ public class UserController extends BaseController {
         return toJsonOk(userService.getUserInfoMation(userId));
     }
 
-    @ApiOperation(value = "我的")
+    @ApiOperation(value = "我的关注")
     @PostMapping("/myFocusList")
     public Object myFocusList(@ApiParam(hidden = true) @RequestParam Map<String, Object> params) {
         long userId = ModelUtil.getLong(params, "userId");
@@ -90,7 +91,7 @@ public class UserController extends BaseController {
         return toJsonOk(userService.myFocusList(userId));
     }
 
-    @ApiOperation(value = "我的")
+    @ApiOperation(value = "我的粉丝")
     @PostMapping("/myFanList")
     public Object myFanList(@ApiParam(hidden = true) @RequestParam Map<String, Object> params) {
         long userId = ModelUtil.getLong(params, "userId");
@@ -100,7 +101,7 @@ public class UserController extends BaseController {
         return toJsonOk(userService.myFanList(userId));
     }
 
-    @ApiOperation(value = "我的")
+    @ApiOperation(value = "更新自我介绍")
     @PostMapping("/updateIntroduce")
     public Object updateIntroduce(@ApiParam(hidden = true) @RequestParam Map<String, Object> params) {
         long userId = ModelUtil.getLong(params, "userId");
@@ -113,5 +114,43 @@ public class UserController extends BaseController {
         userService.updateIntroduce(userId, headpic, name, introduce);
         return toJsonOk("");
     }
+
+
+    @ApiOperation(value = "发消息")
+    @PostMapping("/sendMessage")
+    public Object sendMessage(@ApiParam(hidden = true) @RequestParam Map<String, Object> params) {
+        long userId = ModelUtil.getLong(params, "userId");
+        long sessionId = ModelUtil.getLong(params, "sessionId");//会话id
+        String content = ModelUtil.getStr(params, "content");
+        List<?> userList = ModelUtil.getList(params, "userList", new ArrayList<>());//聊天对象id
+        //若有sessionID，则不需userlist
+        if (userId == 0) {
+            toError("userId为空");
+        }
+        userService.sendMessage(sessionId, content, userId, userList);
+        return toJsonOk("success");
+    }
+
+
+    @ApiOperation(value = "会话列表")
+    @PostMapping("/getSessionList")
+    public Object getSessionList(@ApiParam(hidden = true) @RequestParam Map<String, Object> params) {
+        long userId = ModelUtil.getLong(params, "userId");
+        if (userId == 0) {
+            toError("userId为空");
+        }
+        return toJsonOk(userService.getSessionList(userId));
+    }
+
+    @ApiOperation(value = "聊天记录")
+    @PostMapping("/getContentList")
+    public Object getContentList(@ApiParam(hidden = true) @RequestParam Map<String, Object> params) {
+        long sessionId = ModelUtil.getLong(params, "sessionId");//会话id
+        if (sessionId == 0) {
+            toError("sessionId为空");
+        }
+        return toJsonOk(userService.getContentList(sessionId));
+    }
+
 
 }

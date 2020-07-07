@@ -1,11 +1,12 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8888/center/eureka/
+#      defaultZone: http://localhost:8888/center/eureka/
+      defaultZone: http://120.92.42.252:9000/center/eureka/
 server:
   port: 8889
-#  servlet:
-#    context-path: /pears
+  servlet:
+    context-path: /ws
 
 spring:
   application:
@@ -42,6 +43,9 @@ spring:
     url: jdbc:mysql://localhost:3306/myproduct?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
     username: root
     password: 123456
+#    url: jdbc:mysql://120.92.42.252:3306/myproduct?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
+#    username: root
+#    password: 1q2W3e.,
     type: com.alibaba.druid.pool.DruidDataSource
     initialSize: 5
     minIdle: 5
@@ -66,7 +70,9 @@ base:
   filepath: /Users/qiango/data/springboot/file/ #上传文件的缓存位置
 #  weburl: https://www.nopears.com/ #上传文件的缓存位置
   weburl: http://localhost:8887/pears/file/readFile/ #读取文件链接
-
+  cross-domain:
+  imageurl: https://www.nopears.com/image/ #图片访问前缀
+  music: https://www.nopears.com/music/ #语音访问前缀
 
 ma:
   maAppId: 123456

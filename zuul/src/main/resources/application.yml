@@ -26,6 +26,7 @@ zuul:
     consumerApi:
       path: /consumerApi/**
       serviceId: ribbon-consumer
+  ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin #解决跨域问题
 #  host:
 #       connect-timeout-millis: 3000
 #       socket-timeout-millis: 3000
