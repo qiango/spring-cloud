@@ -146,10 +146,13 @@ public class UserController extends BaseController {
     @PostMapping("/getContentList")
     public Object getContentList(@ApiParam(hidden = true) @RequestParam Map<String, Object> params) {
         long sessionId = ModelUtil.getLong(params, "sessionId");//会话id
-        if (sessionId == 0) {
-            toError("sessionId为空");
+        long userId = ModelUtil.getLong(params, "userId");
+        int pageIndex = ModelUtil.getInt(params, "pageIndex", 1);
+        int pageSize = ModelUtil.getInt(params, "pageSize", 20);
+        if (userId == 0) {
+            toError("userId为空");
         }
-        return toJsonOk(userService.getContentList(sessionId));
+        return toJsonOk(userService.getContentList(sessionId, userId, pageSize, pageIndex));
     }
 
 

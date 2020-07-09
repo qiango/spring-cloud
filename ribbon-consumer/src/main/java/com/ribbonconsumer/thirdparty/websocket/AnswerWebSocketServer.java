@@ -4,6 +4,7 @@ package com.ribbonconsumer.thirdparty.websocket;
 import com.core.base.util.JsonUtil;
 import com.core.base.util.MD5Encrypt;
 import com.core.base.util.ModelUtil;
+import com.core.base.util.QianThread;
 import com.ribbonconsumer.config.RabbitMqConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -100,7 +101,7 @@ public class AnswerWebSocketServer {
         String content = ModelUtil.getStr(result, "content");
         long sessionId = ModelUtil.getLong(result, "sessionId");
         log.info("会话id为：" + sessionId + ",发送给用户：" + userList.toString() + ",消息内容为：" + content);
-        ExecutorService executorService = Executors.newCachedThreadPool();
+        ExecutorService executorService = QianThread.getIntance();
         for (Object o : userList) {
             executorService.execute(() -> {
                 try {

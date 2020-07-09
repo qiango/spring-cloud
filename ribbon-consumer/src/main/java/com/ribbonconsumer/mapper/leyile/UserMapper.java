@@ -164,15 +164,33 @@ public class UserMapper extends BaseMapper {
         return queryForList(sql, param);
     }
 
-    public List<Map<String, Object>> getContentList(long sessionId) {
-        String sql = "select userid,content from user_answer where sessionid=? and ifnull(delflag,0)=0 ";
+    //bearing为1，消息在右边，为本人发的
+    public List<Map<String, Object>> getContentList(long sessionId, long userid, int pageSize, int pageIndex) {
+        String sql = "select ua.userid, ua.content,ua.answer_type type, u.headpic, u.name, if(ua.userid = ?, 1, 0) bearing" +
+                " from user_answer ua" +
+                "            left join user u on ua.userid = u.id" +
+                " where ua.sessionid = ?" +
+                "  and ifnull(ua.delflag, 0) = 0  ";
         List<Object> param = new ArrayList<>();
+        param.add(userid);
         param.add(sessionId);
-        return queryForList(sql, param);
+        return queryForList(pageSql(sql, " order by ua.create_time desc "), pageParams(param, pageIndex, pageSize));
     }
 
     public List<Map<String, Object>> getSessionList(long userid) {
-        String sql = "select id,groupName from user_session where userid=? and ifnull(delflag,0)=0 ";
+        String sql = "select usg.id," +
+                "       usg.sessionid," +
+                "       us.groupName," +
+                "       usg.head_pic      headPic," +
+                "       usg.message_count count," +
+                "       ua.create_time    createTime," +
+                "       ua.content," +
+                "       ua.answer_type type " +
+                " from user_session_group usg" +
+                "            left join user_session us on usg.sessionid = us.id and ifnull(us.delflag, 0) = 0" +
+                "            left join user_answer ua on us.last_answer_id = ua.id" +
+                " where usg.userid = ?" +
+                "  and ifnull(usg.delflag, 0) = 0 ";
         List<Object> param = new ArrayList<>();
         param.add(userid);
         return queryForList(sql, param);

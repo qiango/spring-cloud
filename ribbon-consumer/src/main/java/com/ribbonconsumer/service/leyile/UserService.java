@@ -5,20 +5,26 @@ import cn.binarywang.wx.miniapp.api.WxMaUserService;
 import cn.binarywang.wx.miniapp.bean.WxMaJscode2SessionResult;
 import cn.binarywang.wx.miniapp.bean.WxMaPhoneNumberInfo;
 import cn.binarywang.wx.miniapp.bean.WxMaUserInfo;
+import com.core.base.factory.AnswerTypeEnum;
+import com.core.base.factory.AnswerTypeFactory;
 import com.core.base.service.BaseService;
 import com.core.base.util.JsonUtil;
 import com.core.base.util.ModelUtil;
+import com.core.base.util.QianThread;
 import com.core.base.util.UnixUtil;
 import com.ribbonconsumer.mapper.leyile.UserMapper;
 import com.ribbonconsumer.thirdparty.mq.MsgProducer;
 import me.chanjar.weixin.common.error.WxErrorException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 @Service
 public class UserService extends BaseService {
@@ -95,6 +101,7 @@ public class UserService extends BaseService {
         userMapper.updateIntroduce(userid, headpic, name, introduce);
     }
 
+    @Transactional
     public void sendMessage(long sessionId, String content, long userid, List<?> userList) {
         Map<String, Object> message = new HashMap<>();
         List<Long> userIds = new ArrayList<>();
@@ -111,21 +118,39 @@ public class UserService extends BaseService {
             }
         }
         userMapper.insertAnswer(userid, sessionId, content);
-        List<Map<String, Object>> noList = userMapper.getNoList(userIds);
-        noList.forEach(stringObjectMap -> userIdFinall.add(ModelUtil.getStr(stringObjectMap, "no")));
-        message.put("userList", userIdFinall);
-        message.put("content", content);
-        message.put("sessionId", sessionId);
 
-        msgProducer.sendMsgByWebSocket(JsonUtil.getInstance().toJson(message));
+        ExecutorService executorService = QianThread.getIntance();
+        long finalSessionId = sessionId;
+        List<Long> finalUserIds = userIds;
+        executorService.execute(() -> {
+            List<Map<String, Object>> noList = userMapper.getNoList(finalUserIds);
+            noList.forEach(stringObjectMap -> userIdFinall.add(ModelUtil.getStr(stringObjectMap, "no")));
+            message.put("userList", userIdFinall);
+            message.put("content", content);
+            message.put("sessionId", finalSessionId);
+            msgProducer.sendMsgByWebSocket(JsonUtil.getInstance().toJson(message));
+        });
     }
 
-    public List<Map<String, Object>> getContentList(long sessionId) {
-        return userMapper.getContentList(sessionId);
+    public List<Map<String, Object>> getContentList(long sessionId, long userid, int pageSize, int pageIndex) {
+        List<Map<String, Object>> list = userMapper.getContentList(sessionId, userid, pageSize, pageIndex);
+        initAnswer(list);
+        return list;
     }
 
     public List<Map<String, Object>> getSessionList(long userid) {
-        return userMapper.getSessionList(userid);
+        List<Map<String, Object>> list = userMapper.getSessionList(userid);
+        initAnswer(list);
+        return list;
     }
+
+    private void initAnswer(List<Map<String, Object>> list) {
+        for (Map<String, Object> map : list) {
+            int type = ModelUtil.getInt(map, "type");
+            String content = ModelUtil.getStr(map, "content");
+            map.put("content", AnswerTypeFactory.typeInterface(AnswerTypeEnum.getValue(type)).getContent(content));
+        }
+    }
+
 
 }
