@@ -3,6 +3,7 @@ package com.ribbonconsumer.service.leyile;
 import com.core.base.service.BaseService;
 import com.core.base.util.ModelUtil;
 import com.ribbonconsumer.mapper.leyile.ProductMapper;
+import com.ribbonconsumer.service.interfaceService.ProductInterface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,7 +13,7 @@ import java.util.List;
 import java.util.Map;
 
 @Service
-public class ProductService extends BaseService {
+public abstract class ProductService extends BaseService implements ProductInterface {
 
     private ProductMapper productMapper;
 
@@ -23,7 +24,8 @@ public class ProductService extends BaseService {
     }
 
 
-    public List<Map<String, Object>> getEvaluationList(long contentId) {
+    public List<Map<String, Object>> getEvaluationList(long contentId, long userid) {
+        updateRecords(userid, productMapper.getClassfyList(contentId), 90);
         List<Map<String, Object>> evaluationList = productMapper.getEvaluationList(contentId);
         Map<Long, List<Map<String, Object>>> tempMap = new HashMap<>();
         evaluationList.forEach(stringObjectMap -> initMap(ModelUtil.getLong(stringObjectMap, "pid"), tempMap, stringObjectMap));
@@ -51,13 +53,7 @@ public class ProductService extends BaseService {
     }
 
     public List<Map<String, Object>> getContentList(long userid, int pageSize, int pageIndex) {
-        List<Long> classfyIds = productMapper.getClassfyList(userid);
-        return productMapper.getContentList(classfyIds, userid, pageSize, pageIndex);
-    }
-
-    public long getContentCount(long userid) {
-        List<Long> classfyIds = productMapper.getClassfyList(userid);
-        return productMapper.getContentCount(classfyIds);
+        return productMapper.getContentList(userid, pageSize, pageIndex);
     }
 
 

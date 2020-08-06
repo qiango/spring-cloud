@@ -11,6 +11,7 @@ import com.core.base.util.UnixUtil;
 //import com.ribbonconsumer.config.RabbitMqConfig;
 import com.ribbonconsumer.config.RabbitMqConfig;
 import com.ribbonconsumer.mapper.leyile.LeMapper;
+import com.ribbonconsumer.service.interfaceService.ProductInterface;
 import me.chanjar.weixin.common.error.WxErrorException;
 //import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 //import org.springframework.amqp.rabbit.annotation.RabbitListener;
@@ -24,7 +25,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Service
-public class LeService extends BaseService {
+public abstract class LeService extends BaseService implements ProductInterface {
 
     private WxMaService wxMaService;
     private LeMapper leMapper;
@@ -50,15 +51,20 @@ public class LeService extends BaseService {
         }
     }
 
+
     @Transactional
     public void praise(long userid, long contentId, int type) {
-        long contentUserid = ModelUtil.getLong(leMapper.getUserId(contentId), "userid");
+        Map<String, Object> userId = leMapper.getUserId(contentId);
+        long contentUserid = ModelUtil.getLong(userId, "userid");
+        long classifyId = ModelUtil.getLong(userId, "classifyId");
         if (type == 1) {//取消点赞
             leMapper.canclePraise(userid, contentId);
             leMapper.updateSubNum(contentUserid, 3);
+            updateRecords(userid, classifyId, -50);
         } else {
             leMapper.praise(userid, contentId);
             leMapper.updateSubNum(contentUserid, 3);
+            updateRecords(userid, classifyId, 100);
         }
     }
 
@@ -84,10 +90,14 @@ public class LeService extends BaseService {
 
     public void insertEvaluation(long userid, long contentId, String content, long pid) {
         leMapper.insertEvaluation(userid, contentId, content, pid);
+        Map<String, Object> userId = leMapper.getUserId(contentId);
+        long classifyId = ModelUtil.getLong(userId, "classifyId");
+        updateRecords(userid, classifyId, 150);
     }
 
-    public void updateEvaluation(long evaluationId) {
+    public void updateEvaluation(long evaluationId, long classifyId, long userid) {
         leMapper.updateEvaluation(evaluationId);
+        updateRecords(userid, classifyId, 120);
     }
 
 

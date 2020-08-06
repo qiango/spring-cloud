@@ -77,10 +77,12 @@ public class LeController extends BaseController {
     @PostMapping("/updateEvaluation")
     public Object updateEvaluation(@ApiParam(hidden = true) @RequestParam Map<String, Object> params) {
         long evaluationId = ModelUtil.getLong(params, "evaluationId");
+        long userid = ModelUtil.getLong(params, "userid");
+        long classifyId = ModelUtil.getLong(params, "classifyId");
         if (evaluationId == 0) {
             return toError("参数错误");
         }
-        leService.updateEvaluation(evaluationId);
+        leService.updateEvaluation(evaluationId,classifyId,userid);
         return toJsonOk("success");
     }
 

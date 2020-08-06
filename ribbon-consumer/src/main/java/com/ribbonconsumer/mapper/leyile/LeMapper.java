@@ -4,6 +4,7 @@ import com.core.base.baseenum.CheckStatusEnum;
 import com.core.base.mapper.BaseMapper;
 import com.core.base.util.UnixUtil;
 import org.springframework.stereotype.Repository;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -62,7 +63,32 @@ public class LeMapper extends BaseMapper {
         update(sqlFans, param);
     }
 
+    public long getRecordId(long userid, long chassfid) {
+        String sql = "select id from user_behavior_records where userid=? and classfy_id=? ";
+        List<Object> param = new ArrayList<>();
+        param.add(userid);
+        param.add(chassfid);
+        return jdbcTemplate.queryForObject(sql, param.toArray(), Long.class);
+    }
 
+
+    public void insertRecords(long userid, long chassfid, int preference) {
+        String sql = "insert into user_behavior_records (userid, create_time, classfy_id, degree_of_preference) values (?,?,?,?) ";
+        List<Object> param = new ArrayList<>();
+        param.add(userid);
+        param.add(UnixUtil.getNowTimeStamp());
+        param.add(chassfid);
+        param.add(preference);
+        insert(sql, param);
+    }
+
+    public void updateRecords(int preference, long id) {
+        String sql = "update user_behavior_records set degree_of_preference=degree_of_preference+? where id=? ";
+        List<Object> param = new ArrayList<>();
+        param.add(preference);
+        param.add(id);
+        update(sql, param);
+    }
 
     //点赞作品
     public void praise(long userid, long contentId) {
@@ -84,7 +110,7 @@ public class LeMapper extends BaseMapper {
     }
 
     public Map<String, Object> getUserId(long contentId) {
-        String sql = "select userid from user_content where id=? ";
+        String sql = "select userid,classify_id classifyId from user_content where id=? ";
         List<Object> param = new ArrayList<>();
         param.add(contentId);
         return queryForMap(sql, param);

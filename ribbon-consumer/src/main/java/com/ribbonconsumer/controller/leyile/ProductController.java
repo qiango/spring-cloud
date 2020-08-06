@@ -29,10 +29,11 @@ public class ProductController extends BaseController {
     @PostMapping("/getEvaluationList")
     public Object contentId(@ApiParam(hidden = true) @RequestParam Map<String, Object> params) {
         long contentId = ModelUtil.getLong(params, "contentId");
+        long userid = ModelUtil.getLong(params, "userid");
         if (contentId == 0) {
             toError("contentId为空");
         }
-        toJsonOk(productService.getEvaluationList(contentId));
+        toJsonOk(productService.getEvaluationList(contentId,userid));
         return toJsonOk("");
     }
 
@@ -49,7 +50,7 @@ public class ProductController extends BaseController {
         return toJsonOk("success");
     }
 
-    @ApiOperation(value = "首页作品列表")
+    @ApiOperation(value = "首页推荐作品列表")
     @GetMapping("/getContentList")
     public Object getContentList(@ApiParam(hidden = true) @RequestParam Map<String, Object> params) {
         Map<String, Object> result = new HashMap<>();
@@ -57,7 +58,6 @@ public class ProductController extends BaseController {
         int pageIndex = ModelUtil.getInt(params, "pageIndex", 1);
         int pageSize = ModelUtil.getInt(params, "pageSize", 20);
         result.put("data", productService.getContentList(userid, pageSize, pageIndex));
-        result.put("total", productService.getContentCount(userid));
         return toJsonOk(result);
     }
 

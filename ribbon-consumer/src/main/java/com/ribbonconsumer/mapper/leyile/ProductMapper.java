@@ -29,7 +29,7 @@ public class ProductMapper extends BaseMapper {
     }
 
     //推荐作品列表
-    public List<Map<String, Object>> getContentList(List<Long> classfyIds, long userid, int pageSize, int pageIndex) {
+    public List<Map<String, Object>> getContentList(long userid, int pageSize, int pageIndex) {
         String sql = "select uc.create_time    time," +
                 "       uc.id," +
                 "       uc.content," +
@@ -40,32 +40,35 @@ public class ProductMapper extends BaseMapper {
                 "       u.name," +
                 "       u.headpic," +
                 "       uc.music_url      musicUrl," +
-                "       uf.id ufd  " +
+                "       ifnull(uf.id,0)   isFriend  " +
                 " from user_content uc" +
                 "       left join user u on uc.userid = u.id" +
                 "       left join user_focus uf on u.id=uf.focus_userid and uf.userid=:userid " +
                 "       left join content_material cm on uc.material_id = cm.id" +
+                "       left join user_behavior_records ubr on uc.classify_id=ubr.classfy_id and ubr.userid=:userid " +
                 " where check_status = :status";
         Map<String, Object> param = new HashMap<>();
         param.put("status", CheckStatusEnum.Success.getCode());
         param.put("userid", userid);
-        if (!classfyIds.isEmpty()) {
-            param.put("classfyId", classfyIds);
-            sql += " and uc.classify_id in (:classfyId)";
-        }
-        List<Map<String, Object>> list = queryForList(pageNameSql(sql, "order by rand()"), pageParams(param, pageIndex, pageSize));
+        List<Map<String, Object>> list = queryForList(pageNameSql(sql, " order by ubr.degree_of_preference desc,rand() "), pageParams(param, pageIndex, pageSize));
         for (Map<String, Object> map : list) {
             map.put("meterialUrl", ConfigModel.IMAGEURL + ModelUtil.getStr(map, "meterialUrl"));
             map.put("musicUrl", ConfigModel.MUSIC + ModelUtil.getStr(map, "musicUrl"));
             map.put("headpic", ConfigModel.IMAGEURL + ModelUtil.getStr(map, "headpic"));
-            map.put("isFriend", ModelUtil.getLong(map, "ufd") > 0 ? 1 : 0);
         }
         return list;
     }
 
-    public List<Long> getClassfyList(long userid) {
-        String sql = "select classfy_id classfyId from user_behavior_records where userid=? ";
-        return jdbcTemplate.queryForList(sql, new Object[]{userid}, Long.class);
+    public long getClassfyList(long id) {
+        String sql = "select classify_id classfyId from user_content where id=? ";
+        List<Object> list = new ArrayList<>();
+        list.add(id);
+        return jdbcTemplate.queryForObject(sql, list.toArray(), Long.class);
+    }
+
+    public List<Map<String, Object>> getClassfyMap(long userid) {
+        String sql = "select classfy_id classfyId,degree_of_preference preference from user_behavior_records where userid=? ";
+        return queryForList(sql, userid);
     }
 
     public Integer getContentCount(List<Long> classfyIds) {
