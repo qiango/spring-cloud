@@ -56,7 +56,7 @@ public class AnswerWebSocketServer {
         String sessionKey = String.format("%s-%s", happyNo, sessionId);
         concurrentHashMap.put(sessionKey, session);
         try {
-            sendMessage(session, "连接成功");
+            sendMessage(session, "pong");
         } catch (IOException e) {
             log.error("websocket IO异常");
         }
@@ -79,7 +79,15 @@ public class AnswerWebSocketServer {
     @OnMessage
     public void onMessage(String message, Session session) {
         log.info("来自客户端的消息:" + message);
-        sendToUser(message);
+        if ("ping".equals(message)) {
+            try {
+                sendMessage(session, "pong");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        } else {
+            sendToUser(message);
+        }
     }
 
 
