@@ -48,13 +48,17 @@ public abstract class ProductService extends BaseService implements ProductInter
     }
 
 
-    public void insertContent(long userid, String content, long meterialId) {
-        productMapper.insertContent(userid, content, meterialId);
+    public void insertContent(long userid, String title,String content, long meterialId) {
+        productMapper.insertContent(userid,title, content, meterialId);
     }
 
     public List<Map<String, Object>> getContentList(long userid, int pageSize, int pageIndex) {
         return productMapper.getContentList(userid, pageSize, pageIndex);
     }
 
+
+    public void insertFootprint(long userid,long productId){
+        productMapper.insertFootprint(userid, productId);
+    }
 
 }

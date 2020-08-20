@@ -17,10 +17,11 @@ import java.util.Map;
 public class ProductMapper extends BaseMapper {
 
     //发布作品
-    public void insertContent(long userid, String content, long meterialId) {
-        String sql = "insert into user_content (userid, create_time, check_status,content, material_id) values (?,?,?,?,?) ";
+    public void insertContent(long userid, String title,String content, long meterialId) {
+        String sql = "insert into user_content (userid, title,create_time, check_status,content, material_id) values (?,?,?,?,?) ";
         List<Object> param = new ArrayList<>();
         param.add(userid);
+        param.add(title);
         param.add(UnixUtil.getNowTimeStamp());
         param.add(CheckStatusEnum.Success.getCode());
         param.add(content);
@@ -45,8 +46,10 @@ public class ProductMapper extends BaseMapper {
                 "       left join user u on uc.userid = u.id" +
                 "       left join user_focus uf on u.id=uf.focus_userid and uf.userid=:userid " +
                 "       left join content_material cm on uc.material_id = cm.id" +
-                "       left join user_behavior_records ubr on uc.classify_id=ubr.classfy_id and ubr.userid=:userid " +
-                " where check_status = :status";
+                "       left join user_behavior_records ubr on uc.classify_id=ubr.classfy_id and ubr.userid=:userid" +
+                "       left join user_footprint uf2 on uc.id=uf2.productid and uf2.userid=:userid " +
+                " where check_status = :status" +
+                "   and uf2.id is null ";
         Map<String, Object> param = new HashMap<>();
         param.put("status", CheckStatusEnum.Success.getCode());
         param.put("userid", userid);
@@ -57,6 +60,15 @@ public class ProductMapper extends BaseMapper {
             map.put("headpic", ConfigModel.IMAGEURL + ModelUtil.getStr(map, "headpic"));
         }
         return list;
+    }
+
+    public void insertFootprint(long userid, long productid) {
+        String sql = "insert into user_footprint (userid, productid, create_time) values (?,?,?) ";
+        List<Object> param = new ArrayList<>();
+        param.add(userid);
+        param.add(productid);
+        param.add(UnixUtil.getNowTimeStamp());
+        insert(sql, param);
     }
 
     public long getClassfyList(long id) {

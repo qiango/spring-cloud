@@ -33,7 +33,7 @@ public class ProductController extends BaseController {
         if (contentId == 0) {
             toError("contentId为空");
         }
-        toJsonOk(productService.getEvaluationList(contentId,userid));
+        toJsonOk(productService.getEvaluationList(contentId, userid));
         return toJsonOk("");
     }
 
@@ -43,10 +43,11 @@ public class ProductController extends BaseController {
         long userid = ModelUtil.getLong(params, "userId");
         long meterialId = ModelUtil.getLong(params, "meterialId");
         String content = ModelUtil.getStr(params, "content");
-        if (userid == 0 || meterialId == 0 || StrUtil.isEmpty(content)) {
+        String title = ModelUtil.getStr(params, "title");
+        if (userid == 0  || StrUtil.isEmpty(content, title)) {
             return toError("参数错误");
         }
-        productService.insertContent(userid, content, meterialId);
+        productService.insertContent(userid,title, content, meterialId);
         return toJsonOk("success");
     }
 
@@ -59,6 +60,19 @@ public class ProductController extends BaseController {
         int pageSize = ModelUtil.getInt(params, "pageSize", 20);
         result.put("data", productService.getContentList(userid, pageSize, pageIndex));
         return toJsonOk(result);
+    }
+
+
+    @ApiOperation(value = "添加用户查看足迹")
+    @PostMapping("/insertFootprint")
+    public Object insertFootprint(@ApiParam(hidden = true) @RequestParam Map<String, Object> params) {
+        long userid = ModelUtil.getLong(params, "userId");
+        long productId = ModelUtil.getLong(params, "productId");
+        if (userid == 0) {
+            return toError("参数错误");
+        }
+        productService.insertFootprint(userid, productId);
+        return toJsonOk("success");
     }
 
 
