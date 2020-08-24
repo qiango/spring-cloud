@@ -85,8 +85,8 @@ public class DemoFilter extends ZuulFilter {
         String timespan = httpServletRequest.getHeader("timestamp");
         String secretContent = String.format("%s|%s", useridreal, timespan);
         String cipherMd5 = MD5Encrypt.encrypt(String.format("%s|%s", SECRETKEY, secretContent));
-        boolean result = sign.equals(cipherMd5);
+        boolean result = cipherMd5.equals(sign);
         logger.info("url>>>>>:" + url + " verify sign>>>>>>>>" + result + "  sign>>>>>>" + sign + " time:" + timespan);
-        return true;
+        return result;
     }
 }

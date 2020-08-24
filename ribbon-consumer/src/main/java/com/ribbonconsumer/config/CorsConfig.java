@@ -1,27 +1,29 @@
 package com.ribbonconsumer.config;
 
-import com.core.base.util.StrUtil;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.CorsRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import org.springframework.stereotype.Component;
 
-@Configuration
-public class CorsConfig implements WebMvcConfigurer {
+import javax.servlet.*;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 
-    @Value("${base.cross-domain}")
-    public void setCROSSDOMAIN(String value) {
-        CROSSDOMAIN = StrUtil.isEmpty(value) ? "*" : value;
+@Component
+public class CorsConfig implements Filter {
+    @Override
+    public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain) throws IOException, ServletException {
+        HttpServletRequest request = (HttpServletRequest) req;
+        HttpServletResponse response = (HttpServletResponse) res;
+       /* String curOrigin = request.getHeader("Origin");
+        System.out.println("###跨域过滤器->当前访问来源->"+curOrigin+"###");   */
+        response.setHeader("Access-Control-Allow-Origin", "*");
+        response.setHeader("Access-Control-Allow-Methods", "*");
+        response.setHeader("Access-Control-Max-Age", "3600");
+        response.setHeader("Access-Control-Allow-Headers", "x-requested-with");
+        chain.doFilter(req, res);
     }
-
-    private static String CROSSDOMAIN;
+    @Override
+    public void init(FilterConfig filterConfig) {}
 
     @Override
-    public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/**")
-                .allowedOrigins(CROSSDOMAIN.split(","))
-                .allowCredentials(true)
-                .allowedMethods("GET", "POST")
-                .maxAge(3600);
-    }
+    public void destroy() {}
 }

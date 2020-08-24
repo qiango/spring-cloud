@@ -1,22 +1,20 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8888/center/eureka/
-#       defaultZone: http://120.92.42.252:9000/center/eureka/
-
+      defaultZone: http://120.92.42.252:9000/center/eureka/
 server:
-  port: 9020
+  port: 8020
   servlet:
-    context-path: /authPears
+    context-path: /qaAuthPears
 spring:
   application:
     name: service-zuul
 
-zuul:
+  zuul:
   routes:
-#  ？：匹配任意单个字符串
-#  * ：匹配任意数量的字符串
-#  **：匹配任意数量的字符串，支持多级目录
+    #  ？：匹配任意单个字符串
+    #  * ：匹配任意数量的字符串
+    #  **：匹配任意数量的字符串，支持多级目录
     api-a:
       path: /api-a/**
       serviceId: service-ribbon
@@ -25,10 +23,8 @@ zuul:
       serviceId: service-feign
     consumerApi:
       path: /consumerApi/**
-      serviceId: ribbon-consumer
-  ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin #解决跨域问题
-  sensitive-headers: Access-Control-Allow-Origin
-#  ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
+      serviceId: qa-ribbon-consumer
+    ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
 #  host:
 #       connect-timeout-millis: 3000
 #       socket-timeout-millis: 3000
@@ -51,8 +47,7 @@ hystrix:
 #    max-semaphores: 200
 base:
   isonline: 1 #正式测试环境的标记 1:dev 2:qa，3：uat 4:www
-  filepath: /Users/qiango/data/springboot/ #上传文件的缓存位置
+  filepath: /qian/file/ #上传文件的缓存位置
   cross-domain:
-
 #//首先指定服务注册中心的地址为http://localhost:8761/eureka/，服务的端口为8769，
 #//服务名为service-zuul；以/api-a/ 开头的请求都转发给service-ribbon服务；以/api-b/开头的请求都转发给service-feign服务；

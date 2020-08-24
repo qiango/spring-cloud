@@ -44,10 +44,10 @@ public class ProductController extends BaseController {
         long meterialId = ModelUtil.getLong(params, "meterialId");
         String content = ModelUtil.getStr(params, "content");
         String title = ModelUtil.getStr(params, "title");
-        if (userid == 0  || StrUtil.isEmpty(content, title)) {
+        if (userid == 0 || StrUtil.isEmpty(content, title)) {
             return toError("参数错误");
         }
-        productService.insertContent(userid,title, content, meterialId);
+        productService.insertContent(userid, title, content, meterialId);
         return toJsonOk("success");
     }
 

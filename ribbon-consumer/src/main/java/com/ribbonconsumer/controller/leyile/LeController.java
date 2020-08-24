@@ -19,12 +19,12 @@ public class LeController extends BaseController {
     private MsgProducer msgProducer;
 
     @Autowired
-    public LeController(LeService leService, MsgProducer msgProducer) {
+    public LeController(LeService leService,MsgProducer msgProducer) {
         this.leService = leService;
         this.msgProducer = msgProducer;
     }
 
-
+//
     @PostMapping("/get")
     public Object exceptionTest(@RequestParam Map<String, Object> params) {
         int code = ModelUtil.getInt(params, "a");
