@@ -16,5 +16,6 @@
         <module>feign</module>
         <module>ribbon</module>
         <module>eureka</module>
+        <module>websocket</module>
     </modules>
 </project>

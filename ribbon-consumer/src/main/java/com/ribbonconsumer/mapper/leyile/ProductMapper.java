@@ -17,7 +17,7 @@ import java.util.Map;
 public class ProductMapper extends BaseMapper {
 
     //发布作品
-    public void insertContent(long userid, String title,String content, long meterialId) {
+    public void insertContent(long userid, String title, String content, long meterialId) {
         String sql = "insert into user_content (userid, title,create_time, check_status,content, material_id) values (?,?,?,?,?) ";
         List<Object> param = new ArrayList<>();
         param.add(userid);
@@ -114,6 +114,27 @@ public class ProductMapper extends BaseMapper {
                 "  order by appoint_num desc ,u.create_time desc ";
         List<Object> param = new ArrayList<>();
         param.add(contentId);
+        return queryForList(sql, param);
+    }
+
+    public List<Map<String, Object>> getClassifyList(long userid) {
+        String sql = "select cc.id, cc.name, cc.image, cc.pid, if(ufc.id is null, 0, 1) isFocus" +
+                " from content_classify cc" +
+                "       left join user_focus_classfy ufc on cc.id = ufc.classfy_id and ufc.userid = ? and cc.delflag = 0" +
+                " where cc.delflag = 0  ";
+        List<Object> param = new ArrayList<>();
+        param.add(userid);
+        return queryForList(sql, param);
+    }
+
+    public List<Map<String, Object>> getFocusList(long userid) {
+        String sql = "select cc.id, cc.name, cc.image" +
+                " from user_focus_classfy ufc" +
+                "       left join content_classify cc on ufc.classfy_id = cc.id" +
+                " where ufc.userid = ?" +
+                "  and cc.delflag = 0 ";
+        List<Object> param = new ArrayList<>();
+        param.add(userid);
         return queryForList(sql, param);
     }
 

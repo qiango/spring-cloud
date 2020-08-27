@@ -108,10 +108,12 @@ public class UserController extends BaseController {
         String headpic = ModelUtil.getStr(params, "headpic");
         String name = ModelUtil.getStr(params, "name");
         String introduce = ModelUtil.getStr(params, "introduce");
+        long birthDay = ModelUtil.getLong(params, "birthDay");
+        int gender = ModelUtil.getInt(params, "gender");
         if (userId == 0) {
             toError("userId为空");
         }
-        userService.updateIntroduce(userId, headpic, name, introduce);
+        userService.updateIntroduce(userId, headpic, name, introduce,birthDay,gender);
         return toJsonOk("");
     }
 

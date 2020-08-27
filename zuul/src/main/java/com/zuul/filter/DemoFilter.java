@@ -7,6 +7,7 @@ import com.netflix.zuul.context.RequestContext;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -19,6 +20,9 @@ import java.util.*;
 //run：拦截器的具体实现；
 public class DemoFilter extends ZuulFilter {
 
+
+    @Value("${base.isonline}")
+    private String isOnline;
 
     private static Logger logger = LoggerFactory.getLogger(DemoFilter.class);
     private final static String AUTHORITY_ERROR = "{\"code\": -100,\"message\": \"token expire\"}";
@@ -52,7 +56,9 @@ public class DemoFilter extends ZuulFilter {
         String requestURL = request.getRequestURI();
         boolean isOk = verifyUrlParam(token, userid, requestURL);
         if (isOk) {
-            isOk = verifySecutity(requestURL, request, userid);
+            if (isOnline.equals("4")) {
+                isOk = verifySecutity(requestURL, request, userid);
+            }
             if (!isOk) {
                 ctx.setSendZuulResponse(false);
                 ctx.setResponseBody(VERIFY_ERROR);

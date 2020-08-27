@@ -12,6 +12,7 @@
         <module name="ribbon" />
         <module name="ribbon-consumer" />
         <module name="ribbonconsumer" />
+        <module name="websocket" />
         <module name="zuul" />
       </profile>
     </annotationProcessing>
@@ -22,6 +23,7 @@
       <module name="ribbon" target="1.8" />
       <module name="ribbon-consumer" target="1.8" />
       <module name="spring-cloud" target="1.5" />
+      <module name="websocket" target="1.8" />
       <module name="zuul" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -32,6 +34,7 @@
       <module name="qiancore" options="-parameters" />
       <module name="ribbon" options="-parameters" />
       <module name="ribbon-consumer" options="-parameters" />
+      <module name="websocket" options="-parameters" />
       <module name="zuul" options="-parameters" />
     </option>
   </component>

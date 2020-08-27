@@ -114,12 +114,14 @@ public class UserMapper extends BaseMapper {
     }
 
     //更新自我介绍
-    public void updateIntroduce(long userid, String headpic, String name, String introduce) {
-        String sql = "update user set introduce=?,name=?,headpic=? where id=? ";
+    public void updateIntroduce(long userid, String headpic, String name, String introduce, long birthDay, int gender) {
+        String sql = "update user set introduce=?,name=?,headpic=?,birthday=?,gender=? where id=? ";
         List<Object> param = new ArrayList<>();
         param.add(introduce);
         param.add(name);
         param.add(headpic);
+        param.add(birthDay);
+        param.add(gender);
         param.add(userid);
         update(sql, param);
     }

@@ -1,0 +1,47 @@
+eureka:
+  client:
+    serviceUrl:
+#      defaultZone: http://localhost:8888/center/eureka/
+      defaultZone: http://120.92.42.252:9000/center/eureka/
+server:
+  port: 8050
+  servlet:
+      context-path: /qauknow
+
+spring:
+  application:
+    name: qa-websocket
+
+  # mysql 属性配置(druid)
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://120.92.42.252:3306/myproducttest?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: 1q2W3e.,
+    type: com.alibaba.druid.pool.DruidDataSource
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT1FROMDUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    filters: stat,wall,log4j
+    logSlowSql: true
+
+  rabbitmq:
+    host: 120.92.42.252
+    port: 5672
+    username: guest
+    password: guest
+base:
+  isonline: 0  #正式测试环境的标记 0:非正式 1:正式
+  filepath: /Users/qiango/data/springboot/file/ #上传文件的缓存位置
+#  weburl: https://www.nopears.com/ #上传文件的缓存位置
+  weburl: http://localhost:8887/pears/file/readFile/ #读取文件链接
+  cross-domain:
+  imageurl: https://www.nopears.com/image/ #图片访问前缀
+  music: https://www.nopears.com/music/ #语音访问前缀

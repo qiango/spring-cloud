@@ -1,4 +1,4 @@
-package com.ribbonconsumer.controller;
+package com.ribbonconsumer.controller.server;
 
 import com.core.base.controller.BaseController;
 import com.core.base.domain.Server;

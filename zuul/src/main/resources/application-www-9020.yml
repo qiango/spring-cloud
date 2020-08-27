@@ -10,7 +10,7 @@ spring:
   application:
     name: service-zuul
 
-  zuul:
+zuul:
   routes:
     #  ？：匹配任意单个字符串
     #  * ：匹配任意数量的字符串
@@ -46,7 +46,7 @@ hystrix:
 #  semaphore:
 #    max-semaphores: 200
 base:
-  isonline: 1 #正式测试环境的标记 1:dev 2:qa，3：uat 4:www
+  isonline: 4 #正式测试环境的标记 1:dev 2:qa，3：uat 4:www
   filepath: /qian/file/ #上传文件的缓存位置
   cross-domain:
 #//首先指定服务注册中心的地址为http://localhost:8761/eureka/，服务的端口为8769，

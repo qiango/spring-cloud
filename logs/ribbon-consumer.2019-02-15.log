@@ -225,7 +225,7 @@ Caused by: java.lang.ClassNotFoundException: org.apache.log4j.Logger
 2019-02-15 16:01:27.562 - INFO 18196 [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
 2019-02-15 16:01:27.562 - INFO 18196 [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
 2019-02-15 16:01:27.562 - INFO 18196 [ost-startStop-1] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
-2019-02-15 16:01:28.039 - INFO 18196 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/server/getInfo],methods=[GET]}" onto public java.lang.Object com.ribbonconsumer.controller.ServerController.server(org.springframework.ui.ModelMap) throws java.lang.Exception
+2019-02-15 16:01:28.039 - INFO 18196 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/server/getInfo],methods=[GET]}" onto public java.lang.Object com.ribbonconsumer.controller.server.ServerController.server(org.springframework.ui.ModelMap) throws java.lang.Exception
 2019-02-15 16:01:28.039 - INFO 18196 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/qian/nullTest],methods=[GET]}" onto public java.lang.Object com.ribbonconsumer.controller.TestController.nullTest()
 2019-02-15 16:01:28.039 - INFO 18196 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/qian/getCustomer],methods=[GET]}" onto public java.lang.Object com.ribbonconsumer.controller.TestController.sayHello()
 2019-02-15 16:01:28.039 - INFO 18196 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/qian/get],methods=[POST]}" onto public java.lang.Object com.ribbonconsumer.controller.TestController.exceptionTest()
@@ -1156,7 +1156,7 @@ java.lang.NumberFormatException: Infinite or NaN
 2019-02-15 17:27:58.143 - INFO 10960 [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
 2019-02-15 17:27:58.143 - INFO 10960 [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
 2019-02-15 17:27:58.143 - INFO 10960 [ost-startStop-1] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
-2019-02-15 17:27:58.672 - INFO 10960 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/server/getInfo],methods=[GET]}" onto public java.lang.Object com.ribbonconsumer.controller.ServerController.server(org.springframework.ui.ModelMap) throws java.lang.Exception
+2019-02-15 17:27:58.672 - INFO 10960 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/server/getInfo],methods=[GET]}" onto public java.lang.Object com.ribbonconsumer.controller.server.ServerController.server(org.springframework.ui.ModelMap) throws java.lang.Exception
 2019-02-15 17:27:58.675 - INFO 10960 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/qian/get],methods=[POST]}" onto public java.lang.Object com.ribbonconsumer.controller.TestController.exceptionTest()
 2019-02-15 17:27:58.675 - INFO 10960 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/qian/getCustomer],methods=[GET]}" onto public java.lang.Object com.ribbonconsumer.controller.TestController.sayHello()
 2019-02-15 17:27:58.675 - INFO 10960 [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/qian/getDemo],methods=[GET]}" onto public java.lang.Object com.ribbonconsumer.controller.TestController.sayDemo()

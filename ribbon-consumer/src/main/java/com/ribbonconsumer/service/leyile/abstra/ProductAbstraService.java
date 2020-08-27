@@ -62,4 +62,24 @@ public abstract class ProductAbstraService extends BaseService implements Produc
         productMapper.insertFootprint(userid, productId);
     }
 
+    public List<Map<String, Object>> getClassifyList(long userid) {
+        Map<Long, List<Map<String, Object>>> tempMap = new HashMap<>();
+        List<Map<String, Object>> classifyList = productMapper.getClassifyList(userid);
+        classifyList.forEach(map -> {
+            long pids = ModelUtil.getLong(map, "pid");
+            initMap(pids, tempMap, map);
+        });
+        classifyList.forEach(map -> {
+            List<Map<String, Object>> mapList = tempMap.get(ModelUtil.getLong(map, "id"));
+            map.put("child", mapList);
+        });
+        List<Map<String, Object>> maps = tempMap.get(0L);
+        return maps == null ? new ArrayList<>() : maps;
+    }
+
+    public List<Map<String, Object>> getFocusList(long userid) {
+        return productMapper.getFocusList(userid);
+    }
+
+
 }

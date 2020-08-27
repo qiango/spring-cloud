@@ -96,8 +96,8 @@ public class UserService extends BaseService {
         return userMapper.myFanList(userid);
     }
 
-    public void updateIntroduce(long userid, String headpic, String name, String introduce) {
-        userMapper.updateIntroduce(userid, headpic, name, introduce);
+    public void updateIntroduce(long userid, String headpic, String name, String introduce,long birthDay,int gender) {
+        userMapper.updateIntroduce(userid, headpic, name, introduce,birthDay,gender);
     }
 
     @Transactional

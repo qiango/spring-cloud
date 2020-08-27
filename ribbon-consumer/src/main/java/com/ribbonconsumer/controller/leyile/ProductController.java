@@ -76,4 +76,25 @@ public class ProductController extends BaseController {
     }
 
 
+    @ApiOperation(value = "所有分类列表")
+    @GetMapping("/getClassifyList")
+    public Object getClassifyList(@ApiParam(hidden = true) @RequestParam Map<String, Object> params) {
+        Map<String, Object> result = new HashMap<>();
+        long userid = ModelUtil.getLong(params, "userid");
+        result.put("data", productService.getClassifyList(userid));
+        return toJsonOk(result);
+    }
+
+    @ApiOperation(value = "我关注的分类")
+    @GetMapping("/getFocusList")
+    public Object getFocusList(@ApiParam(hidden = true) @RequestParam Map<String, Object> params) {
+        Map<String, Object> result = new HashMap<>();
+        long userid = ModelUtil.getLong(params, "userid");
+        if (userid == 0) {
+            return toError("参数错误");
+        }
+        result.put("data", productService.getFocusList(userid));
+        return toJsonOk(result);
+    }
+
 }

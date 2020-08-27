@@ -1,0 +1,5 @@
+打包流程：如果改动了qiancore
+1、mvn clean
+2、mvn install (注：一定要用install，他会先打包放到target目录下，然后同时将打包结果放到本地仓库的相应目录中，供其他项目或模块引用)
+3、再打包其他模块(注：mvn package 只会打包放入target下);
+4、打包ribbon-consumer，因为有weboscket的原因，得用mvn package -DskipTests （打包的时候跳过test，因为spring boot内带tomcat，tomcat中的websocket会有冲突出现问题，因此跳过test编译打包package -DskipTests）
