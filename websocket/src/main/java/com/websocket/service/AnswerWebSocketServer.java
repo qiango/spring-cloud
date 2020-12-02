@@ -23,7 +23,11 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.atomic.AtomicInteger;
 
-
+//高版本的websocket在第一次http请求后，使用的是更快速的tcp连接
+//zuul网关只能管理http请求，并且不支持tcp以及udp请求
+//websocket在经过zuul以后，就会降级会http请求（轮询的方式）
+//结论
+//最好是不要通过zuul来管理websocket连接，降级为轮询后，效率会降低很多
 @ServerEndpoint(value = "/AnswerSocket/{happyNo}/{sessionId}/{timespan}/{sign}")
 @Component
 public class AnswerWebSocketServer {

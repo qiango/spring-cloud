@@ -2,45 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46efe340-4ae4-44b4-89d3-9d7a0a43132c" name="Default" comment="订单">
-      <change afterPath="$PROJECT_DIR$/mvnprocess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/websocket/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/websocket/src/main/java/com/websocket/WebsocketApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/websocket/src/main/java/com/websocket/config/ConfigModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/websocket/src/main/java/com/websocket/service/AnswerWebSocketServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/websocket/src/main/java/com/websocket/service/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/websocket/src/main/resources/application-qa-8050.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/websocket/src/main/resources/application-www-9050.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/websocket/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/websocket/websocket.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_xiaoymin_knife4j_annotations_1_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_xiaoymin_knife4j_core_1_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_xiaoymin_knife4j_spring_1_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_xiaoymin_knife4j_spring_boot_autoconfigure_1_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_xiaoymin_knife4j_spring_boot_starter_1_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_xiaoymin_knife4j_spring_ui_1_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_bean_validators_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_25_0_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/config/swagger/DocVer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/config/swagger/Swagger2Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/leyile/admin/adminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ribbon/src/main/java/com/cloud/ribbon/rabbitmq/TestQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_16_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_18_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/ribbon-consumer.2019-01-23.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/ribbon-consumer.2019-01-23.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/ribbon-consumer.2019-02-15.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/ribbon-consumer.2019-02-15.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/ribbon-consumer.2019-02-18.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/ribbon-consumer.2019-02-18.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/ribbon-consumer.2019-03-01.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/ribbon-consumer.2019-03-01.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/ribbon-consumer.2019-03-04.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/ribbon-consumer.2019-03-04.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/RibbonConsumerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/RibbonConsumerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/config/Swagger2Config.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/config/WebSocketConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocket/src/main/java/com/websocket/config/WebSocketConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/FileDownLoadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/file/FileDownLoadController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/LocalUploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/file/LocalUploadController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/ServerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/server/ServerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/leyile/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/leyile/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/leyile/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/leyile/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/mapper/leyile/ProductMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/mapper/leyile/ProductMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/mapper/leyile/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/mapper/leyile/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnprocess" beforeDir="false" afterPath="$PROJECT_DIR$/打包注意事项.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qiancore/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/qiancore/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qiancore/qiancore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/qiancore/qiancore.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/exception/QianException.java" beforeDir="false" afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/exception/QianException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/factory/TypeInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/factory/TypeInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/util/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/util/FileUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/leyile/LeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/leyile/mini/LeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/leyile/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/leyile/mini/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/leyile/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/leyile/mini/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/hand/ExceptionAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/hand/ExceptionAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/mapper/leyile/LeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/mapper/leyile/LeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/service/interfaceService/ProductInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/service/interfaceService/ProductInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/service/leyile/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/service/leyile/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/service/leyile/abstra/LeAbstraService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/service/leyile/abstra/LeAbstraService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/service/leyile/abstra/ProductAbstraService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/service/leyile/abstra/ProductAbstraService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/websocket/AnswerWebSocketServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/websocket/AnswerWebSocketServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/resources/application-www-9010.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/resources/application-www-9010.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/resources/application-www-9011.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/resources/application-www-9011.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/design/SingletonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/design/SingletonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/sort/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/sort/Sort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/resources/application-qa-8010.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/resources/application-qa-8010.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-consumer/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ribbon-consumer/src/main/resources/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon/src/main/java/com/cloud/ribbon/rabbitmq/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon/src/main/java/com/cloud/ribbon/rabbitmq/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon/src/main/java/com/cloud/ribbon/rabbitmq/RabbitMq.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon/src/main/java/com/cloud/ribbon/rabbitmq/RabbitMq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocket/src/main/java/com/websocket/service/AnswerWebSocketServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocket/src/main/java/com/websocket/service/AnswerWebSocketServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocket/src/main/java/com/websocket/service/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocket/src/main/java/com/websocket/service/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocket/websocket.iml" beforeDir="false" afterPath="$PROJECT_DIR$/websocket/websocket.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/zuul/ZuulConfig.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/zuul/filter/DemoFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/zuul/src/main/java/com/zuul/filter/DemoFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/zuul/filter/DemoToFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/zuul/src/main/java/com/zuul/filter/DemoToFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/zuul/filter/ErrorFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/zuul/src/main/java/com/zuul/filter/ErrorFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/zuul/filter/FeignFallbackProvider.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/zuul/src/main/resources/application-qa-8020.yml" beforeDir="false" afterPath="$PROJECT_DIR$/zuul/src/main/resources/application-qa-8020.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zuul/src/main/resources/application-www-9020.yml" beforeDir="false" afterPath="$PROJECT_DIR$/zuul/src/main/resources/application-www-9020.yml" afterDir="false" />
     </list>
@@ -97,99 +100,67 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/resources/application-qa-8010.yml">
+        <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/config/ConfigModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1156">
-              <caret line="68" column="15" selection-start-line="68" selection-start-column="15" selection-end-line="68" selection-end-column="15" />
+            <state relative-caret-position="85">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/websocket/src/main/resources/application.yml">
+        <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/config/CorsConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+            <state relative-caret-position="85">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/websocket/src/main/resources/application-www-9050.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/resources/application-www-9010.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1032">
-              <caret line="63" column="6" selection-start-line="63" selection-start-column="6" selection-end-line="63" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/service/leyile/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="105" column="46" selection-start-line="105" selection-start-column="46" selection-end-line="105" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3858#3859#0" expanded="true" />
-                <element signature="e#3911#3912#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/websocket/src/main/resources/application-qa-8050.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/websocket/src/main/java/com/websocket/service/TestController.java">
+        <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/config/DruidConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/config/RabbitMqConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/config/RedisConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/config/WechatConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/websocket/src/main/java/com/websocket/service/AnswerWebSocketServer.java">
+        <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/leyile/mini/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="71" column="43" lean-forward="true" selection-start-line="71" selection-start-column="43" selection-end-line="71" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/leyile/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="131" column="26" selection-start-line="131" selection-start-column="26" selection-end-line="131" selection-end-column="26" />
+            <state relative-caret-position="340">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -209,36 +180,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Header</find>
-      <find>注册</find>
-      <find>name</find>
-      <find>socket</find>
-      <find>Receive&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;CCC</find>
-      <find>isHave</find>
-      <find>ExecutorService executorService = Executors.newCachedThreadPool();</find>
-      <find>ExecutorService</find>
-      <find>FANOUT_EXCHANGE</find>
-      <find>user_behavior_records</find>
-      <find>发送消息</find>
-      <find>/getUser</find>
-      <find>content_classify</find>
-      <find>classify</find>
-      <find>user_focus_classfy</find>
-      <find>Access-Control-Allow-Origin</find>
-      <find>CorsFilter</find>
-      <find>AUTHORITY_ERROR</find>
-      <find>eureka</find>
-      <find>CorsFilter(</find>
-      <find>aram error</find>
-      <find>VERIFY_ERROR</find>
-      <find>/getCustomer</find>
-      <find>qaAuthPears</find>
-      <find>service-ribbon</find>
-      <find>验证码</find>
-      <find>\n</find>
-      <find>QUEUE_WEBSOCKET</find>
       <find>isonline</find>
       <find>AppAnswerWebSocketServer 发生错误</find>
+      <find>深度拷贝</find>
+      <find>流</find>
+      <find>数组</find>
+      <find>排序</find>
+      <find>生产者</find>
+      <find>hystrix</find>
+      <find>/getUser</find>
+      <find>WxMaService</find>
+      <find>server is bad</find>
+      <find>系统异常，请检查</find>
+      <find>/getEvaluationList</find>
+      <find>GENERAL</find>
+      <find>死锁</find>
+      <find>swaggerPath</find>
+      <find>后台接口</find>
+      <find>collection</find>
+      <find>guava</find>
+      <find>com.google.guava</find>
+      <find>install</find>
+      <find>spring-cloud-netflix-eureka-client</find>
+      <find>spring-cloud</find>
+      <find>ribbon-consumer</find>
+      <find>2.2.5</find>
+      <find>communication</find>
+      <find>冒泡</find>
+      <find>阻塞队列</find>
+      <find>深度</find>
+      <find>apollo</find>
     </findStrings>
     <replaceStrings>
       <replace>RestJson</replace>
@@ -252,39 +223,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/mq/MsgProducer.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/config/RabbitMqConfig.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/config/WebSocketConfig.java" />
-        <option value="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/util/QianThread.java" />
-        <option value="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/factory/TypeInterface.java" />
-        <option value="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/factory/impl/EmojiImpl.java" />
-        <option value="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/factory/AnswerTypeFactory.java" />
-        <option value="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/factory/AnswerTypeEnum.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/mapper/leyile/LeMapper.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/Video.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/service/interfaceService/ProductInterface.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/service/interfaceService/impl/ProductImpl.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/service/leyile/LeService.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/service/leyile/LeAbstraService.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/service/leyile/ProductAbstraService.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/service/leyile/ProductService.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/leyile/LeController.java" />
-        <option value="$PROJECT_DIR$/zuul/src/main/java/com/zuul/filter/CorsConfig.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/config/CorsConfig.java" />
-        <option value="$PROJECT_DIR$/zuul/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/zuul/src/main/java/com/zuul/filter/CorsConfigs.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/resources/application-qa-8010.yml" />
-        <option value="$PROJECT_DIR$/mvnprocess" />
-        <option value="$PROJECT_DIR$/zuul/src/main/java/com/zuul/filter/DemoFilter.java" />
-        <option value="$PROJECT_DIR$/zuul/src/main/resources/application-qa-8020.yml" />
-        <option value="$PROJECT_DIR$/zuul/src/main/resources/application-www-9020.yml" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/server/ServerController.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/file/LocalUploadController.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/service/leyile/abstra/LeAbstraService.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/leyile/UserController.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/service/leyile/UserService.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/mapper/leyile/UserMapper.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/mapper/leyile/ProductMapper.java" />
         <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/service/leyile/abstra/ProductAbstraService.java" />
         <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/leyile/ProductController.java" />
         <option value="$PROJECT_DIR$/ribbon-consumer/src/main/resources/application-www-9011.yml" />
@@ -294,15 +232,48 @@
         <option value="$PROJECT_DIR$/websocket/src/main/java/com/websocket/config/WebSocketConfig.java" />
         <option value="$PROJECT_DIR$/websocket/src/main/java/com/websocket/config/ConfigModel.java" />
         <option value="$PROJECT_DIR$/ribbon-consumer/src/main/resources/logback.xml" />
-        <option value="$PROJECT_DIR$/websocket/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/websocket/src/main/resources/application-qa-8050.yml" />
         <option value="$PROJECT_DIR$/websocket/src/main/resources/application-www-9050.yml" />
         <option value="$PROJECT_DIR$/websocket/pom.xml" />
-        <option value="$PROJECT_DIR$/websocket/src/main/java/com/websocket/service/TestController.java" />
-        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/RibbonConsumerApplication.java" />
         <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/websocket/AnswerWebSocketServer.java" />
+        <option value="$PROJECT_DIR$/websocket/src/main/java/com/websocket/service/TestController.java" />
+        <option value="$PROJECT_DIR$/ribbon/src/main/java/com/cloud/ribbon/rabbitmq/RabbitMq.java" />
+        <option value="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/factory/TypeInterface.java" />
+        <option value="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/util/FileUtil.java" />
+        <option value="$PROJECT_DIR$/ribbon/src/main/java/com/cloud/ribbon/rabbitmq/Consumer.java" />
+        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/leyile/UserController.java" />
+        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/leyile/admin/adminController.java" />
+        <option value="$PROJECT_DIR$/zuul/src/main/java/com/zuul/filter/FeignFallbackProvider.java" />
+        <option value="$PROJECT_DIR$/zuul/src/main/java/com/zuul/filter/RequestLogService.java" />
+        <option value="$PROJECT_DIR$/zuul/src/main/java/com/zuul/filter/DemoFilter.java" />
+        <option value="$PROJECT_DIR$/zuul/src/main/java/com/zuul/ZuulConfig.java" />
+        <option value="$PROJECT_DIR$/zuul/src/main/java/com/zuul/filter/DemoToFilter.java" />
+        <option value="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/exception/QianException.java" />
+        <option value="$PROJECT_DIR$/qiancore/src/main/java/com/core/base/util/ValueUtil.java" />
+        <option value="$PROJECT_DIR$/zuul/src/main/java/com/zuul/filter/ErrorFilter.java" />
+        <option value="$PROJECT_DIR$/zuul/src/main/java/com/zuul/filter/ExceptionAdvice.java" />
+        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/hand/ExceptionAdvice.java" />
+        <option value="$PROJECT_DIR$/zuul/src/main/java/com/zuul/base/ErrorHandlerController.java" />
+        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/service/interfaceService/ProductInterface.java" />
+        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/mapper/leyile/LeMapper.java" />
+        <option value="$PROJECT_DIR$/ribbon/src/main/java/com/cloud/ribbon/rabbitmq/TestQueue.java" />
         <option value="$PROJECT_DIR$/ribbon-consumer/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/qiancore/pom.xml" />
+        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/config/swagger/DocVer.java" />
+        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/leyile/mini/UserController.java" />
+        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/service/leyile/UserService.java" />
+        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/leyile/mini/LeController.java" />
+        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/leyile/mini/ProductController.java" />
+        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/config/swagger/Swagger2Config.java" />
+        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/RibbonConsumerApplication.java" />
+        <option value="$PROJECT_DIR$/zuul/src/main/resources/application-www-9020.yml" />
+        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/resources/application-qa-8010.yml" />
+        <option value="$PROJECT_DIR$/zuul/src/main/resources/application-qa-8020.yml" />
+        <option value="$PROJECT_DIR$/websocket/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/zuul/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/websocket/src/main/java/com/websocket/service/AnswerWebSocketServer.java" />
+        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/sort/Sort.java" />
+        <option value="$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/design/SingletonTest.java" />
       </list>
     </option>
   </component>
@@ -323,12 +294,22 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="ribbon-consumer" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="eureka" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="ribbon-consumer" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+          <item name="zuul" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="zuul" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="zuul" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:2.0.1.RELEASE" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
         </path>
       </expand>
       <select />
@@ -348,135 +329,8 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="ribbon-consumer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="ribbon-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="ribbon-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="ribbon-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="ribbon-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ribbonconsumer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="ribbon-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ribbonconsumer" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="ribbon-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ribbonconsumer" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="leyile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="ribbon-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="websocket" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="websocket" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="websocket" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="websocket" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="websocket" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="websocket" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="websocket" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="websocket" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="websocket" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -511,11 +365,11 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ribbonconsumer.config.swagger" />
+      <recent name="com.zuul.filter" />
+      <recent name="com.ribbonconsumer.controller.leyile.admin" />
       <recent name="com.websocket.service" />
       <recent name="com.websocket.config" />
-      <recent name="com.websocket" />
-      <recent name="com.ribbonconsumer.service.leyile" />
-      <recent name="com.ribbonconsumer.config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/websocket/src/main/resources" />
@@ -557,7 +411,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.WebsocketApplication">
+  <component name="RunManager" selected="Application.Student">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -650,13 +504,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VerifyCodeUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.core.base.util.VerifyCodeUtil" />
-      <module name="qiancore" />
+    <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cloud.ribbon.rabbitmq.Consumer" />
+      <module name="ribbon" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.core.base.util.*" />
+          <option name="PATTERN" value="com.cloud.ribbon.rabbitmq.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -664,13 +518,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Video" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ribbonconsumer.thirdparty.Video" />
+    <configuration name="Sort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ribbonconsumer.thirdparty.sort.Sort" />
       <module name="ribbon-consumer" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ribbonconsumer.thirdparty.*" />
+          <option name="PATTERN" value="com.ribbonconsumer.thirdparty.sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Student" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cloud.ribbon.serializable.Student" />
+      <module name="ribbon" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cloud.ribbon.serializable.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VerifyCodeUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.core.base.util.VerifyCodeUtil" />
+      <module name="qiancore" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.core.base.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -721,15 +603,6 @@
       <setting name="depsClasspath" value="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2" />
-    </configuration>
-    <configuration name="All in ribbon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ribbon" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
@@ -785,14 +658,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CoreApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="CoreApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="qiancore" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.core.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.core.CoreApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -838,7 +705,6 @@
     <configuration name="WebsocketApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="websocket" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.websocket.WebsocketApplication" />
-      <option name="ACTIVE_PROFILES" value="qa-8050" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -847,6 +713,7 @@
     <configuration name="ZuulApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="zuul" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.zuul.ZuulApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -879,9 +746,10 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.Video" />
       <item itemvalue="Application.VerifyCodeUtil" />
-      <item itemvalue="JUnit.All in ribbon" />
+      <item itemvalue="Application.Student" />
+      <item itemvalue="Application.Sort" />
+      <item itemvalue="Application.Consumer" />
       <item itemvalue="Spring Boot.EurekaApplication" />
       <item itemvalue="Spring Boot.FeignApplication" />
       <item itemvalue="Spring Boot.RibbonApplication" />
@@ -892,11 +760,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Student" />
         <item itemvalue="Spring Boot.RibbonConsumerApplication" />
+        <item itemvalue="Application.Consumer" />
+        <item itemvalue="Application.Sort" />
         <item itemvalue="Application.VerifyCodeUtil" />
-        <item itemvalue="Application.Video" />
-        <item itemvalue="JUnit.All in ribbon" />
-        <item itemvalue="Spring Boot.CoreApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -1039,14 +907,36 @@
       <workItem from="1598255250329" duration="7093000" />
       <workItem from="1598320502214" duration="8342000" />
       <workItem from="1598437247579" duration="732000" />
-      <workItem from="1598492955855" duration="10802000" />
-    </task>
-    <task id="LOCAL-00005" summary="订单">
-      <created>1592125716306</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1592125716306</updated>
+      <workItem from="1598492955855" duration="11176000" />
+      <workItem from="1598579480477" duration="823000" />
+      <workItem from="1598751082872" duration="844000" />
+      <workItem from="1598926997220" duration="5913000" />
+      <workItem from="1599010416115" duration="3559000" />
+      <workItem from="1599098871693" duration="3553000" />
+      <workItem from="1599640494963" duration="636000" />
+      <workItem from="1599804769349" duration="1580000" />
+      <workItem from="1600046917878" duration="1126000" />
+      <workItem from="1600241563891" duration="642000" />
+      <workItem from="1602384504924" duration="1418000" />
+      <workItem from="1602661892552" duration="31000" />
+      <workItem from="1603431061360" duration="486000" />
+      <workItem from="1603595843245" duration="2609000" />
+      <workItem from="1604284630697" duration="1217000" />
+      <workItem from="1604307802340" duration="598000" />
+      <workItem from="1604390213139" duration="1077000" />
+      <workItem from="1604544362564" duration="976000" />
+      <workItem from="1604545728202" duration="10798000" />
+      <workItem from="1604628801583" duration="5255000" />
+      <workItem from="1604886328401" duration="9255000" />
+      <workItem from="1604904799802" duration="8335000" />
+      <workItem from="1604972613040" duration="5260000" />
+      <workItem from="1604989645356" duration="4675000" />
+      <workItem from="1605058654129" duration="6508000" />
+      <workItem from="1605232256274" duration="1066000" />
+      <workItem from="1605237212516" duration="1203000" />
+      <workItem from="1605247212863" duration="46000" />
+      <workItem from="1606124856190" duration="756000" />
+      <workItem from="1606808152366" duration="645000" />
     </task>
     <task id="LOCAL-00006" summary="订单">
       <created>1592126015959</created>
@@ -1384,11 +1274,18 @@
       <option name="project" value="LOCAL" />
       <updated>1598256208276</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="订单">
+      <created>1598524779685</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1598524779685</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="729277000" />
+    <option name="totallyTimeSpent" value="810541000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1401,9 +1298,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2427954" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22622478" />
       <window_info id="Structure" order="1" weight="0.24973205" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -1413,17 +1309,17 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32898173" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49927953" weight="0.48694518" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49973333" weight="0.31070495" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49783862" weight="0.28720626" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49973333" weight="0.23237598" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32898173" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.31853786" />
       <window_info anchor="bottom" id="Java Enterprise" order="8" weight="0.32898173" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49783862" visible="true" weight="0.30287206" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5021614" side_tool="true" weight="0.2845953" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49783862" weight="0.27937338" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5021614" side_tool="true" weight="0.17101827" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.26631853" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.31984335" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.308094" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Analysis" order="15" />
@@ -1435,7 +1331,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Database" order="5" weight="0.23054755" />
       <window_info anchor="right" id="Designer" order="6" />
-      <window_info anchor="right" id="Bean Validation" order="7" weight="0.32977587" />
+      <window_info anchor="right" id="Bean Validation" order="7" weight="0.32925072" />
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.32586667" />
       <window_info anchor="right" id="Mongo Explorer" order="9" weight="0.18804035" />
       <window_info anchor="right" id="Theme Preview" order="10" />
@@ -1479,6 +1375,12 @@
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/hand/ExceptionAdvice.java</url>
+          <line>45</line>
+          <properties />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -1506,400 +1408,374 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/zuul/src/main/resources/application-www-9020.yml">
+    <entry file="file://$PROJECT_DIR$/打包注意事项.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qiancore/src/main/java/com/core/base/util/VerifyCodeUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="100" column="35" selection-start-line="100" selection-start-column="35" selection-end-line="100" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.4.RELEASE/spring-web-5.1.4.RELEASE-sources.jar!/org/springframework/http/MediaType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="234" column="31" selection-start-line="234" selection-start-column="31" selection-end-line="234" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feign/src/main/java/com/feign/service/HelloService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="36" column="18" lean-forward="true" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feign/src/main/java/com/feign/controller/HelloController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="30" column="31" lean-forward="true" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
-          <folding>
-            <element signature="e#936#937#0" expanded="true" />
-            <element signature="e#987#988#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/file/FileDownLoadController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/file/LocalUploadController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="40" column="36" lean-forward="true" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qiancore/src/main/java/com/core/base/domain/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="105" column="16" selection-start-line="105" selection-start-column="16" selection-end-line="105" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/mq/MsgProducer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="48" column="63" selection-start-line="48" selection-start-column="63" selection-end-line="48" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/service/leyile/abstra/LeAbstraService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qiancore/src/main/java/com/core/base/controller/BaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="44" column="21" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
-          <folding>
-            <element signature="e#1261#1262#0" expanded="true" />
-            <element signature="e#1310#1311#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/mapper/leyile/ProductMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1853">
-          <caret line="119" column="46" selection-start-line="119" selection-start-column="46" selection-end-line="119" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/leyile/ProductController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="70" column="26" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
-          <folding>
-            <element signature="e#692#693#0" expanded="true" />
-            <element signature="e#744#745#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/service/leyile/abstra/ProductAbstraService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="64" column="43" selection-start-line="64" selection-start-column="43" selection-end-line="64" selection-end-column="43" />
-          <folding>
-            <element signature="e#2345#2346#0" expanded="true" />
-            <element signature="e#2409#2410#0" expanded="true" />
-            <element signature="e#3150#3151#0" expanded="true" />
-            <element signature="e#3207#3208#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/mapper/leyile/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2057">
-          <caret line="128" column="29" selection-start-line="128" selection-start-column="29" selection-end-line="128" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/server/ServerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/leyile/LeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/hand/ExceptionAdvice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-parent/2.0.4.RELEASE/spring-boot-starter-parent-2.0.4.RELEASE.pom">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon/src/main/java/com/cloud/ribbon/RibbonApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/ribbon-consumer.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/config/RabbitMqConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="57" column="54" selection-start-line="57" selection-start-column="54" selection-end-line="57" selection-end-column="54" />
-          <folding>
-            <element signature="e#3015#3016#0" expanded="true" />
-            <element signature="e#3068#3069#0" expanded="true" />
-            <element signature="e#3617#3618#0" expanded="true" />
-            <element signature="e#3679#3680#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zuul/src/main/resources/application-qa-8020.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zuul/src/main/java/com/zuul/filter/DemoFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="23" selection-start-line="23" selection-end-line="24" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/service/TestService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="54" column="5" lean-forward="true" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/websocket/src/main/java/com/websocket/config/WebSocketConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qiancore/src/main/java/com/core/base/util/SendSmsUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qiancore/src/main/java/com/core/base/ConfigModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="39" lean-forward="true" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/websocket/src/main/java/com/websocket/config/ConfigModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/websocket/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/websocket/src/main/java/com/websocket/WebsocketApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="e#458#459#0" expanded="true" />
-            <element signature="e#520#521#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka/src/main/resources/application-www-9000.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/config/WebSocketConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/websocket/AnswerWebSocketServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/resources/logback.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        <state relative-caret-position="68">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/RibbonConsumerApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#535#536#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/config/ConfigModel.java">
+    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/leyile/mini/LeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="63" column="54" lean-forward="true" selection-start-line="63" selection-start-column="54" selection-end-line="63" selection-end-column="54" />
+        <state relative-caret-position="472">
+          <caret line="62" column="6" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/leyile/mini/ProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="97" column="24" selection-start-line="97" selection-start-column="24" selection-end-line="97" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/ribbon/ribbon-loadbalancer/2.2.5/ribbon-loadbalancer-2.2.5-sources.jar!/com/netflix/loadbalancer/LoadBalancerContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="493" column="20" lean-forward="true" selection-start-line="493" selection-start-column="20" selection-end-line="493" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/resources/application-www-9011.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        <state relative-caret-position="527">
+          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/zuul/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        <state relative-caret-position="408">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/resources/application-www-9010.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1032">
-          <caret line="63" column="6" selection-start-line="63" selection-start-column="6" selection-end-line="63" selection-end-column="6" />
+        <state relative-caret-position="1309">
+          <caret line="77" column="30" selection-start-line="77" selection-start-column="30" selection-end-line="77" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/resources/application-qa-8010.yml">
+    <entry file="file://$PROJECT_DIR$/websocket/src/main/java/com/websocket/config/WebSocketConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="68" column="15" selection-start-line="68" selection-start-column="15" selection-end-line="68" selection-end-column="15" />
+        <state relative-caret-position="153">
+          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/websocket/src/main/resources/application-www-9050.yml">
+    <entry file="file://$PROJECT_DIR$/websocket/src/main/java/com/websocket/config/ConfigModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/websocket/src/main/java/com/websocket/service/TestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/websocket/src/main/java/com/websocket/service/AnswerWebSocketServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="40" column="7" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/service/leyile/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="49" column="58" selection-start-line="49" selection-start-column="58" selection-end-line="49" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/mapper/leyile/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/github/binarywang/weixin-java-miniapp/3.6.1.B/weixin-java-miniapp-3.6.1.B.jar!/cn/binarywang/wx/miniapp/api/WxMaService.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qiancore/src/main/java/com/core/base/util/JsonUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbon/src/main/java/com/cloud/ribbon/service/TestService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+          <folding>
+            <element signature="e#1173#1174#0" expanded="true" />
+            <element signature="e#1210#1211#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuul/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuul/src/main/resources/application-qa-8020.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuul/src/main/java/com/zuul/filter/DemoFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuul/src/main/java/com/zuul/filter/DemoToFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuul/src/main/resources/application-www-9020.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/websocket/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/websocket/src/main/resources/application-qa-8050.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/websocket/src/main/java/com/websocket/service/TestController.java">
+    <entry file="file://$PROJECT_DIR$/zuul/src/main/java/com/zuul/filter/ErrorFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        <state relative-caret-position="289">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#543#544#0" expanded="true" />
+            <element signature="e#573#574#0" expanded="true" />
+            <element signature="e#605#606#0" expanded="true" />
+            <element signature="e#640#641#0" expanded="true" />
+            <element signature="e#677#678#0" expanded="true" />
+            <element signature="e#704#705#0" expanded="true" />
+            <element signature="e#745#746#0" expanded="true" />
+            <element signature="e#772#773#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/websocket/src/main/resources/application-qa-8050.yml">
+    <entry file="file://$PROJECT_DIR$/websocket/src/main/resources/application-www-9050.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/sort/Sort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/design/SingletonTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbon/src/main/java/com/cloud/ribbon/rabbitmq/TestQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/design/factory/AoDi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/leyile/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="131" column="26" selection-start-line="131" selection-start-column="26" selection-end-line="131" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/service/leyile/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="105" column="46" selection-start-line="105" selection-start-column="46" selection-end-line="105" selection-end-column="46" />
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3858#3859#0" expanded="true" />
-            <element signature="e#3911#3912#0" expanded="true" />
+            <element signature="e#192#193#0" expanded="true" />
+            <element signature="e#236#237#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/websocket/src/main/java/com/websocket/service/AnswerWebSocketServer.java">
+    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/design/factory/AoDiFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="71" column="43" lean-forward="true" selection-start-line="71" selection-start-column="43" selection-end-line="71" selection-end-column="43" />
+        <state relative-caret-position="119">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/design/factory/BaoMa.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/thirdparty/design/factory/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbon/src/main/java/com/cloud/ribbon/serializable/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbon-consumer/mvnw.cmd">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbon-consumer/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3808">
+          <caret line="224" column="16" selection-start-line="224" selection-start-column="16" selection-end-line="224" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbon/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="121" column="21" selection-start-line="121" selection-start-column="21" selection-end-line="121" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="70" column="23" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/ctrip/framework/apollo/apollo-client/1.1.0/apollo-client-1.1.0.jar!/com/ctrip/framework/apollo/Config.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/config/swagger/DocVer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1564">
+          <caret line="92" column="43" selection-start-line="92" selection-start-column="43" selection-end-line="92" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/config/swagger/Swagger2Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/resources/application-qa-8010.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="58" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka/src/main/resources/application-www-9000.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="67" lean-forward="true" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/config/ConfigModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/config/CorsConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/config/DruidConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/config/RabbitMqConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/config/RedisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/config/WechatConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbon-consumer/src/main/java/com/ribbonconsumer/controller/leyile/mini/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

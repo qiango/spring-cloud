@@ -30,8 +30,7 @@ public class QianException extends RuntimeException {
     }
 
     public QianException(String message) {
-//        super(message);
-        this.code = -1;
+        this.code = 500;
         this.message = message;
     }
 }

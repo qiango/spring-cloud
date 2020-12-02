@@ -2,13 +2,14 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://120.92.42.252:9000/center/eureka/
+#      defaultZone: http://localhost:8888/center/eureka/
 server:
   port: 8010
 
 
 spring:
   application:
-    name: qa-ribbon-consumer
+    name: ribbon-consumer
     #Redis配置
   redis:
     host: 120.92.42.252 # Redis服务器地址

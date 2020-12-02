@@ -8,6 +8,7 @@ import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -18,6 +19,7 @@ import java.util.*;
 //filterOrder： 执行时序， 值是0,1,2....N等自然数。 0的优先级最高，即最先执行。
 //shouldFilter： 是否需要执行run函数。
 //run：拦截器的具体实现；
+@Component
 public class DemoFilter extends ZuulFilter {
 
 

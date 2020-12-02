@@ -2,13 +2,14 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://120.92.42.252:9000/center/eureka/
+#      defaultZone: http://localhost:8888/center/eureka/
 server:
   port: 8020
   servlet:
     context-path: /qaAuthPears
 spring:
   application:
-    name: qa-service-zuul
+    name: service-zuul
 
 zuul:
   routes:
@@ -23,8 +24,10 @@ zuul:
       serviceId: service-feign
     consumerApi:
       path: /consumerApi/**
-      serviceId: qa-ribbon-consumer
-    ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
+      serviceId: ribbon-consumer
+  ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin #解决跨域问题
+  sensitive-headers: Access-Control-Allow-Origin
+
 #  host:
 #       connect-timeout-millis: 3000
 #       socket-timeout-millis: 3000

@@ -471,7 +471,6 @@ public class FileUtil {
 
         // 文件名取得
         String fileName = file.getName();
-
 //        // 如果是文件的话，取文件名的时候把文件类型扩展名去掉
 //        if (file.isFile()) {
 //

@@ -6,6 +6,7 @@ package com.core.base.factory;
  */
 public interface TypeInterface {
 
+
     public Object getContent(String content);
 
 }

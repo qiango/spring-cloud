@@ -63,12 +63,12 @@ public class LeMapper extends BaseMapper {
         update(sqlFans, param);
     }
 
-    public long getRecordId(long userid, long chassfid) {
+    public Map<String, Object> getRecordId(long userid, long chassfid) {
         String sql = "select id from user_behavior_records where userid=? and classfy_id=? ";
         List<Object> param = new ArrayList<>();
         param.add(userid);
         param.add(chassfid);
-        return jdbcTemplate.queryForObject(sql, param.toArray(), Long.class);
+        return queryForMap(sql, param);
     }
 
 
@@ -136,7 +136,6 @@ public class LeMapper extends BaseMapper {
         param.add(evaluationId);
         update(sql, param);
     }
-
 
 
 }

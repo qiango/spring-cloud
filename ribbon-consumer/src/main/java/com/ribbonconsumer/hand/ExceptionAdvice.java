@@ -60,7 +60,7 @@ public class ExceptionAdvice implements ResponseBodyAdvice<Object> {
     public Map<String, Object> handle(Exception e, HandlerMethod m) {
         Map<String, Object> error = new HashMap<>();
         log.error(m.getMethod().getDeclaringClass() + ">" + m.getMethod().getName(), e);
-        error.put("result", -1);
+        error.put("result", 500);
         error.put("message", "系统异常，请联系管理员");
         return error;
     }

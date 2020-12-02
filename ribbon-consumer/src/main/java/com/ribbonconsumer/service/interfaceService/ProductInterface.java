@@ -1,5 +1,6 @@
 package com.ribbonconsumer.service.interfaceService;
 
+import com.core.base.util.ModelUtil;
 import com.ribbonconsumer.mapper.leyile.LeMapper;
 
 /**
@@ -10,7 +11,7 @@ import com.ribbonconsumer.mapper.leyile.LeMapper;
 public interface ProductInterface {
 
     default void updateRecords(LeMapper leMapper, long userid, long classifyId, int preference) {
-        long recordId = leMapper.getRecordId(userid, classifyId);
+        long recordId = ModelUtil.getLong(leMapper.getRecordId(userid, classifyId), "id");
         if (recordId == 0) {
             leMapper.insertRecords(userid, classifyId, preference);
         } else {

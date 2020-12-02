@@ -1,8 +1,6 @@
 package com.ribbonconsumer.thirdparty.sort;
 
 
-import java.util.Arrays;
-
 /**
  * @author qian.wang
  * @description 排序算法
@@ -26,9 +24,9 @@ public class Sort {
     }
 
     //选择排序
-    public static int [] selectSort(int[] array) {
-        int tmp = 0;
-        int minIndex = 0;
+    public static int[] selectSort(int[] array) {
+        int tmp;
+        int minIndex;
         for (int i = 0; i < array.length; i++) {
             minIndex = i;
             for (int j = i + 1; j < array.length; j++) {
@@ -42,18 +40,37 @@ public class Sort {
         return array;
     }
 
-    public static void main(String[] args) {
-        int a[]={1,3,9,5,7,2,5,7,8,3,2};
-        long start=System.currentTimeMillis();
-//        System.out.println(Arrays.toString(orderByBubble(a)));
-        System.out.println(Arrays.toString(selectSort(a)));
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+
+    public static int[] selelist(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length - i - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    int temp = arr[j + 1];
+                    arr[j + 1] = arr[j];
+                    arr[j] = temp;
+                }
+            }
         }
-        System.out.println(System.currentTimeMillis()-start);
+        return arr;
+    }
+
+    public static void main(String[] args) {
+//        int a[] = {1, 3, 9, 5, 7, 2, 5, 7, 8, 3, 2};
+//        long start = System.currentTimeMillis();
+////        System.out.println(Arrays.toString(orderByBubble(a)));
+//        System.out.println(Arrays.toString(selelist(a)));
+//        try {
+//            Thread.sleep(1000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+//        System.out.println(System.currentTimeMillis() - start);
 //        System.out.println(Arrays.toString(selectSort(a)));
+        Object o = new Object() {
+            public boolean equals(Object o) {
+                return true;
+            }
+        };
     }
 
 

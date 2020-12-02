@@ -6,7 +6,7 @@ package com.ribbonconsumer.thirdparty.design;
  * @date 2019/2/27
  */
 
-//懒汉式
+//懒汉式-双重for循环式
 public class SingletonTest {
 
     private volatile static SingletonTest singletonTest;
