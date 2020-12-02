@@ -2,92 +2,44 @@ package com.ribbonconsumer.controller.leyile.admin;
 
 import com.core.base.controller.BaseController;
 import com.core.base.util.ModelUtil;
-import com.ribbonconsumer.service.leyile.LeService;
-import com.ribbonconsumer.thirdparty.mq.MsgProducer;
+import com.ribbonconsumer.service.leyile.AdminService;
 import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.Map;
 
 
 @RestController
-@RequestMapping("/User")
+@RequestMapping("/admin")
 public class adminController extends BaseController {
 
-    private LeService leService;
-    private MsgProducer msgProducer;
+    private AdminService adminService;
 
     @Autowired
-    public adminController(LeService leService, MsgProducer msgProducer) {
-        this.leService = leService;
-        this.msgProducer = msgProducer;
+    public adminController(AdminService adminService) {
+        this.adminService = adminService;
     }
 
-//
-    @PostMapping("/get")
-    public Object exceptionTest(@RequestParam Map<String, Object> params) {
-        int code = ModelUtil.getInt(params, "a");
-        if (code == 0) {
-            return toError("参数错误");
-        }
-        msgProducer.sendMsg("测试单发");
-        msgProducer.sendAll("测试多发");
-        return toJsonOk("");
+    @GetMapping("/getClassifyList")
+    public Object exceptionTest() {
+        Map<String, Object> result = new HashMap<>();
+        result.put("data", adminService.getClassifyList());
+        return toJsonOk(result);
     }
 
-    @PostMapping("/focusUser")
-    public Object focusUser(@ApiParam(hidden = true) @RequestParam Map<String, Object> params) {
-        long userid = ModelUtil.getLong(params, "userid");
-        long focusUserId = ModelUtil.getLong(params, "focusUserId");
-        int type = ModelUtil.getInt(params, "type");
-        if (userid == 0 || focusUserId == 0) {
-            return toError("参数错误");
-        }
-        leService.focusUser(userid, focusUserId, type);
-        return toJsonOk("success");
+    @GetMapping("/getContentList")
+    public Object getContentList() {
+        Map<String, Object> result = new HashMap<>();
+        result.put("data", adminService.getContentList());
+        return toJsonOk(result);
     }
 
-    @PostMapping("/praise")
-    public Object praise(@ApiParam(hidden = true) @RequestParam Map<String, Object> params) {
-        long userid = ModelUtil.getLong(params, "userid");
-        long contentId = ModelUtil.getLong(params, "contentId");
-        int type = ModelUtil.getInt(params, "type");
-        if (userid == 0 || contentId == 0) {
-            return toError("参数错误");
-        }
-        leService.praise(userid, contentId, type);
-        return toJsonOk("success");
+    @GetMapping("/getUserList")
+    public Object getUserList() {
+        Map<String, Object> result = new HashMap<>();
+        result.put("data", adminService.getUserList());
+        return toJsonOk(result);
     }
-
-    @PostMapping("/insertEvaluation")
-    public Object insertEvaluation(@ApiParam(hidden = true) @RequestParam Map<String, Object> params) {
-        long userid = ModelUtil.getLong(params, "userid");
-        long contentId = ModelUtil.getLong(params, "contentId");
-        long pid = ModelUtil.getLong(params, "pid");
-        int type = ModelUtil.getInt(params, "type");
-        String content = ModelUtil.getStr(params, "content");
-        if (userid == 0 || contentId == 0) {
-            return toError("参数错误");
-        }
-        leService.insertEvaluation(userid, contentId, content, pid);
-        return toJsonOk("success");
-    }
-
-    @PostMapping("/updateEvaluation")
-    public Object updateEvaluation(@ApiParam(hidden = true) @RequestParam Map<String, Object> params) {
-        long evaluationId = ModelUtil.getLong(params, "evaluationId");
-        long userid = ModelUtil.getLong(params, "userid");
-        long classifyId = ModelUtil.getLong(params, "classifyId");
-        if (evaluationId == 0) {
-            return toError("参数错误");
-        }
-        leService.updateEvaluation(evaluationId,classifyId,userid);
-        return toJsonOk("success");
-    }
-
-
 }

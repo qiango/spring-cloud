@@ -32,7 +32,7 @@ spring:
   # mysql 属性配置(druid)
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://120.92.42.252:3306/myproduct?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
+    url: jdbc:mysql://127.0.0.1:3306/myproduct?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
     username: root
     password: 1q2W3e.,
     type: com.alibaba.druid.pool.DruidDataSource

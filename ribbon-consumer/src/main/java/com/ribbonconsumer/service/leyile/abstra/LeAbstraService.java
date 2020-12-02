@@ -7,6 +7,7 @@ import com.ribbonconsumer.mapper.leyile.LeMapper;
 import com.ribbonconsumer.service.interfaceService.ProductInterface;
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Map;
@@ -15,6 +16,7 @@ public abstract class LeAbstraService extends BaseService implements ProductInte
 
     private LeMapper leMapper;
 
+    @Autowired
     public LeAbstraService(LeMapper leMapper) {
         this.leMapper = leMapper;
     }

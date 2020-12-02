@@ -38,17 +38,6 @@ public abstract class ProductAbstraService extends BaseService implements Produc
     }
 
 
-    private void initMap(long pid, Map<Long, List<Map<String, Object>>> tempMap, Map<String, Object> map) {
-        if (tempMap.containsKey(pid)) {
-            tempMap.get(pid).add(map);
-        } else {
-            List<Map<String, Object>> list = new ArrayList<>();
-            list.add(map);
-            tempMap.put(pid, list);
-        }
-    }
-
-
     public void insertContent(long userid, String title, String content, long meterialId) {
         productMapper.insertContent(userid, title, content, meterialId);
     }
