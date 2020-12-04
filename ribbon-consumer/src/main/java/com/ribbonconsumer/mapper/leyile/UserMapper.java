@@ -1,7 +1,9 @@
 package com.ribbonconsumer.mapper.leyile;
 
 import com.core.base.mapper.BaseMapper;
+import com.core.base.util.ModelUtil;
 import com.core.base.util.UnixUtil;
+import com.ribbonconsumer.config.ConfigModel;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
@@ -69,7 +71,11 @@ public class UserMapper extends BaseMapper {
         String sql = "select id,gender,name,headpic,happy_no happyNo,fans_num fansNum,focus_num focusNum,introduce from user where id=? ";
         List<Object> param = new ArrayList<>();
         param.add(userid);
-        return queryForMap(sql, param);
+        Map<String, Object> map = queryForMap(sql, param);
+        if (null != map) {
+            map.put("headpic", ConfigModel.WEBURL + ModelUtil.getStr(map, "headpic"));
+        }
+        return map;
     }
 
     //我点赞过的作品
@@ -168,7 +174,8 @@ public class UserMapper extends BaseMapper {
 
     //bearing为1，消息在右边，为本人发的
     public List<Map<String, Object>> getContentList(long sessionId, long userid, int pageSize, int pageIndex) {
-        String sql = "select ua.userid, ua.content,ua.answer_type type, u.headpic, u.name, if(ua.userid = ?, 1, 0) bearing" +
+        String sql = "select ua.userid, ua.content,ua.answer_type type, u.headpic," +
+                "  u.name, if(ua.userid = ?, 1, 0) bearing,ua.create_time createTime " +
                 " from user_answer ua" +
                 "            left join user u on ua.userid = u.id" +
                 " where ua.sessionid = ?" +

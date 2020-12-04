@@ -70,14 +70,15 @@ public class LeController extends BaseController {
             return toError("参数错误");
         }
         leService.praise(userid, contentId, type);
-        return toJsonOk("success");
+        return toJsonOk(true);
     }
 
     @ApiOperation(value = "评价")
     @ApiImplicitParams({
-            @ApiImplicitParam(paramType = "query", name = "userId", value = "用户id", defaultValue = "1", dataType = "String"),
-            @ApiImplicitParam(paramType = "query", name = "contentId", value = "被评价作品id", defaultValue = "20", dataType = "String"),
-            @ApiImplicitParam(paramType = "query", name = "pid", value = "评价父id", defaultValue = "20", dataType = "String"),
+            @ApiImplicitParam(paramType = "query", name = "userId", value = "用户id",  dataType = "String"),
+            @ApiImplicitParam(paramType = "query", name = "contentId", value = "被评价作品id",  dataType = "String"),
+            @ApiImplicitParam(paramType = "query", name = "pid", value = "评价父id", dataType = "String"),
+            @ApiImplicitParam(paramType = "query", name = "content", value = "评价内容", dataType = "String"),
     })
     @PostMapping("/insertEvaluation")
     public Object insertEvaluation(@ApiParam(hidden = true) @RequestParam Map<String, Object> params) {
@@ -95,7 +96,7 @@ public class LeController extends BaseController {
     @ApiOperation(value = "点赞评论")
     @ApiImplicitParams({
             @ApiImplicitParam(paramType = "query", name = "userId", value = "用户id", defaultValue = "1", dataType = "String"),
-            @ApiImplicitParam(paramType = "query", name = "evaluationId", value = "被点赞作品id", defaultValue = "20", dataType = "String"),
+            @ApiImplicitParam(paramType = "query", name = "evaluationId", value = "被点赞评价id", defaultValue = "20", dataType = "String"),
             @ApiImplicitParam(paramType = "query", name = "classifyId", value = "作品分类id", defaultValue = "20", dataType = "String"),
     })
     @PostMapping("/updateEvaluation")

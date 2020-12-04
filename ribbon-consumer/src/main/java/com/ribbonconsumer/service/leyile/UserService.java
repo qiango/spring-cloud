@@ -12,6 +12,7 @@ import com.core.base.util.JsonUtil;
 import com.core.base.util.ModelUtil;
 import com.core.base.util.QianThread;
 import com.core.base.util.UnixUtil;
+import com.ribbonconsumer.config.ConfigModel;
 import com.ribbonconsumer.mapper.leyile.UserMapper;
 import com.ribbonconsumer.thirdparty.mq.MsgProducer;
 import me.chanjar.weixin.common.error.WxErrorException;
@@ -148,6 +149,7 @@ public class UserService extends BaseService {
             int type = ModelUtil.getInt(map, "type");
             String content = ModelUtil.getStr(map, "content");
             map.put("content", AnswerTypeFactory.typeInterface(AnswerTypeEnum.getValue(type)).getContent(content));
+            map.put("headpic", ConfigModel.WEBURL + ModelUtil.getStr(map, "headpic"));
         }
     }
 

@@ -100,6 +100,33 @@ public class UserController extends BaseController {
     @ApiImplicitParams({
             @ApiImplicitParam(paramType = "query", name = "userId", value = "用户id", dataType = "String"),
     })
+    @ApiResponses({
+            @ApiResponse(code = 200, message = "{\n" +
+                    "    \"myCreateContentList|我的作品列表\":[\n" +
+                    "        {\n" +
+                    "            \"praiseNum｜点赞数\":0,\n" +
+                    "            \"content｜内容\":\"1\"\n" +
+                    "        },\n" +
+                    "        {\n" +
+                    "            \"praiseNum\":0,\n" +
+                    "            \"content\":\"第一个作品\"\n" +
+                    "        }\n" +
+                    "    ],\n" +
+                    "    \"myLoveContentList｜我喜爱的作品列表\":[\n" +
+                    "\n" +
+                    "    ],\n" +
+                    "    \"userInfoMation｜用户信息\":{\n" +
+                    "        \"id\":1,\n" +
+                    "        \"gender｜性别\":\"男\",\n" +
+                    "        \"name｜名称\":\"王大帅迁\",\n" +
+                    "        \"headpic｜头像\":\"temp-111.jpg\",\n" +
+                    "        \"happyNo｜快乐号\":\"123456\",\n" +
+                    "        \"fansNum｜粉丝数\":100,\n" +
+                    "        \"focusNum｜关注数\":100,\n" +
+                    "        \"introduce｜介绍\":\"帅不需要过多的解释\"\n" +
+                    "    }\n" +
+                    "}")
+    })
     @PostMapping("/getUserInfoMation")
     public Object getUserInfoMation(@ApiParam(hidden = true) @RequestParam Map<String, Object> params) {
         long userId = ModelUtil.getLong(params, "userId");
@@ -155,8 +182,8 @@ public class UserController extends BaseController {
         if (userId == 0) {
             toError("userId为空");
         }
-        userService.updateIntroduce(userId, headpic, name, introduce,birthDay,gender);
-        return toJsonOk("");
+        userService.updateIntroduce(userId, headpic, name, introduce, birthDay, gender);
+        return toJsonOk("success");
     }
 
 
@@ -165,7 +192,7 @@ public class UserController extends BaseController {
             @ApiImplicitParam(paramType = "query", name = "userId", value = "用户id", dataType = "String"),
             @ApiImplicitParam(paramType = "query", name = "sessionId", value = "会话id", dataType = "String"),
             @ApiImplicitParam(paramType = "query", name = "content", value = "说话内容", dataType = "String"),
-            @ApiImplicitParam(paramType = "query", name = "userList", value = "聊天对象id", dataType = "String"),
+            @ApiImplicitParam(paramType = "query", name = "userList", value = "聊天用户id组[2,3,4]", dataType = "String"),
     })
     @PostMapping("/sendMessage")
     public Object sendMessage(@ApiParam(hidden = true) @RequestParam Map<String, Object> params) {
@@ -186,6 +213,19 @@ public class UserController extends BaseController {
     @ApiImplicitParams({
             @ApiImplicitParam(paramType = "query", name = "userId", value = "用户id", dataType = "String"),
     })
+    @ApiResponses({
+            @ApiResponse(code = 200,message = "[\n" +
+            "    {\n" +
+            "        \"id\":4,\n" +
+            "        \"sessionid|会话id\":4,\n" +
+            "        \"groupName｜会话名称\":\"name\",\n" +
+            "        \"headPic｜头像\":null,\n" +
+            "        \"count｜未读数量\":0,\n" +
+            "        \"createTime｜发送时间\":null,\n" +
+            "        \"content｜内容\":\"[表情]\",\n" +
+            "        \"type｜消息类型\":null\n" +
+            "    }\n" +
+            "]")})
     @PostMapping("/getSessionList")
     public Object getSessionList(@ApiParam(hidden = true) @RequestParam Map<String, Object> params) {
         long userId = ModelUtil.getLong(params, "userId");
@@ -202,6 +242,18 @@ public class UserController extends BaseController {
             @ApiImplicitParam(paramType = "query", name = "pageIndex", value = "页码", dataType = "String"),
             @ApiImplicitParam(paramType = "query", name = "pageSize", value = "页长", dataType = "String"),
     })
+    @ApiResponses({
+            @ApiResponse(code = 200,message = "[\n" +
+                    "    {\n" +
+                    "        \"userid\":1,\n" +
+                    "        \"content|消息内容\":\"[表情]\",\n" +
+                    "        \"type｜消息类型\":null,\n" +
+                    "        \"headpic｜头像\":\"temp-111.jpg\",\n" +
+                    "        \"name｜名称\":\"王大帅迁\",\n" +
+                    "        \"bearing｜bearing为1，消息在右边，为本人发的\":0\n" +
+                    "        \"createTime｜创建时间\":0\n" +
+                    "    }\n" +
+                    "]")})
     @PostMapping("/getContentList")
     public Object getContentList(@ApiParam(hidden = true) @RequestParam Map<String, Object> params) {
         long sessionId = ModelUtil.getLong(params, "sessionId");//会话id

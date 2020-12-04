@@ -64,9 +64,9 @@ spring:
 base:
   isonline: 0  #正式测试环境的标记 0:非正式 1:正式
   filepath: /qian/file/ #上传文件的缓存位置
-  weburl: https://www.nopears.com/pears/file/readFile/ #上传文件的缓存位置
-  imageurl: https://www.nopears.com/image/ #图片访问前缀
-  music: https://www.nopears.com/music/ #语音访问前缀
+  weburl: https://www.nopears.com/qaAuthPears/consumerApi/file/readFile/ #上传文件的访问前缀
+  imageurl: https://www.nopears.com/image/ #web静态图片访问前缀
+  music: https://www.nopearsv.com/music/ #语音访问前缀
   cross-domain:
 
 swagger:

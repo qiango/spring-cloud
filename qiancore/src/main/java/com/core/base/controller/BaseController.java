@@ -1,5 +1,6 @@
 package com.core.base.controller;
 
+import com.core.base.util.ModelUtil;
 import com.core.base.util.ValueUtil;
 import org.apache.http.HttpStatus;
 import org.slf4j.Logger;
@@ -9,6 +10,7 @@ import org.springframework.core.io.InputStreamResource;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+
 import java.io.IOException;
 import java.util.Map;
 
@@ -38,15 +40,31 @@ public abstract class BaseController {
         return setResult(value, msg, 1);
     }
 
-    protected Object toJsonOk(Object value){
-        return ValueUtil.toJson(HttpStatus.SC_OK,value);
+    protected Object toJsonOk(Object value) {
+        return ValueUtil.toJson(HttpStatus.SC_OK, value);
     }
 
-    protected Object toError(String message){
+    protected Object toError(String message) {
         return ValueUtil.isError(message);
     }
 
+    protected Object validString(Map<String, Object> param, String... key) {
+        for (String s : key) {
+            if (null == ModelUtil.getStr(param, s)) {
+                return toError("参数" + s + "不能为空!");
+            }
+        }
+        return null;
+    }
 
+    protected Object validLong(Map<String, Object> param, String... key) {
+        for (String s : key) {
+            if (0 == ModelUtil.getLong(param, s)) {
+                return toError("参数" + s + "不能为0!");
+            }
+        }
+        return null;
+    }
 
     /**
      * 接口失败设置返回值

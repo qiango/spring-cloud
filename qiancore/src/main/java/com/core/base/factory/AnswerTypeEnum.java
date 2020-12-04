@@ -8,7 +8,9 @@ import com.core.base.baseenum.CodeEnum;
  */
 public enum AnswerTypeEnum implements CodeEnum {
 
-    Emoji(1, "表情");
+    Emoji(1, "表情"),
+
+    Text(2, "文本");
 
     private Integer code;
 
@@ -42,7 +44,7 @@ public enum AnswerTypeEnum implements CodeEnum {
                 return c;
             }
         }
-        return Emoji;
+        return Text;
     }
 
 }

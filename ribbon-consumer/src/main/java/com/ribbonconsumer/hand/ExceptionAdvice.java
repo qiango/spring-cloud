@@ -1,6 +1,7 @@
 package com.ribbonconsumer.hand;
 
 import com.core.base.exception.QianException;
+import org.apache.http.HttpStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.core.MethodParameter;
@@ -44,8 +45,9 @@ public class ExceptionAdvice implements ResponseBodyAdvice<Object> {
     public Map<String, Object> handleException(QianException e, HandlerMethod m) {
         Map<String, Object> error = new HashMap<>();
         log.info(m.getMethod().getDeclaringClass() + ">" + m.getMethod().getName(), e);
-        error.put("result", e.getCode());
-        error.put("message", e.getMessage());
+        error.put("code", e.getCode());
+        error.put("msg", "customException");
+        error.put("result", e.getMessage());
         return error;
     }
 
@@ -60,8 +62,9 @@ public class ExceptionAdvice implements ResponseBodyAdvice<Object> {
     public Map<String, Object> handle(Exception e, HandlerMethod m) {
         Map<String, Object> error = new HashMap<>();
         log.error(m.getMethod().getDeclaringClass() + ">" + m.getMethod().getName(), e);
-        error.put("result", 500);
-        error.put("message", "系统异常，请联系管理员");
+        error.put("code", HttpStatus.SC_INTERNAL_SERVER_ERROR);
+        error.put("msg", "exception");
+        error.put("result", "系统异常，请联系Q");
         return error;
     }
 }

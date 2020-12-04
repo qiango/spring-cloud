@@ -5,6 +5,8 @@ eureka:
 #      defaultZone: http://120.92.42.252:9000/center/eureka/
 server:
   port: 8889
+  servlet:
+    context-path: /image
 
 
 spring:
@@ -39,12 +41,12 @@ spring:
   # mysql 属性配置(druid)
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/myproduct?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
-    username: root
-    password: 123456
-#    url: jdbc:mysql://120.92.42.252:3306/myproduct?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
+#    url: jdbc:mysql://localhost:3306/myproduct?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
 #    username: root
-#    password: 1q2W3e.,
+#    password: 123456
+    url: jdbc:mysql://120.92.42.252:3306/myproducttest?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: 1q2W3e.,
     type: com.alibaba.druid.pool.DruidDataSource
     initialSize: 5
     minIdle: 5

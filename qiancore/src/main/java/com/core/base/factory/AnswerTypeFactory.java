@@ -1,6 +1,7 @@
 package com.core.base.factory;
 
 import com.core.base.factory.impl.EmojiImpl;
+import com.core.base.factory.impl.TextImpl;
 
 /**
  * @Authod: wangqian
@@ -14,6 +15,9 @@ public class AnswerTypeFactory {
         switch (answerTypeEnum) {
             case Emoji:
                 typeInterface = EmojiImpl.getInstance();
+                break;
+            case Text:
+                typeInterface = TextImpl.getInstance();
                 break;
             default:
                 System.out.println("....");

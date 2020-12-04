@@ -17,15 +17,16 @@ import java.util.Map;
 public class ProductMapper extends BaseMapper {
 
     //发布作品
-    public void insertContent(long userid, String title, String content, long meterialId) {
-        String sql = "insert into user_content (userid, title,create_time, check_status,content, material_id) values (?,?,?,?,?) ";
+    public void insertContent(long userid, String title, String content, String picture, long classId) {
+        String sql = "insert into user_content (userid, title,create_time, check_status,content, picture,classify_id) values (?,?,?,?,?,?,?) ";
         List<Object> param = new ArrayList<>();
         param.add(userid);
         param.add(title);
         param.add(UnixUtil.getNowTimeStamp());
         param.add(CheckStatusEnum.Success.getCode());
         param.add(content);
-        param.add(meterialId);
+        param.add(picture);
+        param.add(classId);
         insert(sql, param);
     }
 
@@ -41,10 +42,14 @@ public class ProductMapper extends BaseMapper {
                 "       u.name," +
                 "       u.headpic," +
                 "       uc.music_url      musicUrl," +
-                "       ifnull(uf.id,0)   isFriend  " +
+                "       ifnull(uf.id,0)   isFriend," +
+                "       uc.title," +
+                "       uc.picture," +
+                "       ifnull(up.id,0)   isPraise" +
                 " from user_content uc" +
                 "       left join user u on uc.userid = u.id" +
-                "       left join user_focus uf on u.id=uf.focus_userid and uf.userid=:userid " +
+                "       left join user_focus uf on u.id=uf.focus_userid and uf.userid=:userid" +
+                "       left join user_praise up on up.content_id=uc.id and up.userid=:userid " +
                 "       left join content_material cm on uc.material_id = cm.id" +
                 "       left join user_behavior_records ubr on uc.classify_id=ubr.classfy_id and ubr.userid=:userid" +
                 "       left join user_footprint uf2 on uc.id=uf2.productid and uf2.userid=:userid " +
@@ -55,11 +60,59 @@ public class ProductMapper extends BaseMapper {
         param.put("userid", userid);
         List<Map<String, Object>> list = queryForList(pageNameSql(sql, " order by ubr.degree_of_preference desc,rand() "), pageParams(param, pageIndex, pageSize));
         for (Map<String, Object> map : list) {
-            map.put("meterialUrl", ConfigModel.IMAGEURL + ModelUtil.getStr(map, "meterialUrl"));
+            map.put("meterialUrl", ConfigModel.WEBURL + ModelUtil.getStr(map, "meterialUrl"));
             map.put("musicUrl", ConfigModel.MUSIC + ModelUtil.getStr(map, "musicUrl"));
-            map.put("headpic", ConfigModel.IMAGEURL + ModelUtil.getStr(map, "headpic"));
+            map.put("headpic", ConfigModel.WEBURL + ModelUtil.getStr(map, "headpic"));
+            String content = ModelUtil.getStr(map, "content");
+            map.put("introduce", content.length() > 20 ? content.substring(20) : content);
         }
         return list;
+    }
+
+    public long getContentCount(long userid) {
+        String sql = "select count(uc.id) count " +
+                " from user_content uc" +
+                "       left join user_footprint uf2 on uc.id=uf2.productid and uf2.userid=? " +
+                " where uc.check_status = ?" +
+                "   and uf2.id is null ";
+        List<Object> param = new ArrayList<>();
+        param.add(userid);
+        param.add(CheckStatusEnum.Success.getCode());
+        Long aLong = jdbcTemplate.queryForObject(sql, param.toArray(), long.class);
+        return aLong == null ? 0 : aLong;
+    }
+
+    //推荐作品
+    public Map<String, Object> getContentDetail(long contentId, long userid) {
+        String sql = "select uc.create_time    time," +
+                "       uc.id," +
+                "       uc.content," +
+                "       uc.evaluation_num evaluationNum," +
+                "       uc.praise_num     praiseNum," +
+                "       uc.forwarding_num forwardingNum," +
+                "       cm.meterial_url   meterialUrl," +
+                "       u.name," +
+                "       u.headpic," +
+                "       uc.music_url      musicUrl," +
+                "       ifnull(uf.id,0)   isFriend," +
+                "       uc.title," +
+                "       uc.picture," +
+                "       ifnull(up.id,0)   isPraise" +
+                " from user_content uc" +
+                "       left join user u on uc.userid = u.id" +
+                "       left join user_focus uf on u.id=uf.focus_userid and uf.userid=?" +
+                "       left join user_praise up on up.content_id=uc.id and up.userid=? " +
+                "       left join content_material cm on uc.material_id = cm.id" +
+                " where uc.id=? ";
+        List<Object> param = new ArrayList<>();
+        param.add(userid);
+        param.add(userid);
+        param.add(contentId);
+        Map<String, Object> map = queryForMap(sql, param);
+        if (null != map) {
+            map.put("headpic", ConfigModel.IMAGEURL + ModelUtil.getStr(map, "headpic"));
+        }
+        return map;
     }
 
     public void insertFootprint(long userid, long productid) {
@@ -121,7 +174,7 @@ public class ProductMapper extends BaseMapper {
         String sql = "select cc.id, cc.name, cc.image, cc.pid, if(ufc.id is null, 0, 1) isFocus" +
                 " from content_classify cc" +
                 "       left join user_focus_classfy ufc on cc.id = ufc.classfy_id and ufc.userid = ? and cc.delflag = 0" +
-                " where cc.delflag = 0  ";
+                " where ifnull(cc.delflag,0) = 0  ";
         List<Object> param = new ArrayList<>();
         param.add(userid);
         return queryForList(sql, param);
@@ -132,7 +185,7 @@ public class ProductMapper extends BaseMapper {
                 " from user_focus_classfy ufc" +
                 "       left join content_classify cc on ufc.classfy_id = cc.id" +
                 " where ufc.userid = ?" +
-                "  and cc.delflag = 0 ";
+                "  and ifnull(cc.delflag,0) = 0 ";
         List<Object> param = new ArrayList<>();
         param.add(userid);
         return queryForList(sql, param);

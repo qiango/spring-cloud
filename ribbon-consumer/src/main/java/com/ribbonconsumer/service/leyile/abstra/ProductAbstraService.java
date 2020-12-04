@@ -2,6 +2,7 @@ package com.ribbonconsumer.service.leyile.abstra;
 
 import com.core.base.service.BaseService;
 import com.core.base.util.ModelUtil;
+import com.ribbonconsumer.config.ConfigModel;
 import com.ribbonconsumer.mapper.leyile.LeMapper;
 import com.ribbonconsumer.mapper.leyile.ProductMapper;
 import com.ribbonconsumer.service.interfaceService.ProductInterface;
@@ -32,18 +33,27 @@ public abstract class ProductAbstraService extends BaseService implements Produc
         evaluationList.forEach(stringObjectMap -> initMap(ModelUtil.getLong(stringObjectMap, "pid"), tempMap, stringObjectMap));
         for (Map<String, Object> map : evaluationList) {
             map.put("childList", tempMap.get(ModelUtil.getLong(map, "id")));
+            map.put("headpic", ConfigModel.WEBURL + ModelUtil.getStr(map, "headpic"));
         }
         List<Map<String, Object>> maps = tempMap.get(0L);
         return maps == null ? new ArrayList<>() : maps;
     }
 
 
-    public void insertContent(long userid, String title, String content, long meterialId) {
-        productMapper.insertContent(userid, title, content, meterialId);
+    public void insertContent(long userid, String title, String content, String picture, long classId) {
+        productMapper.insertContent(userid, title, content, picture, classId);
     }
 
-    public List<Map<String, Object>> getContentList(long userid, int pageSize, int pageIndex) {
-        return productMapper.getContentList(userid, pageSize, pageIndex);
+    public Map<String, Object> getContentList(long userid, int pageSize, int pageIndex) {
+        Map<String, Object> result = new HashMap<>();
+        result.put("total", productMapper.getContentCount(userid));
+        result.put("pageIndex", pageIndex);
+        result.put("list", productMapper.getContentList(userid, pageSize, pageIndex));
+        return result;
+    }
+
+    public Map<String, Object> getContentDetail(long contentId, long userid) {
+        return productMapper.getContentDetail(contentId, userid);
     }
 
 
